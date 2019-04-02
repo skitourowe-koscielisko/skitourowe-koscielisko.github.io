@@ -1,8 +1,8 @@
 ---
 ---
 @import 'vars';
-@import 'mixins';
 @import 'typography';
+@import 'mixins';
 
 
 footer {
@@ -20,55 +20,100 @@ footer {
     clear: both;
 }
 
+body {
+
+    font-size: 10pt;
+    background: white url("/assets/images/bg.png") top center no-repeat;
+    background-size: 100%;
+}
+
 .homepage {
+
+
     header {
-        position: absolute;
-        left: 50%;
-        width: 38%;
-        margin-left: -25%;
-        top: 13%;
-        z-index: 100000;
+        display: none;
+    }
+
+    main {
+
+        padding-top: 104px;
+
         h1 {
-            min-height: 278px;
+            width: 259px;
+            height: 138px;
             background: url("/assets/images/skitourowekoscielisko-logo-main.png") no-repeat center center;
             background-size: 100%;
             text-align: center;
             font-size: 0pt;
+            margin: auto;
         }
+
+        h4 {
+            text-align: center;
+        }
+
+	#promo {
+            width: 560px;
+            height: 315px;
+	    position: relative;
+	    left: 50%;
+	    margin-left: -280px;
+            margin-bottom: 15px;
+
+            @media screen and (max-width: 560px) {
+                width: 100%;
+                height: 300px;
+                left: 0;
+                margin-left: 0;
+            }
+
+	}
     }
 
-    #langing-bg {
-        display: inline;
-        width: 100%;
-    }
+    #site-content {
+        margin: 0px 40px;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
 
-    .content {
-        background: grey url("/assets/images/main-bg.png") no-repeat center center;
         position: absolute;
-        top: 45px;
-        right: 0px;
-        width: 31%;
-        min-height: 500px;
-        color: white;
-        padding: 60px 0px;
-        //padding: 60px 12px 0px 40px;
+        top: 33px;
 
-        > div {
-            padding: 0px 20px;
+        @media screen and (max-width: 800px) {
+            position: initial;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 5%;
+
+            li {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media screen and (max-width: 560px) {
+            display: initial;
+
+            li {
+                margin-left: 5%;
+            }
         }
 
 
-        h3 {
-            margin-bottom: 60px;
+        a {
+            color: black;
+            text-transform: uppercase;
+            text-decoration: unset;
+            font-size: 10pt;
+
+            &:hover {
+                cursor: inherit;
+            }
         }
 
         p {
-            margin-top: -60px;
-            margin-bottom: 60px;
-            font-size: 8pt;
+            font-size: 6pt;
         }
-
     }
+
 
     #coming-soon {
         margin-top: 32px;
@@ -85,44 +130,4 @@ footer {
         }
     }
 
-    @include tablet-screen() {
-        header {
-            top: 25px;
-            height: 150px;
-        }
-
-        #landing-bg {
-            display: block;
-        }
-
-        .content {
-            background-size: 100%;
-            background-repeat: repeat-y;
-            position: inherit;
-            width: 100%;
-            min-height: inherit;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-
-            h3 {
-                margin-bottom: 25px;
-            }
-
-            p {
-                margin-top: -25px;
-                margin-bottom: 25px;
-            }
-        }
-    }
-
-    @include phone-screen() {
-        header {
-            h1 {
-                min-height: 155px;
-            }
-        }
-        .content {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
 }
