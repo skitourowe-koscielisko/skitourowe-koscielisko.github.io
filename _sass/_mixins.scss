@@ -1,0 +1,15 @@
+@import 'vars';
+
+@mixin tablet-screen($query: null) {
+    @media screen and (max-width: $tablet-max-device-width) {
+        @content;
+    }
+
+}
+
+@mixin phone-screen($query: null) {
+    @media screen and (max-width: $phone-max-device-width) {
+        @content;
+    }
+
+}

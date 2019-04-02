@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body class="{{layout.bodyclass}}">
+    <header>
+      <h1>{{ page.title }}</h1>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    {% include page-footer.html %}
+  </body>
+</html>

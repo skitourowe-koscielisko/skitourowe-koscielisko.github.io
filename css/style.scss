@@ -1,0 +1,128 @@
+---
+---
+@import 'vars';
+@import 'mixins';
+@import 'typography';
+
+
+footer {
+    text-align: center;
+
+    .bar {
+        background-color: #dadada;
+        font-size: 7pt;
+        padding: 24px 43px;
+        margin-bottom: 0px;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+.homepage {
+    header {
+        position: absolute;
+        left: 50%;
+        width: 38%;
+        margin-left: -25%;
+        top: 13%;
+        z-index: 100000;
+        h1 {
+            min-height: 278px;
+            background: url("/assets/images/skitourowekoscielisko-logo-main.png") no-repeat center center;
+            background-size: 100%;
+            text-align: center;
+            font-size: 0pt;
+        }
+    }
+
+    #langing-bg {
+        display: inline;
+        width: 100%;
+    }
+
+    .content {
+        background: grey url("/assets/images/main-bg.png") no-repeat center center;
+        position: absolute;
+        top: 45px;
+        right: 0px;
+        width: 31%;
+        min-height: 500px;
+        color: white;
+        padding: 60px 0px;
+        //padding: 60px 12px 0px 40px;
+
+        > div {
+            padding: 0px 20px;
+        }
+
+
+        h3 {
+            margin-bottom: 60px;
+        }
+
+        p {
+            margin-top: -60px;
+            margin-bottom: 60px;
+            font-size: 8pt;
+        }
+
+    }
+
+    #coming-soon {
+        margin-top: 32px;
+        margin-bottom: 44px;
+        text-align: center;
+        
+        h4 {
+            margin-bottom: 7px;
+        }
+
+        time {
+            color: #e50b3b;
+            font-size: 18pt;
+        }
+    }
+
+    @include tablet-screen() {
+        header {
+            top: 25px;
+            height: 150px;
+        }
+
+        #landing-bg {
+            display: block;
+        }
+
+        .content {
+            background-size: 100%;
+            background-repeat: repeat-y;
+            position: inherit;
+            width: 100%;
+            min-height: inherit;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            h3 {
+                margin-bottom: 25px;
+            }
+
+            p {
+                margin-top: -25px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    @include phone-screen() {
+        header {
+            h1 {
+                min-height: 155px;
+            }
+        }
+        .content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
