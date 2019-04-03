@@ -24,7 +24,7 @@ github_username:  skitourowekoscielisko
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-slate
+theme: minima
 plugins:
   - jekyll-feed
 
@@ -43,7 +43,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - jekyll
   - serve
 
 defaults:
