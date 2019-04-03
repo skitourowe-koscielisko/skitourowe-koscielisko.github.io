@@ -1,0 +1,11 @@
+#!/bin/sh
+
+PWD=`pwd`
+SITE_DIR=${PWD}
+GEM_DIR=${PWD}/.gems
+JEKYLL_VERSION=3.8
+BASE=`pwd`
+echo SITE_DIR ${SITE_DIR}
+echo GEM_DIR ${GEM_DIR}
+docker run --rm -it -v ${SITE_DIR}:/srv/jekyll -v ${GEM_DIR}:/usr/gem -p 9000:9000 --name jekyll_serve jekyll/jekyll:${JEKYLL_VERSION} \
+    jekyll serve -P 9000 --watch --drafts --incremental
