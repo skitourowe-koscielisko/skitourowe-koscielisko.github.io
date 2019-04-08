@@ -1,1 +1,1 @@
-﻿# Schroniska w Kościelisku* Schronisko na Hali Ornak* Schronisko w Murowańcu
+﻿---title: Trasa na Ornakyoutube: xyzdla_kogo: opisy/poczatkujacy.md---﻿# Schroniska w Kościelisku## Naflowek* Schronisko na Hali Ornak* Schronisko w Murowańcu* Bacowka# Drugi naglowek[Skitour School](http://skitourschool.pl/) fajna szkoła. Najlepsza!
