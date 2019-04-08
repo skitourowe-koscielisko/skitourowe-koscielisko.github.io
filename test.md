@@ -1,0 +1,1 @@
+﻿# Schroniska w Kościelisku* Schronisko na Hali Ornak* Schronisko w Murowańcu
