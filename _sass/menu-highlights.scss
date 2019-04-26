@@ -1,0 +1,39 @@
+body {
+    $font-weight: 900;
+
+    &.home {
+        .home a {
+            font-weight: $font-weight;
+        }
+    }
+    &.tracks {
+        .tracks a {
+            font-weight: $font-weight;
+        }
+    }
+    &.map {
+        .map a {
+            font-weight: $font-weight;
+        }
+    }
+    &.weather {
+        .weather a {
+            font-weight: $font-weight;
+        }
+    }
+    &.news {
+        .news a {
+            font-weight: $font-weight;
+        }
+    }
+    &.accomodation {
+        .accomodation a {
+            font-weight: $font-weight;
+        }
+    }
+    &.contact {
+        .contact a {
+            font-weight: $font-weight;
+        }
+    }
+}

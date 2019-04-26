@@ -1,0 +1,22 @@
+body {
+
+    font-size: 10pt;
+    background: white url("/images/bg.png") top center no-repeat;
+    background-size: 100%;
+}
+
+.clear {
+    clear: both;
+    display: block;
+}
+
+main {
+    margin: 0px 15px;
+
+    @include min-width($large-width) {
+        margin: 0px auto;
+        width: $large-width;
+    }
+}
+
+

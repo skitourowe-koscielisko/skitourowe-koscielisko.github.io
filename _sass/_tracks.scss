@@ -1,0 +1,72 @@
+.tracks {
+    .tour-summary {
+        display: flex;
+        -moz-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        vertical-align: baseline;
+        margin: 0 0 24px 0;
+
+        div {
+            position: relative;
+            font-size: 8pt;
+            text-align: center;
+            padding-top: 71px;
+
+            margin: 12px 0px 6px 6px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            position: relative;
+            width: calc(50% - 6px);
+
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: top center;
+
+            &.difficulty {
+                padding-top: 47px;
+                display: flex;
+                -moz-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                vertical-align: baseline;
+
+                .block {
+                    min-width: calc(20% - 4px);
+                    max-width: 32px;
+                    font-size: 0pt;
+                    height: 8px;
+                    border: 1px solid $default-color;
+                    margin-right: 2px;
+                    margin-bottom: 14px;
+
+                    &.fill {
+                        background-color: $menu-bg-color;
+                        border-color: $menu-bg-color;
+                    }
+
+                }
+            }
+
+            &.splitboard {
+                background-image: url(/images/layout-trasa/no-splitboard.png);
+                &.tak {
+                    background-image: url(/images/layout-trasa/splitboard.png);
+                }
+            }
+
+            &.winter {
+                background-image: url(/images/layout-trasa/wiosna.png);
+                &.tak {
+                    background-image: url(/images/layout-trasa/zima.png);
+                }
+            }
+
+            @include min-width(510px) {
+                width: calc(25% - 6px);
+            }
+        }
+    }
+}

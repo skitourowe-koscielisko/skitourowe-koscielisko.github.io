@@ -1,5 +1,13 @@
-$tablet-min-device-width: 800px;
-$tablet-max-device-width: 1024px;
+/* Color definitions */
+$default-color: #1e2837;
+$bg-color: #fff;
+$menu-color: #fff;
+$menu-bg-color: #e50b3b;
+$menu-bg-color-alt: #1a2634;
+$bg-darker: #e7e7e7;
 
-$phone-max-device-width: 799px;
+
+/* Screen width breakpoints */
+$medium-width: 800px;
+$large-width: 1024px;
 

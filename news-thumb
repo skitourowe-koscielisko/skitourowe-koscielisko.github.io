@@ -1,0 +1,31 @@
+#!/bin/sh
+
+IMG_PATH=$1
+
+if [ "x$IMG_PATH" = "x" ]
+then
+    echo "Usage: $0 image"
+    exit 1
+fi
+
+if [ ! -e $IMG_PATH ]
+then
+    echo "$IMG_PATH: No such image"
+    exit 1
+fi
+
+IMG_BASENAME=$(basename $IMG_PATH | sed 's/\..*$/.png/')
+THUMB_PATH="images/thumbs/$IMG_BASENAME"
+
+if [ ! -d assets/thumbs ]
+then
+    mkdir -p assets/thumbs
+fi
+
+# Convert with padding
+#convert $IMG_PATH -thumbnail '346x203>' -background white -gravity center -extent 346x203 $THUMB_PATH
+
+# Convert and crop
+convert $IMG_PATH -thumbnail '346x203^' -background white -gravity center -extent 346x203 $THUMB_PATH && \
+    echo thumbnail: $THUMB_PATH
+

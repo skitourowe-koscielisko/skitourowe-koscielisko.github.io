@@ -1,0 +1,194 @@
+footer {
+    text-align: center;
+
+    .precaution {
+        margin-bottom: -16px;
+
+        @include min-width($medium-width) {
+            margin-bottom: -45px;
+        }
+        h2 {
+            font-size: 76px;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+
+            @include min-width($medium-width) {
+                font-size: 106px;
+            }
+        }
+
+        .text {
+            background: transparent url("/images/giewont-sm.png") top center no-repeat;
+            background-size: 100%;
+            position: relative;
+            top: -61px;
+            padding: 64px 32px 12px;
+
+            strong, em {
+                font-size: 8pt;
+                display: block;
+                margin: 0 auto 18px;
+                max-width: 400px;
+
+                @include min-width($medium-width) {
+                    font-size: 10pt;
+                    max-width: 500px;
+                }
+            }
+
+            @include min-width(590px) {
+                padding-top: 73px;
+            }
+
+            @include min-width($medium-width) {
+                padding: 113px 60px;
+                background-image: url("/images/giewont.png");
+                background-size: auto;
+                top: -84px;
+            }
+
+            @include min-width($large-width) {
+                background-image: url("/images/giewont.png");
+            }
+        }
+    }
+
+    .logo-footer {
+        background: transparent url("/images/logo-footer.png") top center no-repeat;
+        width: 140px;
+        height: 74px;
+        margin: auto;
+    }
+
+    .social-media {
+        display: block;
+        clear: both;
+        height: 45px;
+        float: left;
+        width: 100%;
+        border-bottom: 2px solid grey;
+        margin: 0 0 50px;
+
+        ul {
+            clear: left;
+            float: left;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            left: 50%;
+            li {
+                display: block;
+                float: left;
+                padding: 24px 34px 12px;
+                position: relative;
+                right: 50%;
+                background-color: $bg-color;
+
+                @include min-width($medium-width) {
+                    padding: 24px 58px 12px;
+                }
+
+                @include min-width($large-width) {
+                    padding: 24px 78px 12px;
+                }
+            }
+        }
+    }
+
+    .partners {
+        margin: 24px 12px;
+        text-align: center;
+        width: calc(100% - 24px);
+
+        @include min-width($medium-width) {
+            text-align: left;
+        }
+
+        @include min-width($large-width) {
+            width: 1024px;
+            margin: 24px auto;
+        }
+
+        h5 {
+            margin: 24px auto 24px;
+            @include min-width($medium-width) {
+                margin-top: 0;
+            }
+        }
+
+        .main {
+            @include min-width($medium-width) {
+                float: left;
+                margin-right: 32px;
+            }
+        }
+
+        ul {
+            list-style: none;
+
+
+            li {
+                display: inline;
+                img {
+                    padding: 12px 0px 12px 24px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        width: 100%;
+
+        a {
+            color: $default-color;
+            font-weight: bold;
+            text-transform: uppercase;
+            &:hover {
+                color: $default-color;
+            }
+        }
+
+        p {
+            font-size: 9pt;
+            display: inline;
+            float: left;
+            margin: 0 12px 16px;
+            border-width: 0;
+
+            &.center {
+                position: relative;
+                width: calc(100% - 24px);
+                display: inline-block;
+                text-align: center;
+
+                a {
+                    text-transform: none;
+                }
+
+                @include min-width($medium-width) {
+                    top: calc(9pt + 17px);
+                }
+            }
+
+            &.left {
+                width: calc(50% - 24px);
+                text-align: left;
+            }
+            &.right {
+                width: calc(50% - 24px);
+                text-align: right;
+            }
+        }
+    }
+
+    .eu {
+        background-color: #dadada;
+        font-size: 7pt;
+        padding: 24px 43px;
+        margin-bottom: 0px;
+    }
+}

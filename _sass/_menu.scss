@@ -1,0 +1,195 @@
+header {
+    $height-sm: 70px;
+    $height-md: 100px;
+
+    background: $menu-bg-color url(/images/menu-bg.png) center 0 no-repeat border-box;
+    height: $height-sm;
+    margin-bottom: 26px;
+
+    @include min-width($medium-width) {
+        height: $height-md;
+    }
+
+    h1 {
+        background: transparent url(/images/logo-header-small.png) center 0 no-repeat border-box;
+        display: inline-block;
+        float: left;
+        text-indent: -999999px;
+        margin: 10px 20px;
+
+        a {
+            height: 60px;
+            width: 114px;
+            display: block;
+        }
+
+        @include min-width($medium-width) {
+            background-image: url(/images/logo-header.png);
+            margin: 10px 26px;
+
+            a {
+                width: 140px;
+                height: 74px;
+            }
+        }
+    }
+
+    #menu {
+        a {
+            text-decoration: none;
+            color: $menu-color;
+            transition: color 0.3s ease;
+
+            &:hover {
+                font-weight: bold;
+                color: $menu-bg-color;
+            }
+        }
+
+        #menu-toggle {
+            display: block;
+            position: relative;
+            float: right;
+            top: 12px;
+            right: 12px;
+            z-index: 1;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+
+
+            input {
+                display: block;
+                width: 40px;
+                height: 32px;
+                position: absolute;
+                top: -7px;
+                left: -5px;
+
+                cursor: pointer;
+                opacity: 0;
+                z-index: 2;
+                -webkit-touch-callout: none;
+
+                @include min-width($large-width) {
+                    display: none;
+                }
+            }
+
+            span {
+                display: block;
+                position: relative;
+                width: 33px;
+                height: 4px;
+                margin-bottom: 5px;
+                background: $menu-color;
+                border-radius: 3px;
+                z-index: 1;
+                transform-origin: 4px 0px;
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                            opacity 0.55s ease;
+
+                &:first-child {
+                    transform-origin: 0% 0%;
+                }
+                &:nth-last-child(2) {
+                    transform-origin: 0% 100%;
+                }
+
+                @include min-width($large-width) {
+                    display: none;
+                }
+
+
+            }
+
+            input:checked ~ span {
+                opacity: 1;
+                transform: rotate(45deg) translate(-2px, -1px);
+                background: $menu-color;
+
+                &:nth-last-child(3) {
+                    opacity: 0;
+                    transform: rotate(0deg) scale(0.2, 0.2);
+                }
+
+                &:nth-last-child(2) {
+                    transform: rotate(-45deg) translate(0, -1px);
+                }
+            }
+
+
+            input:checked ~ ul {
+                transform: none;
+                top: 0px;
+            }
+
+            ul {
+                position: fixed;
+                top: -$height-sm;
+                right: 0px;
+                width: 100%;
+                height: 100%;
+                margin-top: $height-sm;
+                padding: 55px 0px;
+
+
+                background: $menu-bg-color-alt;
+                list-style-type: none;
+                -webkit-font-smoothing: antialiased;
+                transform-origin: 0% 0%;
+                transform: translate(0, -100%);
+
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+                li {
+                    margin: 10px 12%;
+                    font-size: 22px;
+                }
+
+            }
+
+            @include min-width($medium-width) {
+                ul {
+                    top: -$height-md;
+                    margin-top: $height-md;
+                }
+
+            }
+
+            @include min-width($large-width) {
+                float: right;
+
+                ul {
+                    background: none;
+                    position: relative;
+                    right: 20px;
+                    top: 0px;
+                    padding-bottom: 64px;
+
+                    li {
+                        display: inline-block;
+                        font-size: 10pt;
+                        margin: 10px 15px;
+
+                    }
+                }
+
+                input {
+                    display: none;
+                }
+
+                a {
+                    text-transform: uppercase;
+                }
+
+                a:hover {
+                    font-weight: bold;
+                    color: $menu-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

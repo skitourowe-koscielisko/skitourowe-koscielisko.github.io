@@ -1,0 +1,69 @@
+---
+layout: default
+bodyclass: tracks
+---
+
+<article class="track">
+  <section class="heading">
+    <span class="image left">
+      <img src="{{ page.image }}" />
+    </span>
+    <h2>{{ page.title }}</h2>
+    {% include tour-summary.html %}
+    {{ page.excerpt }}
+    <div class="clear"></div>
+  </section>
+
+  <section class="map">
+    <h2>Mapa trasy</h2>
+    <ul class="stats">
+      <li>Maksymalne nachylenie
+          <span class="highlight">{{  page.nachylenie  }}</span></li>
+      <li>Długość zjazdu
+          <span class="highlight">{{  page.dlugosc_trasy  }}</span></li>
+      <li>Najlepsze warunki
+          <span class="highlight">{{  page.najlepsze_warunki  }}</span></li>
+      <li>Przewyższenie
+          <span class="highlight">{{  page.przewyzszenie  }}</span></li>
+      <li>Czas podejścia
+          <span class="highlight">{{  page.czas_podejscia  }}</span></li>
+      <li>Długość podejścia
+          <span class="highlight">{{  page.dlugosc_podejscia  }}</span></li>
+      <li>Czas zjazdu
+          <span class="highlight">{{  page.czas_zjazdu  }}</span></li>
+      <li>Zagrożenia
+          <span class="highlight">{{  page.zagrozenia  }}</span></li>
+    </ul>
+    <div class="miip-map clear">
+      <iframe src="{{  page.miip_map }}" scrolling="no" frameborder="0"></iframe>
+    </div>
+    <p>Mapa wykonana przez Małopolską Instrukture Informacji Przestrzenej. Dziękujemy za konsultacje TOPR’owi i TPN’owi.</p>
+    <div class="legend">
+      <ul>
+        <li class="ascent">Podejście</li>
+        <li class="alt-ascent">Alternatywne podejście</li>
+        <li class="descent">Zjazd</li>
+        <li class="alt-descent">Alternatywny zjazd</li>
+      </ul>
+    </div>
+    <div class="legend">
+      <p class="extreme caution">Miejsce szczególnie narażone na lawiny.<br>
+      Zachowaj wyjątkową ostrożność – przecinasz naturalny tor spadania lawin.</p>
+      <p class="caution">Miejsce sczególnie narażone na lawiny.<br>
+      Dopuszczalne jest wybranie bezpieczniejszego wariantu, w najbliższej odległości od letniego przebiegu szlaku.</p>
+    </div>
+    <p class="see-more">
+    <a href="/mapa/" title="Mapa tras skitourowych"><span class="bracket">[</span> zobacz mapę wszystkich tras <span class="bracket">]</span></a>
+    </p>
+  </section>
+  <section class="video">
+    <h2>Video przewodnik</h2>
+    <iframe src="https://youtube.com/embed/{{ page.youtube_id }}" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="description">
+    {{ page.content | remove: page.excerpt }}
+  </section>
+</article>
+
+<script type="text/javascript" src="/assets/js/modal.js"></script>

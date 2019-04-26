@@ -1,0 +1,68 @@
+.miip-map {
+    width: 100%;
+    height: 430px;
+    margin: 50px auto 22px;
+    border: 1px solid #e2e2e2;
+    margin: 24px 0;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        overflow: hidden !important;
+    }
+}
+
+.legend {
+    @include min-width($medium-width) {
+        float: left;
+        width: 50%;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-left: 0;
+
+        li::before {
+            display: inline-block;
+            content: "";
+            width: 1em;
+            height: 1em;
+            background-color: black;
+            margin-left: 1em;
+            margin-right: 1em;
+            padding: 2px;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -opera-border-radius: 50%;
+
+        }
+
+        li.ascent::before {
+            background-color: #642c88;
+        }
+
+        li.alt-ascent::before {
+            background-color: #a27ab5;
+        }
+
+        li.descent::before {
+            background-color: #145e8c;
+        }
+
+        li.alt-descent::before {
+            background-color: #429ed8;
+        }
+    }
+
+    .caution {
+        background: transparent url("/images/caution.png") no-repeat left center;
+        background-image: url("/images/caution.png");
+        padding-left: 52px;
+        font-size: 10pt;
+
+        &.extreme {
+            background: transparent url("/images/extreme-caution.png") no-repeat left center;
+        }
+    }
+}

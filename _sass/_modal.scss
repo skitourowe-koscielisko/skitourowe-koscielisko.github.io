@@ -1,0 +1,129 @@
+#modal {
+    display: block;
+    position: fixed;
+    z-index: 3;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    overflow-y: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+
+    .close {
+        position: absolute;
+        top: 5px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+
+        &:focus,
+        &:hover {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .content {
+        position: absolute;
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 900px;
+
+        .inner {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: none;
+            vertical-align: top;
+        }
+
+        img {
+            display: inline-block;
+            max-width: 100%;
+        }
+
+        a {
+            position: absolute;
+            display: inline-block;
+            width: 40%;
+            height: 100%;
+            top: 0;
+
+            span {
+                position: absolute;
+                top: 50%;
+                font-size: 40px;
+                font-weight: bold;
+                transition: 0.3s;
+                opacity: 0;
+                padding: 0 16px;
+            }
+            &:hover {
+                span {
+                    opacity: 1;
+                    color: #f1f1f1;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+
+            &.prev {
+                left: 0;
+                text-align: left;
+                span {
+                    left: 0;
+                }
+            }
+
+            &.next {
+                right: 0;
+                text-align: right;
+                span {
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .caption {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 900px;
+        text-align: center;
+        font-style: italic;
+        color: $default-color;
+        background: white;
+        padding: 10px 0;
+    }
+
+    .content,
+    .caption {
+        animation-name: zoom;
+        animation-duration: 0.2s;
+    }
+
+    @keyframes zoom {
+        from { transform: scale(0); }
+        to   { transform: scale(1); }
+    }
+
+    @include min-width($medium-width) {
+        .content {
+            width: 80%;
+            border: 12px solid white;
+            border-radius: 3px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+    }
+}

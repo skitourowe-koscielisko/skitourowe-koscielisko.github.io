@@ -1,0 +1,16 @@
+---
+layout: news
+title: Newsy
+permalink: /news/
+description: Wiadomości skitourowe z rejonu Kościeliska.
+---
+
+<div class="articles">
+  {% for post in site.posts %}
+    <article>
+      <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt="{{ post.title }}"></a>
+      <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+      <a class="read-more" href="{{ post.url }}" title="{{ post.title }}">Zobacz więcej &gt;</a>
+    </article>
+  {% endfor %}
+</div>

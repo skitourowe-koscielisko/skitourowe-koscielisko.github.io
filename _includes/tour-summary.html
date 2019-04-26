@@ -1,0 +1,41 @@
+<div class="tour-summary">
+  <div class="splitboard {{ page.splitboard }}">
+    {% if page.splitboard == 'tak' %}
+    Rekomendowane na splitboard
+    {% else %}
+    Nie rekomendowane na splitboard
+    {% endif %}
+  </div>
+
+  <div class="winter {{ page.zima }}">
+    {% if page.zima == 'tak' %}
+    Rekomendowana na zimę
+    {% else %}
+    Rekomendowana na wiosnę
+    {% endif %}
+  </div>
+
+  <div class="difficulty">
+    {% for i in (1..5) %}
+    <span class="block {% if page.podejscie >= i %}fill{% endif %}"></span>
+    {% endfor %}
+    <span>
+      Poziom trudności podejścia
+    </span>
+  </div>
+
+  <div class="difficulty">
+    {% for i in (1..5) %}
+    <span class="block {% if page.zjazd >= i %}fill{% endif %}"></span>
+    {% endfor %}
+    <span>
+      Poziom trudności zjazdu
+    </span>
+  </div>
+
+</div>
+
+<h4>Wysokość <span class="highlight">{{ page.wysokosc }}</span></h4>
+<p>
+  Przewyższenie <span class="highlight">{{ page.przewyzszenie }}</span> / Długość trasy <span class="highlight">{{ page.dlugosc_trasy }}</span>
+</p>

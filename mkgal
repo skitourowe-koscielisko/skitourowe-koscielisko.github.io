@@ -1,0 +1,39 @@
+#!/bin/sh
+
+IMAGES_DIR=images
+THUMBNAIL_SIZE=369x246
+
+if [ $# -lt 2 -o $1 = '-h' -o $1 = '--help' ]
+then
+    echo "Usage: $0 gallery_name image [image ...]" > /dev/stderr
+    exit 1
+fi
+
+
+GALLERY_NAME=$1
+shift
+GALDIR=$IMAGES_DIR/galleries/$GALLERY_NAME
+mkdir -p $GALDIR
+
+for img in $@
+do
+    identify $img > /dev/null || exit 1
+done
+
+echo '<span class="image gallery">'
+
+for img in $@
+do
+    IMGNAME=$(basename $img)
+    THUMBNAME=${IMGNAME}.thumb.jpg
+    cp $img $GALDIR
+    convert $img -thumbnail ${THUMBNAIL_SIZE}^ -background white -gravity center -extent $THUMBNAIL_SIZE $GALDIR/$THUMBNAME
+    printf '  <a href="/%s" title=""><img src="/%s" alt="" /></a>\n' "${GALDIR}/${IMGNAME}" "${GALDIR}/${THUMBNAME}"
+done
+
+echo '</span>'
+
+# Thumbnail size = 369x246^
+#convert $IMG_PATH -thumbnail '346x203^' -background white -gravity center -extent 346x203 $THUMB_PATH && \
+#    echo thumbnail: $THUMB_PATH
+

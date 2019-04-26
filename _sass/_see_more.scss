@@ -1,0 +1,21 @@
+.see-more {
+    font-size: 16pt;
+    font-weight: bold;
+    color: $menu-bg-color !important;
+    text-align: center;
+    vertical-align: center;
+
+    a {
+        color: $menu-bg-color !important;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .bracket {
+        font-size: 37pt;
+        position: relative;
+        top: 8pt;
+        padding: 0 9pt;
+    }
+}

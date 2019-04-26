@@ -1,0 +1,16 @@
+---
+layout: trasy
+title: Trasy
+permalink: /trasy/
+description: Trasy skitourowe w rejonie Doliny Kościeliskiej, Chochołowskiej i Małej Łąki
+---
+
+<div class="articles">
+  {% for trasa in site.trasy %}
+    <article>
+      <a href="{{ trasa.url }}"><img src="{{ trasa.thumbnail }}" alt="{{ trasa.title }}"></a>
+      <h4><a href="{{ trasa.url }}" title="{{ trasa.title }}">{{ trasa.title }}</a></h4>
+      <a class="read-more" href="{{ trasa.url }}" title="{{ trasa.title }}">Zobacz więcej &gt;</a>
+    </article>
+  {% endfor %}
+</div>

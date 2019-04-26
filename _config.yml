@@ -44,6 +44,12 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - serve
+  - news-thumb
+  - mkgal
+
+collections:
+  trasy:
+    output: true
 
 defaults:
   -
@@ -52,3 +58,16 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "posts"
+  - scope:
+      path: ""
+      type: "trasy"
+    values:
+      layout: "trasa"
+      excerpt_separator: <!--more-->
+

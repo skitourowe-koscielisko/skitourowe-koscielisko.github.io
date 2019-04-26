@@ -1,31 +1,20 @@
 ---
 ---
 @import 'vars';
-@import 'typography';
 @import 'mixins';
+@import 'typography';
+@import 'menu';
+@import 'menu-highlights';
+@import 'main';
+@import 'footer';
+@import 'image';
+@import 'articles';
+@import 'tracks';
+@import 'track';
+@import 'miip_map';
+@import 'see_more';
+@import 'modal';
 
-
-footer {
-    text-align: center;
-
-    .bar {
-        background-color: #dadada;
-        font-size: 7pt;
-        padding: 24px 43px;
-        margin-bottom: 0px;
-    }
-}
-
-.clear {
-    clear: both;
-}
-
-body {
-
-    font-size: 10pt;
-    background: white url("/assets/images/bg.png") top center no-repeat;
-    background-size: 100%;
-}
 
 .homepage {
 
@@ -41,7 +30,7 @@ body {
         h1 {
             width: 259px;
             height: 138px;
-            background: url("/assets/images/skitourowekoscielisko-logo-main.png") no-repeat center center;
+            background: url("/images/skitourowekoscielisko-logo-main.png") no-repeat center center;
             background-size: 100%;
             text-align: center;
             font-size: 0pt;
@@ -117,7 +106,7 @@ body {
         margin-top: 32px;
         margin-bottom: 44px;
         text-align: center;
-        
+
         h4 {
             margin-bottom: 7px;
         }

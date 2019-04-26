@@ -1,0 +1,72 @@
+.track {
+    section:not(.heading) > h2 {
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            margin: 32px auto;
+
+    }
+    .stats {
+        li {
+            display: block;
+            float: left;
+            width: 50%;
+
+            &:last-child {
+                padding-bottom: 24px;
+                width: 100%;
+                clear: left;
+            }
+            @include min-width($medium-width) {
+                width: 33%;
+            }
+        }
+
+
+        @include min-width($large-width) {
+        }
+    }
+
+    .video {
+        padding: 32px 0 48px;
+        margin: 24px auto;
+        background: $bg-color url(/images/layout-trasa/video-bg-sm.png) center 0 no-repeat border-box;
+
+        @include min-width(574px) {
+            background-image: url(/images/layout-trasa/video-bg-md.png);
+        }
+
+        @include min-width($large-width) {
+            background-image: url(/images/layout-trasa/video-bg-lg.png);
+        }
+
+
+        h2 {
+        }
+
+        iframe {
+            width: 100%;
+            border: 0px none;
+            height: 253px;
+
+            @include min-width(450px) {
+                position: relative;
+                left: 50%;
+                margin-left: -225px;
+                width: 450px;
+            }
+
+            @include min-width($medium-width) {
+                width: 600px;
+                height: 337px;
+                margin-left: -300px;
+            }
+
+            @include min-width($large-width) {
+                width: 800px;
+                height: 453px;
+                margin-left: -400px;
+            }
+        }
+    }
+}
