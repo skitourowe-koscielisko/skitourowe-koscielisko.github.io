@@ -1,0 +1,71 @@
+.landing {
+    background-image: none;
+    background-color: $menu-bg-color-alt;
+
+    @include min-width(350px) {
+        background-image: url(/images/landing-bg-sm.png);
+        background-color: $bg-color;
+    }
+
+    header {
+        background-color: transparent;
+        background-image: none;
+    }
+
+    article {
+        header {
+            padding: 48px 0;
+
+            @include min-width(350px) {
+                padding: 94px 0 320px;
+            }
+
+            @include min-width(460px) {
+                padding: 124px 0 382px;
+            }
+
+            @include min-width(530px) {
+                padding: 153px 0 480px;
+            }
+
+            h1 {
+                display: block;
+                margin: 0 auto 12px;
+                width: 210px;
+                height: 52px;
+                background: transparent url(/images/logo-xs.png) center 0 no-repeat border-box;
+                font-size: 0;
+                float: none;
+
+                @include min-width(350px) {
+                    background-image: url(/images/logo-sm.png);
+                    width: 320px;
+                    height: 80px;
+                }
+            }
+
+
+            span {
+                display: inline-block;
+                width: 15em;
+                position: relative;
+                left: 50%;
+                margin-left: -7.5em;
+                text-align: center;
+                color: $bg-color;
+                font-size: 12pt;
+                @include min-width(350px) {
+                    background-color: #134373;
+                }
+            }
+        }
+
+        h2 {
+            display: block;
+            color: $menu-bg-color;
+            width: 100%;
+            margin: 24px 0;
+        }
+    }
+}
+

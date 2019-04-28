@@ -1,0 +1,12 @@
+button,
+.button {
+    display: block;
+    background-color: $menu-bg-color;
+    color: $bg-color !important;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 16px;
+}

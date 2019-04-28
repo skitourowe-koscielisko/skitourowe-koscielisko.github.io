@@ -1,0 +1,28 @@
+---
+title: Poznaj skiturowe oblicze Tatr
+layout: landing
+---
+<article>
+  <header>
+    <h1>Skitourowe Kościelisko</h1>
+    <span>{{ page.title }}</span>
+  </header>
+  <section class="articles">
+    <h2>Ostatnio dodane trasy</h2>
+    <br>
+    {% for trasa in site.trasy limit:1 %}
+      {%include item-trasa.html %}
+    {% endfor %}
+    <div class="clear"></div>
+    <a class="button" href="/trasy/" title="Lista tras">Zobacz wszystkie trasy &gt;</a>
+  </section>
+  <section class="articles">
+    <h2>Ostatnie newsy</h2>
+    <br>
+    {% for post in site.posts limit:1 %}
+      {%include item-post.html %}
+    {% endfor %}
+    <br class="clear">
+    <a class="button" href="/news/" title="Newsy">Zobacz wszystkie newsy &gt;</a>
+  </section>
+</article>
