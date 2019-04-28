@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /news/
+Disallow: /trasy/
+Disallow: /2019/
