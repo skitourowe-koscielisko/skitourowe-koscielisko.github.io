@@ -1,0 +1,107 @@
+.kontakt {
+    background-image: none;
+    background-color: $menu-bg-color;
+
+    @include min-width(350px) {
+        background-image: url(/images/contact-bg-sm.png);
+        background-color: $bg-color;
+    }
+
+    @include min-width(530px) {
+        background-image: url(/images/contact-bg-md.png);
+    }
+
+    @include min-width($medium-width) {
+        article {
+            width: 540px;
+            margin: 0 auto;
+        }
+    }
+
+    @include min-width($large-width) {
+        background-image: url(/images/contact-bg-lg.png);
+    }
+
+    header {
+        background-color: transparent;
+        background-image: none;
+    }
+
+    a {
+        color: $bg-color;
+        font-weight: bold;
+    }
+
+    dl {
+        color: $bg-color;
+        margin: 42px 16px 52px;
+        dt {
+            display: block;
+            float: left;
+            &:after {
+                content: ":";
+                padding-right: 1em;
+            }
+        }
+        dd {
+            font-size: 13pt;
+            display: block;
+            clear: right;
+        }
+
+        @include min-width(370px) {
+            margin-top: 72px;
+        }
+    }
+
+    form {
+        margin: 24px 16px;
+        padding: 0 0 98px 0;
+        input, textarea {
+            font-family: sans-serif;
+            font-size: 10pt;
+            display: block;
+            width: 100%;
+            margin: 0 0 2px 0;
+            padding: 8px;
+            border-radius: 0;
+            border: 0;
+        }
+        textarea {
+            height: 130px;
+        }
+
+        label {
+            margin: 18px 0;
+            color: $bg-color;
+            font-weight: bold;
+            span {
+                width: 24px;
+                display: block;
+                float: left;
+                font-size: 36pt;
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+        input[type=submit] {
+            position: relative;
+            font-weight: bold;
+            font-style: italic;
+            top: 19px;
+            color: $bg-color;
+            background: transparent;
+            display: block;
+            float: left;
+            border: 0;
+            width: calc(100% - 48px);
+        }
+    }
+
+    @include min-width($medium-width) {
+        dl, form {
+
+        }
+    }
+}
