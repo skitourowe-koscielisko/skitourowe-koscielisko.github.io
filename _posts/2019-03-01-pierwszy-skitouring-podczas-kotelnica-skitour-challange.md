@@ -1,5 +1,5 @@
 ---
-title: Pierszy skitouring podczas Kotelnica Skitour Challenge
+title: Pierwszy skitouring podczas Kotelnica Skitour Challenge
 thumbnail: /images/thumbs/kotelnica-thumbnail-small.png
 ---
 
