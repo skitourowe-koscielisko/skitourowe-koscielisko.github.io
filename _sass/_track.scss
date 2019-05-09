@@ -10,12 +10,15 @@
         li {
             display: block;
             float: left;
-            width: 50%;
+            width: 100%;
 
             &:last-child {
                 padding-bottom: 24px;
                 width: 100%;
                 clear: left;
+            }
+            @include min-width(640px) {
+                width: 50%;
             }
             @include min-width($medium-width) {
                 width: 33%;

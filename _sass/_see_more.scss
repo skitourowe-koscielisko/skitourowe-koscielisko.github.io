@@ -1,5 +1,5 @@
 .see-more {
-    font-size: 16pt;
+    font-size: 11pt;
     font-weight: bold;
     color: $menu-bg-color !important;
     text-align: center;
@@ -13,9 +13,18 @@
     }
 
     .bracket {
-        font-size: 37pt;
+        font-size: 17pt;
+        top: 4pt;
         position: relative;
-        top: 8pt;
         padding: 0 9pt;
+    }
+
+    @include min-width(437px) {
+        font-size: 16pt;
+        .bracket {
+            font-size: 37pt;
+            top: 8pt;
+        }
+
     }
 }

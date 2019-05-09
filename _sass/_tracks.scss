@@ -12,13 +12,13 @@
             position: relative;
             font-size: 8pt;
             text-align: center;
-            padding-top: 71px;
 
-            margin: 12px 0px 6px 6px;
+            margin: 12px 0px 6px 0;
+            padding: 71px 12px 6px;
             flex-grow: 1;
             flex-shrink: 1;
             position: relative;
-            width: calc(50% - 6px);
+            width: calc(50% - 24px);
 
             background-color: transparent;
             background-repeat: no-repeat;
@@ -65,7 +65,7 @@
             }
 
             @include min-width(510px) {
-                width: calc(25% - 6px);
+                width: calc(25% - 24px);
             }
         }
     }
