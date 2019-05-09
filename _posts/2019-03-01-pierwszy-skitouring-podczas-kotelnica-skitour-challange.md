@@ -1,10 +1,12 @@
 ---
 title: Pierwszy skitouring podczas Kotelnica Skitour Challenge
-thumbnail: /images/thumbs/kotelnica-thumbnail-small.png
+thumbnail: /images/thumbs/kotelnia-baner-1170x415.png
 ---
 
 
-
+<span class="image left">
+    <img src="/images/news/kotelnia-baner-1170x415.jpg" alt="Plakat z zawodów" />
+</span>
 W dniu 24 marca 2019 roku odbędzie się pierwsza edycja skiturowych zawodów Kotelnica Skitour Challenge. Zawody będą przeprowadzone w formule OPEN i skierowane są do szerokiego grona pasjonatów skitouringu i skialpinizmu, zarówno profesjonalistów, jak i amatorów. Zostaną też przeprowadzone zawody dla dzieci, na krótkiej trasie.
 
 ### First Skitour Step
