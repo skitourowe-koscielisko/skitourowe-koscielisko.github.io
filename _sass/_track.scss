@@ -43,32 +43,22 @@
             background-image: url(/images/layout-trasa/video-bg-lg.png);
         }
 
-
-        h2 {
-        }
-
         iframe {
             width: 100%;
             border: 0px none;
-            height: 253px;
+            display: block;
+            margin: 0 auto;
 
             @include min-width(450px) {
-                position: relative;
-                left: 50%;
-                margin-left: -225px;
-                width: 450px;
+                width: calc(100% - 12px);
             }
 
             @include min-width($medium-width) {
-                width: 600px;
-                height: 337px;
-                margin-left: -300px;
+                width: calc(100% - 68px);
             }
 
             @include min-width($large-width) {
-                width: 800px;
-                height: 453px;
-                margin-left: -400px;
+                width: calc(100% - 96px);
             }
         }
     }

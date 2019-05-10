@@ -67,3 +67,15 @@ bodyclass: tracks
 </article>
 
 <script type="text/javascript" src="/assets/js/modal.js"></script>
+<script type="text/javascript">
+  function onWindowResize() {
+    var iframe = document.querySelector('.video iframe');
+    var height;
+    if (iframe) {
+      height = parseInt(iframe.clientWidth / 1.78);
+      iframe.setAttribute('style', `height: ${height}px`);
+    }
+  }
+  onWindowResize();
+  window.onresize = onWindowResize;
+</script>
