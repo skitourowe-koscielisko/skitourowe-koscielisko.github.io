@@ -19,12 +19,17 @@
         padding: 0 9pt;
     }
 
+    &:hover {
+        .bracket {
+            padding: 0 14pt;
+        }
+    }
+
     @include min-width(437px) {
         font-size: 16pt;
         .bracket {
             font-size: 37pt;
             top: 8pt;
         }
-
     }
 }
