@@ -6,7 +6,7 @@
         closeButton,
         imageIndex,
         images = [],
-        links = document.querySelectorAll('.image.gallery a'),
+        links = document.querySelectorAll('.image.modal a'),
         linksLen = links.length;
 
     for (i = 0; i < linksLen; ++i) {
@@ -20,7 +20,7 @@
         event.stopPropagation();
 
         link = findLinkElement(event.target);
-        gallery = findGalleryElement(link);
+        gallery = findModalParent(link);
         if (!gallery) {
             return;
         }
@@ -94,8 +94,8 @@
         return el;
     }
 
-    function findGalleryElement(el) {
-        for (; el && !el.classList.contains('gallery'); el = el.parentElement);
+    function findModalParent(el) {
+        for (; el && !el.classList.contains('modal'); el = el.parentElement);
         return el;
     }
 

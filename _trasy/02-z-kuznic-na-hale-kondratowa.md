@@ -50,7 +50,7 @@ Przed nami 3,6 kilometra i 350 metrów przewyższenia – w sam raz na pierwszą
 Przy dobrych śniegach (a tylko przy takich ta trasa ma sens) narty zapinamy już w Kuźnicach i ruszamy w górę za szlakiem niebieskim. Po 200 metrach zobaczymy pierwszą budkę TPN’u i szlak, który wiedzie na Kasprowy przez Myślenickie Turnie czy Halę Goryczkową. My tym razem skręcamy w prawo i trzymamy się niebieskich oznaczeń idąc szeroką drogą Brata Alberta, która prowadzi również do hotelu górskiego na Kalatówkach. Po około 300 metrach od rozwidlenia zmierzymy się z pierwszym stromszym odcinkiem. Jeżeli trasa jest śliska, a śnieg bardzo twardy należy mocno pracować rękami, a dodatkowo w wiązaniach można dać „podpiętkę”, dzięki czemu nie będziemy się przechylać do przodu i tym samym odciążać foki. Po przekroczeniu kas biletowych TPNu szlak odbija lekko w lewo, w wąską ścieżynę. Wędrujemy lasem i po około pół godziny od startu osiągamy Polanę. To właśnie tutaj, na Kalatówkach powstał pierwszy ośrodek narciarski w Tatrach i pierwsze zawody w slalomie, zjazdach i skokach narciarskich.
 Z Kalatówek kierujemy się w stronę Hali Kondratowej. Szlak turystyczny wiedzie lewym skrajem Polany, natomiast jeżeli śnieg zakrywa rośliność to skiturowcy przecinają polanę przez środek – dzięki temu nie przeszkadzają turystom pieszym i nie muszą omijać licznych kamieni na drodze. Po przejściu polany ponownie wchodzimy w las i wracamy na szlak niebieski, gdzie po 50 metrach czeka na nas rozwidlenie. Mamy do wyboru dwie opcje w prawo szlakiem niebieskim lub prosto trasą narciarską. Wybieramy wariant narciarski co oznacza, że musimy zjechać (bez zdejmowania fok) lub zejść krótki odcinek trasy, który dochodzi aż do nartostrady z Kasprowego.
 
-<span class="image gallery">
+<span class="image modal gallery">
   <a href="/images/galleries/kondratowa1/29187249_835447079975396_3517034403844849664_o.jpg"><img src="/images/galleries/kondratowa1/29187249_835447079975396_3517034403844849664_o.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/kondratowa1/29196719_835447339975370_4903147283727515648_o-e1545209320925.jpg"><img src="/images/galleries/kondratowa1/29196719_835447339975370_4903147283727515648_o-e1545209320925.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/kondratowa1/29176976_835447826641988_7479061349796937728_o-e1545209252391.jpg"><img src="/images/galleries/kondratowa1/29176976_835447826641988_7479061349796937728_o-e1545209252391.jpg.thumb.jpg" alt="" /></a>
@@ -68,7 +68,7 @@ Idziemy w prawo (pod warunkiem, że wiemy jak robić zakosy. Nie wiesz? Sprawdź
 
 Po wyjściu na pierwszą część Padaków, kolejne rozwidlenie przed nami. Skręcamy w prawo i łatwym terenem leśnym po 30 minutach docieramy do Hali Kondratowej, a po kolejnych 10’ciu do schroniska.
 
-<span class="image gallery">
+<span class="image modal gallery">
   <a href="/images/galleries/kondratowa2/29064142_839630269557077_1672569971075379611_o-1.jpg"><img src="/images/galleries/kondratowa2/29064142_839630269557077_1672569971075379611_o-1.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/kondratowa2/DSC1159_wynik.jpg"><img src="/images/galleries/kondratowa2/DSC1159_wynik.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/kondratowa2/29063940_839630352890402_2015449298140997716_o-1.jpg"><img src="/images/galleries/kondratowa2/29063940_839630352890402_2015449298140997716_o-1.jpg.thumb.jpg" alt="" /></a>
@@ -84,7 +84,7 @@ Po wyjściu na pierwszą część Padaków, kolejne rozwidlenie przed nami. Skr�
 
 Początkowo zjeżdżamy drogą podejścia. Po około 800 metrach trafimy na rozwidlenie szlaków i tutaj porzucamy trasę, którą znamy i ruszamy jednokierunkowym, wąskim szlakiem. Jest to trudny odcinek, gdzie początkujący powinni jechać wolno – szlak ma pełno muld i ostrych zakrętów, a gdzieniegdzie wystają kamienie. Następnie dojedziemy do nartostrady, którą widzieliśmy już na podejściu. Ona doprowadzi nas do miejsca startu, czyli Kuźnic.
 
-<span class="image gallery">
+<span class="image modal gallery">
   <a href="/images/galleries/kondratowa3/26172478_800689473451157_6843924096530850387_o-e1545210605505.jpg"><img src="/images/galleries/kondratowa3/26172478_800689473451157_6843924096530850387_o-e1545210605505.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/kondratowa3/26171525_798888620297909_8705445432652393339_o-e1545210636486.jpg"><img src="/images/galleries/kondratowa3/26171525_798888620297909_8705445432652393339_o-e1545210636486.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/kondratowa3/26114551_800689430117828_3269776825624691259_o-e1545210619119.jpg"><img src="/images/galleries/kondratowa3/26114551_800689430117828_3269776825624691259_o-e1545210619119.jpg.thumb.jpg" alt="" /></a>

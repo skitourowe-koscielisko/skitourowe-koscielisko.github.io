@@ -24,7 +24,7 @@ przedszkole, w którym wszyscy aktywni rodzice będą mogli na czas startu zosta
 swoje pociechy pod okiem wykwalifikowanej kadry z Klubu Odlotowych Mam. Jak sama
 nazwa wskazuje panie zadbają, by dzieciom nie doskwierała nuda!
 
-<span class="image gallery">
+<span class="image modal gallery">
   <a href="/images/galleries/zawody-basi-german/race1.jpg" title=""><img src="/images/galleries/zawody-basi-german/race1.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/zawody-basi-german/race2.jpg" title=""><img src="/images/galleries/zawody-basi-german/race2.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/zawody-basi-german/race3.jpg" title=""><img src="/images/galleries/zawody-basi-german/race3.jpg.thumb.jpg" alt="" /></a>
@@ -45,7 +45,7 @@ Dla najstarszych główną atrakcją będzie na pewno sama trasa zawodów – 12
 
 Ostatnio w grupach OPEN triumfowali Iwona Januszyk (Ks Kandahar-Alpinka SkiTrab) oraz Franciszek Rząsa (TKN Tatra Team), a w całej stawce znalazło się 31 kobiet i 129 mężczyzn. W tym roku impreza będzie miała swój finał w pensjonacie Beskid, a wszyscy startujący w ramach pakietów startowych otrzymają ciepły posiłek, pamiątkowy numer startowy, zawojski „Zbyrcok” ,plecak od DYNAFIT a także udział w losowaniu nagród.
 
-<span class="image gallery">
+<span class="image modal gallery">
   <a href="/images/galleries/zawody-basi-german/race5.jpg" title=""><img src="/images/galleries/zawody-basi-german/race5.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/zawody-basi-german/race6.jpg" title=""><img src="/images/galleries/zawody-basi-german/race6.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/zawody-basi-german/race7.jpg" title=""><img src="/images/galleries/zawody-basi-german/race7.jpg.thumb.jpg" alt="" /></a>
