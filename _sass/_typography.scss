@@ -26,8 +26,58 @@ h1,h2,h3,h4 {
     }
 }
 
-article {
+a {
+    color: $menu-bg-color;
+    &:hover {
+        color: $menu-bg-color;
+    }
+}
+
+p {
+    font-size: 10pt;
+}
+@include min-width($medium-width) {
     p {
-        text-align: justify;
+        font-size: 12pt;
+        line-height: 1.5rem;
+    }
+
+    h1 {
+        font-size: 32pt;
+    }
+
+    h2 {
+        font-size: 26pt;
+    }
+
+    h3 {
+        font-size: 18pt;
+    }
+
+    h4 {
+        font-size: 15pt;
+    }
+}
+
+@include min-width($large-width) {
+    p {
+        font-size: 14pt;
+        line-height: 1.75rem;
+    }
+
+    h1 {
+        font-size: 34pt;
+    }
+
+    h2 {
+        font-size: 28pt;
+    }
+
+    h3 {
+        font-size: 20pt;
+    }
+
+    h4 {
+        font-size: 17pt;
     }
 }
