@@ -17,18 +17,28 @@
         flex-shrink: 1;
         position: relative;
         width: calc(100% - 24px);
-        margin: 0 0 12px 12px;
+        margin: 0 0 11px 12px;
 
 
         h4 {
             a {
                 color: $default-color;
+                span {
+                    padding-bottom: 1px;
+                }
+                &:hover {
+                    text-decoration: none;
+                    span {
+                        padding-bottom: 0px;
+                        border-bottom: 1px solid $menu-bg-color;
+                    }
+                }
             }
         }
 
         span {
             padding-top: 8px;
-            display: block;
+            display: inline-block;
             margin: 11px 15px 24px 15px
         }
 
