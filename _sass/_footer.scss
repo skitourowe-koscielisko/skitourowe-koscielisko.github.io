@@ -64,6 +64,7 @@ footer {
     }
 
     .social-media {
+        position: relative;
         display: block;
         clear: both;
         height: 45px;
@@ -73,29 +74,40 @@ footer {
         margin: 0 0 50px;
 
         ul {
+            position: absolute;
             clear: left;
             float: left;
             margin: 0;
             padding: 0;
             text-align: center;
             list-style-type: none;
-            position: relative;
             left: 50%;
+            width: 353px;
+            margin-left: calc(353px / -2);
+
             li {
                 display: block;
                 float: left;
                 padding: 24px 34px 12px;
-                position: relative;
-                right: 50%;
                 background-color: $bg-color;
 
-                @include min-width($medium-width) {
+            }
+
+            @include min-width($medium-width) {
+                width: 497px;
+                margin-left: calc(497px / -2);
+                li {
                     padding: 24px 58px 12px;
                 }
+            }
 
-                @include min-width($large-width) {
+            @include min-width($large-width) {
+                width: 617px;
+                margin-left: calc(617px / -2);
+                li {
                     padding: 24px 78px 12px;
                 }
+
             }
         }
     }
