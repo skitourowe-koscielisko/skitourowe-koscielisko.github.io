@@ -24,14 +24,11 @@
             a {
                 color: $default-color;
                 span {
-                    padding-bottom: 1px;
-                }
-                &:hover {
-                    text-decoration: none;
-                    span {
-                        padding-bottom: 0px;
-                        border-bottom: 1px solid $menu-bg-color;
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-color: $menu-bg-color;
                     }
+
                 }
             }
         }
