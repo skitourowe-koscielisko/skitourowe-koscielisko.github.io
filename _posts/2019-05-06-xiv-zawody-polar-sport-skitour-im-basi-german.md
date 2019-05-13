@@ -1,5 +1,5 @@
 ---
-title: "XIV zawody Polar Sport Skitour im. Basi German"
+title: "Skitour im. Basi German"
 thumbnail: /images/thumbs/zawody-kuba-witos.png
 ---
 

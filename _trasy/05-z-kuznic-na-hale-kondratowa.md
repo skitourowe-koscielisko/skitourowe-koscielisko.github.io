@@ -1,5 +1,5 @@
 ---
-title: Z Kuźnic na Halę Kondratową
+title: Z Kuźnic na Halę Kondratową 05
 description: Jedna z najprostszych wycieczek dla początkującego skitourowca. Łatwa technicznie, niedługa, ale zakończona posiadem w schronisku na Hali Kondratowej z widokiem na przepiękną Przełęcz pod Kopą Kondracką.
 thumbnail: /images/thumbs/z-kuznic-na-hale-kondratowa.png
 image: /images/trasy/z-kuznic-na-hale-kondratowa.jpg
