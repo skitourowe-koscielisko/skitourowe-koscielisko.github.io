@@ -7,26 +7,31 @@
         background-color: $bg-color;
     }
 
+    @include min-width(598px) {
+        background-image: url(/images/landing-bg-md.jpg);
+    }
+
+    @include min-width(1025px) {
+        background-image: url(/images/landing-bg-lg.jpg);
+        main {
+            width: 100%;
+        }
+    }
+
     header {
         background-color: transparent;
         background-image: none;
     }
 
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
     article {
         header {
             padding: 48px 0;
-
-            @include min-width(350px) {
-                padding: 94px 0 320px;
-            }
-
-            @include min-width(460px) {
-                padding: 124px 0 382px;
-            }
-
-            @include min-width(530px) {
-                padding: 153px 0 480px;
-            }
+            margin: 0;
 
             h1 {
                 display: block;
@@ -37,13 +42,74 @@
                 font-size: 0;
                 float: none;
 
-                @include min-width(350px) {
+            }
+
+            @include min-width(350px) {
+                padding: 94px 0 320px;
+
+                h1 {
                     background-image: url(/images/logo-sm.png);
                     width: 320px;
                     height: 80px;
                 }
             }
 
+            @include min-width(460px) {
+                padding: 124px 0 408px;
+            }
+
+            @include min-width(530px) {
+                padding: 153px 0 506px;
+            }
+
+            @include min-width(598px) {
+                padding: 62px 0 212px;
+            }
+
+            @include min-width(650px) {
+                padding: 72px 0 232px;
+            }
+
+            @include min-width(700px) {
+                padding: 92px 0 242px;
+            }
+
+            @include min-width(700px) {
+                padding: 102px 0 272px;
+            }
+
+            @include min-width($medium-width) {
+                h1 {
+                    background-image: url(/images/logo-lg.png);
+                    width: 518px;
+                    height: 129px;
+                }
+
+            }
+
+            @include min-width(880px) {
+                padding-bottom: 356px;
+            }
+
+            @include min-width(1006px) {
+                padding: 122px 0 362px;
+            }
+
+            @include min-width(1024px) {
+                padding: 122px 0 452px;
+            }
+
+            @include min-width(1025px) {
+                padding: 50px 0 276px;
+            }
+
+            @include min-width(1156px) {
+                padding: 60px 0 346px;
+            }
+
+            @include min-width(1322px) {
+                padding: 80px 0 396px;
+            }
 
             span {
                 display: inline-block;
@@ -57,14 +123,183 @@
                 @include min-width(350px) {
                     background-color: #134373;
                 }
+
+                @include min-width($medium-width) {
+                    //background-color: transparent;
+                    font-size: 14pt;
+                    //text-shadow:
+                    //    -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+                }
+
+                @include min-width($large-width) {
+                    font-size: 16pt;
+                }
             }
         }
 
-        h2 {
-            display: block;
-            color: $menu-bg-color;
-            width: 100%;
-            margin: 24px 0;
+        --section-width: 293px;
+        --margin-width: 24px;
+        --no-items: 5;
+
+        .controls {
+            h2 {
+                display: block;
+                color: $menu-bg-color;
+                width: 100%;
+                margin: 24px 0;
+            }
+
+            a {
+                display: none;
+            }
+
+            @include min-width($medium-width) {
+                h2 {
+                    margin-bottom: 12px;
+                }
+
+                a {
+                    display: block;
+                    margin-bottom: 18px;
+                    text-transform: uppercase;
+                    font-size: 8pt;
+                }
+            }
+
+            @include min-width($large-width) {
+                max-width: calc(var(--section-width) -  var(--margin-width));
+                margin: 0 var(--margin-width);
+                display: inline;
+                float: left;
+
+                h2 {
+                    font-size: 30pt;
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .articles {
+
+            position: relative;
+            background-color: $bg-color;
+            padding: 0 0 0 15px;
+            width: calc(100% - 15px);
+
+            @include min-width($large-width) {
+                padding-bottom: 48px;
+                height: 294px;
+            }
+
+            .container {
+                position: relative;
+                max-width: 100%;
+                overflow: hidden;
+                scroll-behavior: smooth;
+                .list {
+
+                    min-width: calc(var(--section-width) * var(--no-items) + var(--margin-width) * var(--no-items));
+
+                    section {
+                        width: calc(var(--section-width) - var(--margin-width));
+                        margin: 0 0 0 var(--margin-width);
+                        display: inline-block;
+                        float: left;
+
+                        h4 {
+                            margin: 0;
+                        }
+
+                        img:not(first-child) {
+                            filter: grayscale(100%);
+                        }
+
+                        &:nth-child(1) {
+                            img {
+                                filter: grayscale(0%);
+                            }
+                        }
+
+                        @include min-width(613px) {
+                            &:nth-child(2) {
+                                img {
+                                    filter: grayscale(0%);
+                                }
+                            }
+                        }
+
+                        @include min-width(900px) {
+                            &:nth-child(3) {
+                                img {
+                                    filter: grayscale(0%);
+                                }
+                            }
+                        }
+
+                        @include min-width($large-width) {
+                            &:nth-child(3) {
+                                img {
+                                    filter: grayscale(100%);
+                                }
+                            }
+                        }
+
+                    }
+
+                    @include min-width($large-width) {
+                        position: absolute;
+                        left: calc(var(--section-width) + var(--margin-width));
+                    }
+                }
+
+                @include min-width($large-width) {
+                    //width: calc(var(--section-width) * 2.5 + var(--margin-width) * 3);
+                    width: calc(100% - var(--section-width) - var(--margin-width));
+                    overflow: hidden;
+                    .list {
+                        left: 0;
+                    }
+                }
+            }
+
+
+            .button {
+                margin-left: -15px;
+
+                @include min-width($medium-width) {
+                    display: none;
+                }
+            }
+        }
+
+        .weather {
+            background-color: $bg-color;
+            margin-top: 24px;
+            ul {
+                list-style: none;
+                li {
+                    margin: 0 auto;
+                }
+                .topr {
+                    width: 224px;
+                    p {
+                        font-size: 10pt;
+                    }
+                }
+                .meteo,
+                .pogodynka {
+                    width: 200px;
+                }
+
+                @include min-width(680px) {
+                    width: 660px;
+                    margin: 0 auto;
+                    li {
+                        float: left;
+                        margin: 0 12px 0 0;
+                    }
+                }
+            }
         }
     }
 }

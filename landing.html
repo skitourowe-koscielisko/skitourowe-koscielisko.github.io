@@ -8,21 +8,63 @@ layout: landing
     <span>{{ page.title }}</span>
   </header>
   <section class="articles">
-    <h2>Ostatnio dodane trasy</h2>
-    <br>
-    {% for trasa in site.trasy limit:1 %}
-      {%include item-trasa.html %}
-    {% endfor %}
+    <div class="controls">
+      <h2>Ostatnio dodane trasy</h2>
+      <a class="arrow-link" href="/trasy/" title="Wszystkie trasy">
+        Zobacz wszystkie trasy
+        <i></i>
+      </a>
+      <div class="scroll-buttons">
+        <a href="#" class="hscroll back">&lt;</a>
+        <a href="#" class="hscroll forward">&gt;</a>
+      </div>
+      <br>
+    </div>
+    <div class="container">
+      <div class="list">
+      {% assign trasy = site.trasy | sort:'url' | reverse %}
+      {% for post in trasy limit:5 %}
+        {%include item-post.html %}
+      {% endfor %}
+      </div>
+    </div>
     <div class="clear"></div>
-    <a class="button" href="/trasy/" title="Lista tras">Zobacz wszystkie trasy &gt;</a>
+    <a class="button arrow-link" href="/trasy/" title="Lista tras">Zobacz wszystkie trasy <i></i></a>
+  </section>
+  <section class="weather">
+    <ul>
+      <li class="topr">
+      <script type="text/javascript" src="http://lawiny.topr.pl/getwidget"></script>
+      </li>
+      <li class="pogodynka">
+      <script type="text/javascript" src="http://www.pogodynka.pl/widget/get/koscielisko_koscielisko/?a1=FAFAFA&amp;a2=505050"></script>
+      </li>
+      <li class="meteo">
+      <iframe marginwidth="0" marginheight="0" scrolling="NO" src="http://instytutmeteo.pl/userwidget/sitewidgets?id=11&amp;city_id=3095140" style="margin-top: 10px;" width="196" height="357" frameborder="0"></iframe>
+      </li>
+    </ul>
   </section>
   <section class="articles">
-    <h2>Ostatnie newsy</h2>
-    <br>
-    {% for post in site.posts limit:1 %}
-      {%include item-post.html %}
-    {% endfor %}
+    <div class="controls">
+      <h2>Ostatnie newsy</h2>
+      <a class="arrow-link" href="/news/" title="Newsy">
+        Zobacz wszystkie newsy
+        <i></i>
+      </a>
+      <div class="scroll-buttons">
+        <a href="#" class="hscroll back">&lt;</a>
+        <a href="#" class="hscroll forward">&gt;</a>
+      </div>
+      <br>
+    </div>
+    <div class="container">
+      <div class="list">
+      {% for post in site.posts limit:5 %}
+        {%include item-post.html %}
+      {% endfor %}
+      </div>
+    </div>
     <br class="clear">
-    <a class="button" href="/news/" title="Newsy">Zobacz wszystkie newsy &gt;</a>
+    <a class="button arrow-link" href="/news/" title="Newsy">Zobacz wszystkie newsy<i></i></a>
   </section>
 </article>

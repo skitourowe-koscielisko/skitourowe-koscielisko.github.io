@@ -1,0 +1,21 @@
+.arrow-link {
+    transition: all 0.4s;
+    position: relative;
+
+    i {
+        position: absolute;
+        &:after {
+            font-style: initial;
+            content: ">";
+        }
+        transition: all 0.4s;
+    }
+
+    &:hover {
+        i {
+            transform: translate(80%, 0);
+        }
+    }
+
+}
+

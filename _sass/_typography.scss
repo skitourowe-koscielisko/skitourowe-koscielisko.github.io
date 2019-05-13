@@ -1,4 +1,5 @@
 body {
+
     font-family: 'Raleway', sans-serif;
     color: $default-color;
 }
@@ -26,6 +27,7 @@ h1,h2,h3,h4 {
     }
 }
 
+a:visited,
 a {
     color: $menu-bg-color;
     &:hover {
