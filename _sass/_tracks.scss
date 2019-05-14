@@ -1,4 +1,6 @@
-.tracks {
+body.news,
+body.tracks {
+    background-color: $bg-dim-color;
     .tour-summary {
         display: flex;
         -moz-flex-wrap: wrap;

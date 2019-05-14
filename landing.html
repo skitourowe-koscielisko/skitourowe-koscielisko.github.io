@@ -14,19 +14,15 @@ layout: landing
         Zobacz wszystkie trasy
         <i></i>
       </a>
-      <div class="scroll-buttons">
-        <a href="#" class="hscroll back">&lt;</a>
-        <a href="#" class="hscroll forward">&gt;</a>
-      </div>
-      <br>
     </div>
-    <div class="container">
-      <div class="list">
+    <div class="list">
       {% assign trasy = site.trasy | sort:'url' | reverse %}
-      {% for post in trasy limit:5 %}
+      {% for post in trasy limit:3 %}
         {%include item-post.html %}
       {% endfor %}
-      </div>
+    </div>
+    <div class="more-articles">
+      <a href="/trasy/" title="Zobacz wszystkie trasy">&gt;</a>
     </div>
     <div class="clear"></div>
     <a class="button arrow-link" href="/trasy/" title="Lista tras">Zobacz wszystkie trasy <i></i></a>
@@ -51,18 +47,14 @@ layout: landing
         Zobacz wszystkie newsy
         <i></i>
       </a>
-      <div class="scroll-buttons">
-        <a href="#" class="hscroll back">&lt;</a>
-        <a href="#" class="hscroll forward">&gt;</a>
-      </div>
-      <br>
     </div>
-    <div class="container">
-      <div class="list">
-      {% for post in site.posts limit:5 %}
+    <div class="list">
+      {% for post in site.posts limit:3 %}
         {%include item-post.html %}
       {% endfor %}
-      </div>
+    </div>
+    <div class="more-articles" title="Zobacz wszystkie newsy">
+      <a href="/news/">&gt;</a>
     </div>
     <br class="clear">
     <a class="button arrow-link" href="/news/" title="Newsy">Zobacz wszystkie newsy<i></i></a>

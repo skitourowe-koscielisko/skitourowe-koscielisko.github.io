@@ -1,8 +1,8 @@
 body {
 
+    background-color: $bg-color;
+    background-repeat: no-repeat;
     font-size: 10pt;
-    background: white url("/images/bg.png") top center no-repeat;
-    background-size: 100%;
 }
 
 .clear {
@@ -11,7 +11,11 @@ body {
 }
 
 main {
-    margin: 0px 15px;
+    margin: 0px 30px;
+
+    @include min-width(575px) {
+        margin: 0 75px;
+    }
 
     @include min-width($large-width) {
         margin: 0px auto;

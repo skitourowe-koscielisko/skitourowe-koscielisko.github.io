@@ -4,7 +4,6 @@
 @import 'mixins';
 @import 'typography';
 @import 'arrow';
-@import 'hscroll';
 @import 'menu';
 @import 'menu-highlights';
 @import 'main';
@@ -22,6 +21,8 @@
 
 
 .homepage {
+    background: white url("/images/bg.png") top center no-repeat;
+    background-size: 100%;
 
 
     header {

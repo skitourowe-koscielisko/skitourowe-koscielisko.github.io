@@ -16,14 +16,28 @@
         flex-grow: 0;
         flex-shrink: 1;
         position: relative;
-        width: calc(100% - 24px);
-        margin: 0 0 11px 12px;
+        width: 100%;
+        margin: 0 0 24px 0;
 
 
         h4 {
+            font-size: 14pt;
+            line-height: initial;
+            margin-bottom: -100px;
             a {
                 color: $default-color;
+                img {
+                    position: relative;
+                    z-index: 101;
+                }
                 span {
+                    position: relative;
+                    top: -100px;
+                    z-index: 100;
+                    display: block;
+                    padding: 124px 20px 24px 32px;
+                    margin: 0 -24px 0 33px;
+                    background-color: $bg-color;
                     &:hover {
                         text-decoration: underline;
                         text-decoration-color: $menu-bg-color;
@@ -43,12 +57,13 @@
             filter: brightness(105%);
         }
 
-        @include min-width(600px) {
-            width: calc(50% - 12px);
+        @include min-width($medium-width) {
+            margin-left: 33px;
+            width: calc(50% - 33px);
         }
 
-        @include min-width($medium-width) {
-            width: calc(33% - 12px);
+        @include min-width($large-width) {
+            width: calc(33% - 33px);
         }
     }
 }
