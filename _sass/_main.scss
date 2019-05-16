@@ -1,5 +1,8 @@
-body {
+html {
+    background-color: $bg-color;
+}
 
+body {
     background-color: $bg-color;
     background-repeat: no-repeat;
     font-size: 10pt;

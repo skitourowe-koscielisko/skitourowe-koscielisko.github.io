@@ -51,6 +51,15 @@
 
             }
 
+            @include min-width(1260px) {
+                h1 {
+                    background-image: url(/images/logo-xl.png);
+                    width: 1112px;
+                    height: 276px;
+                }
+
+            }
+
             span {
                 display: inline-block;
                 width: 15em;
@@ -70,6 +79,66 @@
 
                 @include min-width($large-width) {
                     font-size: 16pt;
+                }
+            }
+        }
+
+        #check {
+            $side-margin: 75px;
+            color: $bg-color;
+            background: $menu-bg-color-alt repeat url(/images/main-bg.png);
+            position: relative;
+            padding: 155px $side-margin 110px;
+
+            h3 {
+                position: absolute;
+                top: -80px;
+                right: $side-margin;
+                display: block;
+                width: 152px;
+                height: 152px;
+                font-weight: bold;
+                font-size: 14pt;
+                background-color: $menu-bg-color;
+                transition: all 0.3s ease-in 0.1s;
+                &:hover {
+                    transform: scale(1.1, 1.1);
+                }
+                &:after {
+                    content: ">";
+                    font-size: 25pt;
+                    position: relative;
+                    bottom: 104px;
+                    left: 173px;
+                }
+            }
+
+            a:visited,
+            a {
+                display: block;
+                color: $bg-color !important;
+                position: relative;
+                padding: 50px 12px;
+            }
+
+            strong {
+                font-size: 14pt;
+                line-height: 1.3em;
+            }
+
+            p {
+                font-size: 9pt;
+                margin: 30px 0 0;
+                line-height: 1.3em;
+            }
+
+            @include min-width($medium-width) {
+                $side-margin: 124px;
+                padding-left: $side-margin;
+                padding-right: $side-margin;
+
+                h3 {
+                    right: $side-margin;
                 }
             }
         }
@@ -269,7 +338,7 @@
     }
 }
 
-@include min-width($medium-width) {
+@include min-width($large-width) {
     .landing {
         article {
             header {
@@ -279,10 +348,43 @@
     }
 }
 
-@include min-width(1024px) {
+@include min-width($large-width) {
     .landing {
+        background-image: url(/images/landing-bg-md.jpg);
+        background-color: $bg-color;
+        padding-right: 90px;
+        footer,
         main {
-            width: 100%;
+            width: calc(100% + 90px);
+        }
+    }
+}
+
+// Screen size shrunk. Apply rules for screen size - 90px from now on
+@include min-width($large-width - 90px) {
+    .landing {
+        article {
+            header {
+                position: relative;
+                z-index: 2;
+            }
+
+            #check {
+                //position: absolute;
+                top: 162px;
+                right: 0;
+                width: 430px;
+                z-index: 1;
+                padding: 290px 45px 70px;
+                h3 {
+                    position: relative;
+                    z-index: 1000;
+                }
+                a {
+                    z-index: 1001;
+                }
+            }
+
         }
     }
 }

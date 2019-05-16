@@ -1,9 +1,12 @@
 .see-more {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 11pt;
     font-weight: bold;
     color: $menu-bg-color !important;
     text-align: center;
-    vertical-align: center;
+    transition: all 0.3s ease-in 0.1s;
 
     a {
         color: $menu-bg-color !important;
@@ -20,6 +23,7 @@
     }
 
     &:hover {
+        //transform: scale(1.1, 1.1);
         .bracket {
             padding: 0 14pt;
         }
