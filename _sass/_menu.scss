@@ -36,7 +36,7 @@ header {
 
     #menu {
         position: relative;
-        z-index: 999999;
+        z-index: 1000;
         a {
             text-decoration: none;
             color: $menu-color;
@@ -98,12 +98,6 @@ header {
                 &:nth-last-child(2) {
                     transform-origin: 0% 100%;
                 }
-
-                @include min-width($large-width) {
-                    display: none;
-                }
-
-
             }
 
             input:checked ~ span {
@@ -160,38 +154,10 @@ header {
 
             }
 
-            @include min-width($large-width) {
-                float: right;
-
-                ul {
-                    background: none;
-                    position: relative;
-                    right: 20px;
-                    top: 0px;
-                    padding-bottom: 64px;
-
-                    li {
-                        display: inline-block;
-                        font-size: 10pt;
-                        margin: 10px 15px;
-
-                    }
-                }
-
-                input {
-                    display: none;
-                }
-
-                a {
-                    text-transform: uppercase;
-                }
-
-                a:hover {
-                    font-weight: bold;
-                    color: $menu-color;
-                    text-decoration: underline;
-                }
-            }
         }
     }
+}
+
+@include min-width($large-width) {
+    @include floating-menu();
 }

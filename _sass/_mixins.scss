@@ -5,3 +5,45 @@
         @content;
     }
 }
+
+@mixin floating-menu() {
+    header #menu #menu-toggle {
+        float: right;
+
+        span {
+            display: none;
+        }
+        ul {
+            background: none;
+            position: relative;
+            right: 20px;
+            top: 0px;
+            padding-bottom: 64px;
+
+            li {
+                display: inline-block;
+                font-size: 10pt;
+                margin: 10px 15px;
+
+            }
+        }
+
+        input {
+            display: none;
+        }
+
+        a {
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            font-weight: bold;
+            color: $menu-color;
+            text-decoration: underline;
+        }
+
+    }
+
+}
+
+

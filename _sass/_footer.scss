@@ -122,7 +122,7 @@ footer {
         }
 
         @include min-width($large-width) {
-            width: 1024px;
+            width: $large-width;
             margin: 24px auto;
         }
 

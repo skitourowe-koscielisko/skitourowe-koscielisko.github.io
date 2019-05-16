@@ -4,6 +4,7 @@
     const header = document.querySelector('article header');
 
 
+    /*
     window.addEventListener('scroll', function(event) {
         const newOpacity = 1 - (event.pageY / (window.innerHeight / 2)).toFixed(1);
         if (newOpacity < 0)
@@ -13,21 +14,28 @@
             header.style = `opacity: ${opacity}`;
         }
     });
+    */
 
     // Can't do this in CSS :(
     shiftParent();
     window.addEventListener('resize', shiftParent);
     function shiftParent() {
-        const minWidth = 1024;
-        var width = document.body.clientWidth + paddingRight;
-        console.log('resize', document.body.clientWidth, document.body.classList);
-        if (width > 1024 && document.body.classList.contains('landing'))
+        const minWidth = 1000;
+        var width = paddingRight +
+                    window.innerWidth ||
+                    document.documentElement.clientWidth ||
+                    document.body.clientWidth;
+
+        console.log('resize', width, document.body.classList);
+        if (width > minWidth && document.body.classList.contains('landing'))
         {
             document.body.parentElement.style.paddingRight = '90px';
-            paddingRight = 90;
+            if (!window.innerWidth)
+                paddingRight = 90;
         } else {
             document.body.parentElement.style.paddingRight = '0px';
-            paddingRight = 0;
+            if (!window.innerWidth)
+                paddingRight = 0;
         }
 
     }

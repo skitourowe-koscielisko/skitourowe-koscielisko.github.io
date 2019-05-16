@@ -1,4 +1,5 @@
 .landing {
+    $check-side-margin: 75px;
     background-image: none;
     background-repeat: no-repeat;
     background-color: $menu-bg-color-alt;
@@ -7,6 +8,57 @@
     header {
         background-color: transparent;
         background-image: none;
+    }
+
+    #check-header {
+        display: none;
+        position: absolute;
+        top: 758px;
+        right: $check-side-margin;
+        z-index: 1001;
+        display: block;
+        width: 152px;
+        height: 152px;
+        font-weight: bold;
+        font-size: 14pt;
+        background-color: $menu-bg-color;
+        transition: all 0.3s ease-in 0.1s;
+        &:hover {
+            transform: scale(1.07, 1.07);
+        }
+        &:after {
+            content: ">";
+            color: $bg-color;
+            font-size: 25pt;
+            position: relative;
+            bottom: 104px;
+            left: 173px;
+        }
+        a:visited,
+        a {
+            display: block;
+            color: $bg-color !important;
+            position: relative;
+            padding: 50px 12px;
+        }
+    }
+
+    #check {
+        color: $bg-color;
+        background: $menu-bg-color-alt repeat url(/images/main-bg.png);
+        position: relative;
+        padding: 155px $check-side-margin 110px;
+
+        strong {
+            font-size: 14pt;
+            line-height: 1.3em;
+        }
+
+        p {
+            font-size: 9pt;
+            margin: 30px 0 0;
+            line-height: 1.3em;
+        }
     }
 
     main {
@@ -18,7 +70,9 @@
         --section-margin: 35px;
 
         header {
-            padding: 48px 0;
+            position: relative;
+            z-index: 2;
+            padding: 0;
             margin: 0;
 
             h1 {
@@ -32,34 +86,6 @@
 
             }
 
-            @include min-width(350px) {
-                padding: 94px 0 320px;
-
-                h1 {
-                    background-image: url(/images/logo-sm.png);
-                    width: 320px;
-                    height: 80px;
-                }
-            }
-
-            @include min-width(640px) {
-                h1 {
-                    background-image: url(/images/logo-lg.png);
-                    width: 518px;
-                    height: 129px;
-                }
-
-            }
-
-            @include min-width(1260px) {
-                h1 {
-                    background-image: url(/images/logo-xl.png);
-                    width: 1112px;
-                    height: 276px;
-                }
-
-            }
-
             span {
                 display: inline-block;
                 width: 15em;
@@ -69,79 +95,9 @@
                 text-align: center;
                 color: $bg-color;
                 font-size: 12pt;
-                @include min-width(350px) {
-                    background-color: #134373;
-                }
-
-                @include min-width($medium-width) {
-                    font-size: 14pt;
-                }
-
-                @include min-width($large-width) {
-                    font-size: 16pt;
-                }
             }
         }
 
-        #check {
-            $side-margin: 75px;
-            color: $bg-color;
-            background: $menu-bg-color-alt repeat url(/images/main-bg.png);
-            position: relative;
-            padding: 155px $side-margin 110px;
-
-            h3 {
-                position: absolute;
-                top: -80px;
-                right: $side-margin;
-                display: block;
-                width: 152px;
-                height: 152px;
-                font-weight: bold;
-                font-size: 14pt;
-                background-color: $menu-bg-color;
-                transition: all 0.3s ease-in 0.1s;
-                &:hover {
-                    transform: scale(1.1, 1.1);
-                }
-                &:after {
-                    content: ">";
-                    font-size: 25pt;
-                    position: relative;
-                    bottom: 104px;
-                    left: 173px;
-                }
-            }
-
-            a:visited,
-            a {
-                display: block;
-                color: $bg-color !important;
-                position: relative;
-                padding: 50px 12px;
-            }
-
-            strong {
-                font-size: 14pt;
-                line-height: 1.3em;
-            }
-
-            p {
-                font-size: 9pt;
-                margin: 30px 0 0;
-                line-height: 1.3em;
-            }
-
-            @include min-width($medium-width) {
-                $side-margin: 124px;
-                padding-left: $side-margin;
-                padding-right: $side-margin;
-
-                h3 {
-                    right: $side-margin;
-                }
-            }
-        }
 
         .controls {
             h2 {
@@ -149,27 +105,10 @@
                 color: $menu-bg-color;
                 width: 100%;
                 margin: 24px 0;
-                @include min-width(350px) {
-                    margin-top: 60px;
-                }
             }
 
             a {
                 display: none;
-            }
-
-            @include min-width($large-width) {
-                margin-left: calc(var(--section-margin) * 3);
-                h2 {
-                    margin-bottom: 12px;
-                }
-
-                a {
-                    display: block;
-                    margin-bottom: 18px;
-                    text-transform: uppercase;
-                    font-size: 8pt;
-                }
             }
         }
 
@@ -180,16 +119,11 @@
             margin: 42px 0;
             width: calc(100% - var(--section-margin));
 
-            @include min-width(789px) {
-                margin-top: 0;
-            }
-
             .list {
                 display: inline;
                 float: left;
                 width: calc(100% - var(--section-margin));
                 section {
-                    display: none;
                     float: left;
                     margin: 24px var(--section-margin) 24px 0;
                     width: calc(100% - var(--section-margin));
@@ -202,77 +136,13 @@
                         display: inline-block;
                     }
 
-                    @include min-width(640px) {
-                        width: calc(50% - var(--section-margin));
-                        &:nth-child(2) {
-                            display: inline-block;
-                        }
-                    }
-
-                    @include min-width($large-width) {
-                        width: calc(33% - var(--section-margin));
-                        margin-right: 0;
-                        margin-left: var(--section-margin);
-                        position: relative;
-                        right: -10px;
-                        &:nth-child(3) {
-                            display: inline-block;
-                            img {
-                                filter: grayscale(100%) contrast(50%) brightness(150%);
-                            }
-
-                            &:hover {
-                                img {
-                                    filter: grayscale(0%) brightness(105%);
-                                }
-                            }
-
-                            span {
-                                margin-right: 0;
-                            }
-                        }
-                    }
 
                 }
 
-                @include min-width($large-width) {
-                    width: 100%;
-                    margin-right: 0;
-                    padding-left: calc(2 * var(--section-margin));
-                }
             }
-
-            .more-articles {
-                --font-size: 29pt;
-                position: relative;
-                display: inline;
-                a {
-                    position: absolute;
-                    font-size: var(--font-size);
-                    font-weight: bold;
-                    height: var(--font-size);
-                    top: calc(50% - var(--font-size));
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-
-                @include min-width($large-width) {
-                    position: absolute;
-                    z-index: 102;
-                    width: var(--font-size);
-                    right: 0px;
-                    bottom: 241px;
-                }
-            }
-
 
             .button {
                 margin-left: calc(var(--section-margin) * -1);
-
-                @include min-width($large-width) {
-                    display: none;
-                }
             }
         }
 
@@ -306,100 +176,296 @@
             }
         }
     }
-}
-// Setup paddings and backgrounds for standard resolutions
-
-@include min-width(350px) {
-    .landing {
+    @include min-width(350px) {
         // Image height is 880px
         background-image: url(/images/landing-bg-sm.png);
         background-color: $bg-color;
+        #check-header {
+            display: block;
+        }
         article {
             header {
                 padding-top: 158px;
                 padding-bottom: 514px;
+                h1 {
+                    background-image: url(/images/logo-sm.png);
+                    width: 320px;
+                    height: 80px;
+                }
+                span {
+                    background-color: #134373;
+                }
+            }
+        }
+        .controls {
+            h2 {
+                margin-top: 60px;
             }
         }
 
     }
-}
 
-@include min-width(576px) {
-    .landing {
+    @include min-width(576px) {
         // Image height is 613px
         background-image: url(/images/landing-bg-1280.jpg);
-        article {
-            header {
-                padding-top: 86px;
-                padding-bottom: 319px;
-            }
+        #check-header {
+            top: 492px;
         }
-
-    }
-}
-
-@include min-width($large-width) {
-    .landing {
         article {
             header {
-                padding-bottom: 289px;
+                padding-top: 111px;
+                padding-bottom: 294px;
             }
         }
     }
-}
+    @include min-width(640px) {
+        article {
+            header {
+                h1 {
+                    background-image: url(/images/logo-lg.png);
+                    width: 518px;
+                    height: 129px;
+                }
+            }
+            .articles {
+                .list {
+                    section {
+                        width: calc(50% - var(--section-margin));
+                        &:nth-child(2) {
+                            display: inline-block;
+                        }
 
-@include min-width($large-width) {
-    .landing {
+                    }
+                }
+            }
+        }
+    }
+    @include min-width(788px) {
+        #check-header {
+            top: 522px;
+        }
+        article {
+            header {
+                padding-bottom: 264px;
+                span {
+                    font-size: 14pt;
+                }
+            }
+        }
+
+        .articles {
+            margin-top: 0;
+        }
+    }
+    @include min-width($medium-width) {
+        $check-side-margin: 124px;
+        #check {
+            padding-left: $check-side-margin;
+            padding-right: $check-side-margin;
+            h3 {
+                right: $check-side-margin;
+            }
+        }
+    }
+    @include min-width($large-width) {
+        --padding-right: 90px;
         background-image: url(/images/landing-bg-md.jpg);
         background-color: $bg-color;
-        padding-right: 90px;
+        padding-right: var(--padding-right);
         footer,
         main {
-            width: calc(100% + 90px);
+            width: calc(100% + 2 * var(--padding-right));
         }
     }
-}
-
-// Screen size shrunk. Apply rules for screen size - 90px from now on
-@include min-width($large-width - 90px) {
-    .landing {
+    // Screen size shrunk. Apply rules for screen size - 90px from now on
+    @include min-width($large-width - 90px) {
+        @include floating-menu();
         article {
             header {
-                position: relative;
-                z-index: 2;
+                //padding-top: 256px;
+                padding-bottom: 390px;
+                span {
+                    background-color: transparent;
+                    font-size: 16pt;
+                }
             }
-
+            #check-header {
+                top: 129px;
+                right: 295px;
+            }
             #check {
-                //position: absolute;
-                top: 162px;
+                position: absolute;
+                top: 207px;
                 right: 0;
                 width: 430px;
                 z-index: 1;
-                padding: 290px 45px 70px;
+                padding: 550px 65px 70px;
                 h3 {
                     position: relative;
                     z-index: 1000;
                 }
-                a {
-                    z-index: 1001;
+            }
+            .articles {
+                .list {
+                    width: 100%;
+                    margin-right: 0;
+                    padding-left: calc(2 * var(--section-margin));
+                    section {
+                        width: calc(33% - var(--section-margin));
+                        margin-right: 0;
+                        margin-left: var(--section-margin);
+                        position: relative;
+                        right: -10px;
+                        &:nth-child(3n) {
+                            span {
+                                margin-right: 0;
+                            }
+                        }
+                    }
                 }
             }
+            .button {
+                display: none;
+            }
+        }
+
+        .controls {
+            margin-left: calc(var(--section-margin) * 3);
+            h2 {
+                margin-bottom: 12px;
+            }
+
+            a {
+                display: block;
+                margin-bottom: 18px;
+                text-transform: uppercase;
+                font-size: 8pt;
+            }
 
         }
     }
-}
+    @mixin header-resolution($res) {
+        $logo-left-offset: 0.2;
+        $logo-height-ratio: 0.28;
+        $logo-width-ratio: 0.57;
 
-@include min-width(1281px) {
-    .landing {
-        // Image height is 654px
-        background-image: url(/images/landing-bg-1366.jpg);
-        article {
-            header {
-                padding-top: 86px;
-                padding-bottom: 295px;
+        $check-header-offset-right: 0.2;
+        $check-width: 0.41;
+        $check-padding-left: 65px;
+        $check-padding-right: 65px;
+
+        #logo {
+            margin-left: $res * $logo-left-offset;
+            width: $res * $logo-width-ratio;
+            height: $res * $logo-width-ratio * $logo-height-ratio;
+            margin-bottom: 0;
+        }
+
+        #check-header {
+            right: $res * $check-header-offset-right;
+        }
+        main {
+            article {
+                #check {
+                    $width: $res * $check-width - $check-padding-left - $check-padding-right;
+                    width: $width;
+                    padding-left: $check-padding-left;
+                    padding-right: $check-padding-right;
+                }
             }
         }
     }
+    @mixin check-padding-top($top) {
+        main article #check {
+            padding-top: $top;
+        }
+    }
+
+    @mixin header-height($top, $bottom) {
+        main article header {
+            padding-top: $top;
+            padding-bottom: $bottom
+        }
+    }
+
+    @mixin check-header-right($px) {
+        article #check-header {
+            right: $px;
+        }
+    }
+
+    @include min-width(1000px - 90px) {
+        background-image: url(/images/landing-bg-1024.jpg)
+        #logo {
+            background-image: url(/images/logo-1024.png);
+        }
+        @include header-resolution(1024px);
+        @include header-height(194px, 306px);
+        @include check-header-right(173px);
+        @include check-padding-top(351px);
+    }
+
+    @include min-width(1280px - 90px) {
+        background-image: url(/images/landing-bg-1280.jpg);
+        @include header-resolution(1280px);
+        @include header-height(159px, 158px);
+        @include check-padding-top(235px);
+
+        #logo {
+            height: 145px;
+        }
+    }
+    @include min-width(1366px - 90px) {
+        background-image: url(/images/landing-bg-1366.jpg);
+        #logo {
+            background-image: url(/images/logo-1366.png);
+        }
+        @include header-resolution(1366px);
+        @include header-height(186px, 170px);
+        @include check-header-right(260px);
+    }
+    @include min-width(1440px - 45px) {
+        background-image: url(/images/landing-bg-1440.jpg);
+        #logo {
+            background-image: url(/images/logo-1440.png);
+        }
+        @include header-resolution(1440px);
+        @include header-height(173px, 217px);
+        @include check-padding-top(328px);
+    }
+    @include min-width(1600px - 90px) {
+        background-image: url(/images/landing-bg-1600.jpg);
+        #logo {
+            background-image: url(/images/logo-1600.png);
+        }
+        @include header-resolution(1600px);
+        @include header-height(172px, 286px);
+        @include check-header-right(295px);
+        @include check-padding-top(350px);
+        #check {
+            strong {
+                font-size: 16pt;
+            }
+            p {
+                font-size: 11pt;
+            }
+
+        }
+    }
+    @include min-width(1880px - 90px) {
+        background-image: url(/images/landing-bg-1920.jpg);
+        #logo {
+            background-image: url(/images/logo-1920.png);
+        }
+        @include header-resolution(1880px);
+        @include header-height(240px, 369px);
+        @include check-padding-top(549px);
+    }
+    @include min-width(1920px - 90px) {
+        background-image: url(/images/landing-bg-1920.jpg);
+        #logo {
+            background-image: url(/images/logo-1920.png);
+        }
+        @include header-resolution(1920px);
+    }
 }
-
-
