@@ -421,7 +421,8 @@
             background-image: url(/images/logo-1366.png);
         }
         @include header-resolution(1366px);
-        @include header-height(186px, 170px);
+        @include header-height(160px, 196px);
+        @include check-padding-top(285px);
         @include check-header-right(260px);
     }
     @include min-width(1440px - 45px) {
