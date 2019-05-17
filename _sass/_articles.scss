@@ -19,6 +19,13 @@
         width: 100%;
         margin: 0 0 24px 0;
 
+        @mixin box-tilt {
+            display: block;
+            margin: 0 -24px 0 33px;
+            background-color: $bg-color;
+            padding: 0px 20px 24px 32px;
+        }
+
 
         h4 {
             font-size: 14pt;
@@ -34,10 +41,8 @@
                     position: relative;
                     top: -100px;
                     z-index: 100;
-                    display: block;
-                    padding: 124px 20px 24px 32px;
-                    margin: 0 -24px 0 33px;
-                    background-color: $bg-color;
+                    @include box-tilt();
+                    padding-top: 124px;
                     &:hover {
                         text-decoration: underline;
                         text-decoration-color: $menu-bg-color;
@@ -45,6 +50,11 @@
 
                 }
             }
+        }
+
+        .arrow-link {
+            @include box-tilt();
+            text-transform: uppercase;
         }
 
         span {
