@@ -22,9 +22,9 @@
         font-weight: bold;
         font-size: 14pt;
         background-color: $menu-bg-color;
-        transition: all 0.3s ease-in 0.1s;
+        transition: all 0.15s ease-in 0s;
         &:hover {
-            transform: scale(1.07, 1.07);
+            transform: scale(1.04, 1.04);
         }
         &:after {
             content: ">";
@@ -307,6 +307,7 @@
                         position: relative;
                         right: -10px;
                         &:nth-child(3n) {
+                            .arrow-link,
                             span {
                                 margin-right: 0;
                             }
