@@ -17,7 +17,7 @@ czas_podejscia: 2 h
 czas_zjazdu: 45 min
 najlepsze_warunki: styczeń, luty, marzec
 zagrozenia: wystające kamienie i korzenie, inni narciarze
-miip_map: https://fatmap.com/routeid/130154/Magura_Witowska_-_Skitour_School
+mapa: https://mapsengine.google.com/map/embed?mid=1S-ccsmAyiVp0IDXN-38FCLykrw7j24Nw
 youtube_id: wst_hCVOll0
 autor: mateusz
 excerpt_separator: <!--more-->

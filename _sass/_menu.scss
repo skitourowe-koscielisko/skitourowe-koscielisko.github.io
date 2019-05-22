@@ -3,6 +3,7 @@ header {
     $height-md: 100px;
 
     background: $menu-bg-color url(/images/menu-bg.png) center 0 no-repeat border-box;
+    background-size: 100%;
     height: $height-sm;
     margin-bottom: 26px;
 
