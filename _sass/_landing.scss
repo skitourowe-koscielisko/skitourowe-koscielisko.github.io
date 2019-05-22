@@ -170,14 +170,8 @@
                         .module-title {
                             display: none;
                         }
-                        b {
-                            font-weight: normal;
-                        }
                         p {
                             font-size: 10pt;
-                            &:nth-child(2) {
-                                display: none;
-                            }
                         }
                     }
                 }
