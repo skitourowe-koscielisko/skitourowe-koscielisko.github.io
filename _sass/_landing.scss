@@ -272,9 +272,9 @@
             }
             section.articles {
                 .list {
-                    margin-left: var(--section-margin);
                     section {
-                        width: calc(50% - 2 * var(--section-margin));
+                        width: calc(50% - var(--section-margin));
+                        margin-right: var(--section-margin);
                     }
                 }
             }
@@ -312,6 +312,10 @@
         background-image: url(/images/landing-bg-md.jpg);
         background-color: $bg-color;
         padding-right: var(--padding-right);
+
+        #menu {
+            margin-right: calc(-1 * var(--padding-right));
+        }
         footer,
         main {
             width: calc(100% + 2 * var(--padding-right));
@@ -448,16 +452,17 @@
                     padding-left: calc(2 * var(--section-margin));
                     section {
                         width: calc(33% - var(--section-margin));
-                        margin-right: 0;
-                        //margin-left: var(--section-margin);
                         position: relative;
                         right: -10px;
                         &:nth-child(3n) {
                             display: inline-block;
+                            /*
+                             * Maybe move it to higher res?
                             .arrow-link,
                             span {
                                 margin-right: 0;
                             }
+                            */
                         }
                     }
                 }
