@@ -12,35 +12,29 @@ layout: landing
     </a>
   </h3>
   <aside id="check">
-    <strong>
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco
-    </strong>
     <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-    mollit anim id est laborum.
+      8 wycieczek narciarskich o różnym stopniu trudności rozpoczynających się na
+      terenie Kościeliska. Każda dokładnie opisana, sfotografowana i sfilmowana.
+      Oto czym jest projekt Skitourowe Kościelisko będący kontynuacją strony
+      Skitourowe Zakopane.
     </p>
   </aside>
   <section class="articles">
     <div class="controls">
       <h2>Ostatnio dodane trasy</h2>
-      <a class="arrow-link" href="/mapa/" title="Mapa tras skitourowych">
-        Zobacz trasy na mapie
+      <a class="arrow-link" href="/trasy/" title="Trasy skitourowe w rejonie Kościeliska">
+        Zobacz wszystkie trasy
         <i></i>
       </a>
     </div>
     <div class="list">
-      {% assign trasy = site.trasy | sort:'url' | reverse %}
-      {% for post in trasy  %}
+      {% assign trasy = site.trasy | sort:'url' | reverse  %}
+      {% for post in trasy limit:3 %}
         {%include item-post.html %}
       {% endfor %}
     </div>
     <div class="clear"></div>
-    <a class="button arrow-link" href="/mapa/" title="Mapa tras skitourowych">
+    <a class="button arrow-link" href="/trasy/" title="Trasy skitourowe w rejonie Kościeliska">
       Zobacz trasy na mapie <i></i>
     </a>
   </section>
