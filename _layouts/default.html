@@ -7,7 +7,7 @@
     {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
     {% else %}
-    <meta name="description" content="8 tras skitourowych w rejonie Doliny Chochołowskiej, Kościeliskiej i Małej Łąki. Każda dokładnie opisana, sfotografowana i nakręcona. Baza noclegowa Gminy Kościelisko." />
+    <meta name="description" content="{{ page.excerpt | strip_html | split: ' ' | slice:0,23 | join: ' '}} ..." />
     {% endif %}
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"></link>
     <link rel="stylesheet" href="/assets/main.css"></link>
