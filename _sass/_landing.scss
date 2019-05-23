@@ -128,7 +128,6 @@
                         float: left;
                         margin: 24px 0 24px 0;
                         padding: 0;
-                        //width: calc(100% - var(--section-margin));
                         width: 100%;
                         &:nth-child(3) {
                             display: none;
@@ -138,7 +137,8 @@
                 }
 
                 .button {
-                    margin: 0 calc(var(--section-margin) * -1);
+                    margin: 70px calc(var(--section-margin) * -1) 0;
+                    width: calc(100% + 2 * var(--section-margin));
                 }
             }
 
