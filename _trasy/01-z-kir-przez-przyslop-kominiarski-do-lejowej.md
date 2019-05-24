@@ -32,11 +32,9 @@ autor: mateusz
 <p>
     <span class="title">Dla kogo?</span>
   Dobra propozycja na jedną z pierwszych tur w życiu, odpowiednia na wycieczkę z dzieckiem w wózku lub nosidle. Zjazd jest bardzo prosty techniczne (wręcz za prosty), a na podejściu nawet nie wykonujemy zakosów. </p>
-
  <p>
     <span class="title">Sprzęt</span>
     Rekomenduje zabranie harszli – podejście czarnym szlakiem na Przysłop jest wąskie, bywa bardzo twarde, a nie mamy możliwości wykonywania na tym odcinku zakosów (duża ilość połamanych drzew I krzaki).  </p>
-
  <p>
     <span class="title">Dojazd</span>
   Do Kir najprościej dojechać samochodem, który zostawimy na jednym z kilku parkingów tuż przed wlotem do doliny. Cena za dzień to 10-25zł (w zależności od parkingu). Można również dojechać busem, który odjeżdża między innymi z dworca.
