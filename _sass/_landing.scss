@@ -245,30 +245,98 @@
             }
         }
     }
-    @include min-width(640px) {
+    @include min-width(577px) {
+        background-image: url(/images/landing-bg-800.png);
+        background-position-y: 95px;
         article {
             header {
-                h1 {
-                    background-image: url(/images/logo-lg.png);
-                    width: 518px;
-                    height: 129px;
-                }
+                padding-top: 126px;
+                padding-bottom: 30px;
+            }
+        }
+        #check-header {
+            top: 522px;
+            width: 112px;
+            height: 112px;
+            font-size: 10pt;
+
+            a {
+                padding: 36px 10px;
+            }
+            &::after {
+                font-size: 20pt;
+                bottom: 78px;
+                left: 132px;
             }
         }
     }
     @include min-width(788px) {
-        #check-header {
-            top: 522px;
-        }
         article {
             header {
-                padding-bottom: 264px;
-                span {
-                    font-size: 14pt;
+                padding-top: 142px;
+                padding-bottom: 14px;
+                h1 {
+                    background-image: url(/images/logo-800.png);
+                    width: 610px;
+                    height: 151px;
                 }
             }
-        }
+            #check-header {
+                top: 211px;
+                right: 95px;
+            }
+            #check {
+                position: absolute;
+                top: 268px;
+                right: 0;
+                width: 313px;
+                z-index: 1;
+                padding: 271px 35px 40px;
+                strong {
+                    font-size: 11pt;
+                }
+                p {
+                    font-size: 9pt;
+                }
+                h3 {
+                    position: relative;
+                    z-index: 1000;
+                }
+            }
+            .tracks {
+                padding-top: 172px;
+                height: 390px;
+            }
+            section.articles {
+                width: 100%;
+                margin: 0;
+                .controls {
+                    display: inline-block;
+                    float: left;
+                    width: 230px;
+                    .arrow-link {
+                        display: block;
+                        margin: 0 0 30px 30px;
+                    }
+                    h2 {
+                        font-size: 28pt;
+                        margin: 0 0 35px 30px;
+                    }
+                }
+                .list {
+                    position: absolute;
+                    right: 20px;
+                    section {
+                        float: left;
+                        width: 230px;
+                    }
+                }
+            }
 
+            .button {
+                display: none;
+            }
+        }
     }
     @include min-width($medium-width) {
         $check-side-margin: 124px;
@@ -304,22 +372,6 @@
                 span {
                     background-color: transparent;
                     font-size: 16pt;
-                }
-            }
-            #check-header {
-                top: 129px;
-                right: 295px;
-            }
-            #check {
-                position: absolute;
-                top: 207px;
-                right: 0;
-                width: 430px;
-                z-index: 1;
-                padding: 550px 65px 70px;
-                h3 {
-                    position: relative;
-                    z-index: 1000;
                 }
             }
             .button {

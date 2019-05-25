@@ -67,14 +67,27 @@ section.articles {
         img:hover {
             filter: brightness(105%);
         }
-
-        @include min-width($medium-width) {
-            margin-left: 33px;
-            width: calc(50% - 33px);
-        }
-
-        @include min-width($large-width) {
-            width: calc(33% - 33px);
+    }
+    @include min-width(788px) {
+        --tilt: 15px;
+        width: calc(100% - 2 * var(--tilt));
+        margin: 0 15px;
+        section {
+            width: calc(50% - 2* var(--tilt));
+            &:nth-child(2n) {
+                margin-left: calc(2 * var(--tilt));
+            }
+            h4 {
+                a {
+                    span {
+                        padding-top: 125px;
+                        margin: 0 calc(var(--tilt) * -1) 0 16px;
+                    }
+                }
+            }
+            .arrow-link {
+                margin: 0 calc(var(--tilt) * -1) 0 16px;
+            }
         }
     }
 }
@@ -99,8 +112,8 @@ article {
         flex-wrap: wrap;
         vertical-align: baseline;
         background-color: $bg-darker;
-        padding: 24px 12px;
-        margin: 0 -14px;
+        margin: 0;
+        padding: 24px 0;
         width: 100%;
 
         p {
@@ -126,6 +139,11 @@ article {
                 width: calc(33% - 48px);
                 margin: 0 24px 18px;
             }
+        }
+
+        @include min-width($medium-width) {
+            padding: 24px 12px;
+            margin: 0 -14px;
         }
 
         @include min-width($large-width) {
