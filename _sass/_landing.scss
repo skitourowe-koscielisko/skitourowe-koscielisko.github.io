@@ -71,6 +71,7 @@
         --section-margin: 35px;
 
         header {
+            display: none;
             position: relative;
             z-index: 2;
             padding: 0;
@@ -228,6 +229,7 @@
         }
         article {
             header {
+                display: block;
                 padding-top: 158px;
                 padding-bottom: 514px;
                 h1 {
