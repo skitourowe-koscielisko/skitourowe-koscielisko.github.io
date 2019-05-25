@@ -1,6 +1,6 @@
 .landing {
     margin-left: 0;
-    $check-side-margin: 75px;
+    $check-side-margin: 65px;
     background-image: none;
     background-repeat: no-repeat;
     background-color: $menu-bg-color-alt;
@@ -14,7 +14,7 @@
     #check-header {
         display: none;
         position: absolute;
-        top: 758px;
+        top: 800px;
         right: $check-side-margin;
         z-index: 1001;
         display: block;
@@ -48,15 +48,15 @@
         color: $bg-color;
         background: $menu-bg-color-alt repeat url(/images/main-bg.png);
         position: relative;
-        padding: 155px $check-side-margin 110px;
+        padding: 170px $check-side-margin 120px;
 
         strong {
-            font-size: 14pt;
+            font-size: 15pt;
             line-height: 1.3em;
         }
 
         p {
-            font-size: 11pt;
+            font-size: 12pt;
             margin: 30px 0 0;
             line-height: 1.3em;
         }
@@ -231,7 +231,7 @@
             header {
                 display: block;
                 padding-top: 158px;
-                padding-bottom: 514px;
+                padding-bottom: 300px;
                 h1 {
                     background-image: url(/images/logo-sm.png);
                     width: 320px;
