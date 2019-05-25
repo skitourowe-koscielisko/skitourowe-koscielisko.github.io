@@ -221,7 +221,6 @@
         }
     }
     @include min-width(350px) {
-        // Image height is 880px
         background-image: url(/images/landing-bg-sm.png);
         background-color: $bg-color;
         #check-header {
@@ -250,16 +249,16 @@
         }
     }
 
-    @include min-width(576px) {
-        // Image height is 613px
-        background-image: url(/images/landing-bg-1280.jpg);
-        #check-header {
-            top: 492px;
-        }
+    @include min-width(500px) {
         article {
             header {
-                padding-top: 111px;
-                padding-bottom: 294px;
+                padding-top: 66px;
+                padding-bottom: 392px;
+                h1 {
+                    background-image: url(/images/logo-500.png);
+                    width: 432px;
+                    height: 107px;
+                }
             }
         }
     }
