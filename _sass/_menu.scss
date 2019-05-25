@@ -111,13 +111,15 @@ header {
             }
 
             ul {
-                $offset: 204px;
+                $offset: 199px;
                 position: fixed;
                 top: -$offset;
+                left: 0;
                 right: 0px;
                 width: 100%;
                 height: 100%;
-                margin-top: $offset;
+                //margin-top: $offset;
+                margin: $offset 0 0;
                 padding: 55px 0px;
 
 

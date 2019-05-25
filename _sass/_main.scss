@@ -14,11 +14,7 @@ body {
 }
 
 main {
-    margin: 0px 30px;
-
-    @include min-width(575px) {
-        margin: 0 75px;
-    }
+    margin: 0;
 
     @include min-width($large-width) {
         margin: 0px auto;

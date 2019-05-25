@@ -1,5 +1,6 @@
 /* Rules for article collection page */
 section.articles {
+    --tilt: 60px;
     display: flex;
     -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
@@ -16,12 +17,12 @@ section.articles {
         flex-grow: 0;
         flex-shrink: 1;
         position: relative;
-        width: 100%;
-        margin: 0 0 24px 0;
+        width: calc(100% - var(--tilt));
+        margin: 0 0 16px 0;
 
         @mixin box-tilt {
             display: block;
-            margin: 0 -24px 0 33px;
+            margin: 0 calc(var(--tilt) * -1) 0 33px;
             background-color: $bg-color;
             padding: 0px 20px 24px 32px;
         }

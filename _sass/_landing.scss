@@ -68,7 +68,6 @@
     }
 
     article {
-        --section-margin: 35px;
 
         header {
             display: none;
@@ -87,17 +86,6 @@
                 float: none;
 
             }
-
-            span {
-                display: inline-block;
-                width: 15em;
-                position: relative;
-                left: 50%;
-                margin-left: -7.5em;
-                text-align: center;
-                color: $bg-color;
-                font-size: 12pt;
-            }
         }
 
 
@@ -115,31 +103,18 @@
         }
 
         section {
-            padding: 0 var(--section-margin) 0 var(--section-margin);
-            margin: 0;
-            width: calc(100% - 2 * var(--section-margin));
-            position: relative;
-
             &.articles {
                 background: #f5f5f5 url("/images/gory.png") no-repeat top center;
-
-                .list {
-                    width: 100%;
-                    section {
-                        float: left;
-                        margin: 24px 0 24px 0;
-                        padding: 0;
-                        width: 100%;
-                        &:nth-child(3) {
-                            display: none;
-                        }
+                section {
+                    display: none;
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        display: block;
                     }
-
                 }
 
                 .button {
-                    margin: 70px calc(var(--section-margin) * -1) 0;
-                    width: calc(100% + 2 * var(--section-margin));
+                    margin: 70px 0 0;
                 }
             }
 
@@ -151,7 +126,6 @@
                 margin-right: auto;
                 width: $one-column-width;
                 padding: 42px 0;
-                //margin: 24px calc(5 * var(--section-margin));
                 h3 {
                     color: $menu-bg-color;
                     margin-bottom: 20px;
@@ -260,6 +234,15 @@
                     height: 107px;
                 }
             }
+            section.articles {
+                .controls {
+                    h2 {
+                        font-size: 29pt;
+                        padding: 0;
+                        margin: 75px 0 40px 65px;
+                    }
+                }
+            }
         }
     }
     @include min-width(640px) {
@@ -269,14 +252,6 @@
                     background-image: url(/images/logo-lg.png);
                     width: 518px;
                     height: 129px;
-                }
-            }
-            section.articles {
-                .list {
-                    section {
-                        width: calc(50% - var(--section-margin));
-                        margin-right: var(--section-margin);
-                    }
                 }
             }
         }
@@ -294,9 +269,6 @@
             }
         }
 
-        section.articles {
-            margin-top: 0;
-        }
     }
     @include min-width($medium-width) {
         $check-side-margin: 124px;
@@ -354,7 +326,6 @@
                 display: none;
             }
             .controls {
-                margin-left: calc(var(--section-margin) * 3);
                 h2 {
                     margin-bottom: 12px;
                 }
@@ -442,32 +413,6 @@
 
         #logo {
             height: 145px;
-        }
-        article {
-            section.articles {
-                .list {
-                    width: 100%;
-                    margin-top: 32px;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-left: calc(2 * var(--section-margin));
-                    section {
-                        width: calc(33% - var(--section-margin));
-                        position: relative;
-                        right: -10px;
-                        &:nth-child(3n) {
-                            display: inline-block;
-                            /*
-                             * Maybe move it to higher res?
-                            .arrow-link,
-                            span {
-                                margin-right: 0;
-                            }
-                            */
-                        }
-                    }
-                }
-            }
         }
     }
     @include min-width(1366px - 90px) {

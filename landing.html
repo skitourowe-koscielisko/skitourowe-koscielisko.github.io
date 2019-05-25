@@ -31,14 +31,13 @@ layout: landing
       </a>
     </div>
     <div class="list">
-      {% assign trasy = site.trasy | sort:'url' | reverse  %}
-      {% for post in trasy limit:3 %}
+      {% for post in site.trasy %}
         {%include item-post.html %}
       {% endfor %}
     </div>
     <div class="clear"></div>
     <a class="button arrow-link" href="/trasy/" title="Trasy skitourowe w rejonie Kościeliska">
-      Zobacz trasy na mapie <i></i>
+      Zobacz wszystkie trasy <i></i>
     </a>
   </section>
   <section class="weather">
@@ -64,7 +63,7 @@ layout: landing
       </a>
     </div>
     <div class="list">
-      {% for post in site.posts limit:3 %}
+      {% for post in site.posts limit:8 %}
         {%include item-post.html %}
       {% endfor %}
     </div>
