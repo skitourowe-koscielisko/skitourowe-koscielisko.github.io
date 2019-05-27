@@ -9,11 +9,19 @@ footer {
             margin-bottom: -45px;
         }
         h2 {
-            font-size: 76px;
+            font-size: 64px;
             font-family: "Times New Roman", Times, serif;
             font-weight: bold;
             margin: 0;
             padding: 0;
+
+            @include min-width(350px) {
+                font-size: 70px;
+            }
+
+            @include min-width(470px) {
+                font-size: 76px;
+            }
 
             @include min-width($medium-width) {
                 font-size: 106px;
@@ -42,6 +50,7 @@ footer {
             @include min-width(590px) {
                 padding-top: 73px;
             }
+
 
             @include min-width($medium-width) {
                 padding: 113px 60px;
@@ -198,10 +207,4 @@ footer {
         }
     }
 
-    .eu {
-        background-color: #dadada;
-        font-size: 7pt;
-        padding: 24px 43px;
-        margin-bottom: 0px;
-    }
 }

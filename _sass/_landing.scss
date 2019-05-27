@@ -9,12 +9,38 @@
     header {
         background-color: transparent;
         background-image: none;
+        height: initial;
+        .eu-info {
+            display: block;
+            margin: 20px -25px 0px;
+        }
+        #menu {
+            #menu-toggle {
+                input:checked ~ ul {
+                    top: -199px;
+                }
+                input:checked ~ span {
+                    display: none;
+                }
+            }
+        }
+        .menu-bar {
+            background: transparent url(/images/landing-bg-sm.png) no-repeat top center;
+            margin: 0 -25px;
+            background-clip: content-box;
+            h1 {
+                margin-left: 25px;
+            }
+            #menu-toggle {
+                margin-right: 25px;
+            }
+        }
     }
 
     #check-header {
         display: none;
         position: absolute;
-        top: 800px;
+        top: -80px;
         right: $check-side-margin;
         z-index: 1001;
         display: block;
@@ -195,16 +221,19 @@
         }
     }
     @include min-width(350px) {
-        background-image: url(/images/landing-bg-sm.png);
         background-color: $bg-color;
         #check-header {
             display: block;
+        }
+        main {
+            background: transparent url(/images/landing-bg-sm.png) no-repeat top center;
+            background-position-y: -159px;
         }
         article {
             header {
                 display: block;
                 padding-top: 158px;
-                padding-bottom: 300px;
+                padding-bottom: 471px;
                 h1 {
                     background-image: url(/images/logo-sm.png);
                     width: 320px;
@@ -217,17 +246,22 @@
             .controls {
                 h2 {
                     padding: 0;
-                    margin: 60px 10px 24px;
+                    margin: 60px 0 24px 10px;
                 }
             }
+        }
+    }
+    @include min-width(455px) {
+        main {
+            background-position-y: -115px;
         }
     }
 
     @include min-width(500px) {
         article {
             header {
-                padding-top: 66px;
-                padding-bottom: 392px;
+                padding-top: 163px;
+                padding-bottom: 483px;
                 h1 {
                     background-image: url(/images/logo-500.png);
                     width: 432px;
@@ -239,7 +273,7 @@
                     h2 {
                         font-size: 29pt;
                         padding: 0;
-                        margin: 75px 0 40px 65px;
+                        margin: 75px -65px 40px 65px;
                     }
                 }
             }

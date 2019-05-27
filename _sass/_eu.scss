@@ -1,0 +1,31 @@
+.eu-info {
+    background-color: $bg-color;
+    .eu-logos {
+        width: 100%;
+        text-align: center;
+        img {
+            vertical-align: middle;
+            margin: 20px 35px 0px;
+            height: 30px;
+        }
+    }
+    .eu {
+        text-align: center;
+        clear: both;
+        font-size: 10pt;
+        padding: 24px 43px;
+        margin-bottom: 0px;
+    }
+    @include min-width(640px) {
+        .eu-logos {
+            img {
+                height: 40px
+            }
+        }
+    }
+}
+
+header .eu-info {
+    display: none;
+}
+

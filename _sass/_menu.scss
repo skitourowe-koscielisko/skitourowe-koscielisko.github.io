@@ -13,6 +13,13 @@ header {
         background-size: 100%;
     }
 
+    .menu-bar {
+        height: 159px;
+        @include min-width(455px) {
+            height: 115px;
+        }
+    }
+
     h1 {
         background: transparent url(/images/logo-header.png) center 0 no-repeat border-box;
         display: inline-block;

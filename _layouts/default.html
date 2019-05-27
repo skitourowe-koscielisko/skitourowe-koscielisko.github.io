@@ -15,9 +15,12 @@
   </head>
   <body class="{{layout.bodyclass}}">
     <header>
+      {% include eu.html %}
       {% include social-media-top.html %}
-      <h1 id="nav-logo"><a href="/">{{ site.title }}</a></h1>
-      {% include menu.html %}
+      <section class="menu-bar">
+        <h1 id="nav-logo"><a href="/">{{ site.title }}</a></h1>
+        {% include menu.html %}
+      </section>
     </header>
     <main>
       {{ content }}
