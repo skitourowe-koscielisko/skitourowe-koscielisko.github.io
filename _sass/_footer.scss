@@ -4,6 +4,7 @@ footer {
 
     .precaution {
         margin-bottom: -16px;
+        background-color: white;
 
         @include min-width($medium-width) {
             margin-bottom: -45px;
@@ -23,17 +24,22 @@ footer {
                 font-size: 76px;
             }
 
+            @include min-width(565px) {
+                font-size: 100px;
+            }
+
             @include min-width($medium-width) {
                 font-size: 106px;
             }
         }
 
         .text {
-            background: transparent url("/images/giewont-sm.png") top center no-repeat;
-            background-size: 100%;
+            background: transparent url("/images/giewont-sm.png") bottom center no-repeat;
             position: relative;
-            top: -61px;
-            padding: 64px 32px 12px;
+            background-position-y: -234px;
+            top: -114px;
+            margin-bottom: -114px;
+            padding: 119px 32px 22px;
 
             strong, em {
                 font-size: 8pt;
@@ -47,19 +53,25 @@ footer {
                 }
             }
 
-            @include min-width(590px) {
-                padding-top: 73px;
+            @include min-width(565px) {
+                background-image: url(/images/giewont-md.png);
+                background-position-y: -193px;
+                top: -150px;
+                margin-bottom: -150px;
+                padding: 135px 32px 180px;
+                strong, em {
+                    font-size: 10pt;
+                }
             }
 
-
-            @include min-width($medium-width) {
+            @include min-width($tablet-portrait) {
                 padding: 113px 60px;
                 background-image: url("/images/giewont.png");
                 background-size: auto;
                 top: -84px;
             }
 
-            @include min-width($large-width) {
+            @include min-width($tablet-landscape) {
                 background-image: url("/images/giewont.png");
             }
         }
@@ -69,7 +81,13 @@ footer {
         background: transparent url("/images/logo-footer.png") top center no-repeat;
         width: 140px;
         height: 74px;
-        margin: auto;
+        margin: 42px auto 70px;
+
+        @include min-width(565px) {
+            position: relative;
+            top: -205px;
+            margin-bottom: -120px;
+        }
     }
 
     .social-media {

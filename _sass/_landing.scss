@@ -183,7 +183,7 @@
 
                 // Two widgets in row
                 $horizontal-margin: 65px;
-                $two-column-width: $widget-width * 2 + 2 * $horizontal-margin;
+                $two-column-width: $widget-width * 2 + 2 * $horizontal-margin + 30px;
 
                 @include min-width($two-column-width) {
                     width: $two-column-width;
@@ -315,7 +315,7 @@
         }
     }
 
-    @include min-width(600px) {
+    @include min-width($tablet-portrait) {
         article {
             section.articles {
                 width: 100%;
@@ -334,73 +334,7 @@
         }
     }
 
-    @include min-width(788px) {
-        article {
-            header {
-                padding-top: 142px;
-                padding-bottom: 14px;
-                h1 {
-                    background-image: url(/images/logo-800.png);
-                    width: 610px;
-                    height: 151px;
-                }
-            }
-            #check-header {
-                top: 211px;
-                right: 95px;
-            }
-            #check {
-                position: absolute;
-                top: 268px;
-                right: 0;
-                width: 313px;
-                z-index: 1;
-                padding: 271px 35px 40px;
-                strong {
-                    font-size: 11pt;
-                }
-                p {
-                    font-size: 9pt;
-                }
-                h3 {
-                    position: relative;
-                    z-index: 1000;
-                }
-            }
-            .tracks {
-                padding-top: 172px;
-                height: 390px;
-            }
-            section.articles {
-                .controls {
-                    display: inline-block;
-                    float: left;
-                    width: 230px;
-                    .arrow-link {
-                        display: block;
-                        margin: 0 0 30px 30px;
-                    }
-                    h2 {
-                        font-size: 28pt;
-                        margin: 0 0 35px 30px;
-                    }
-                }
-                .list {
-                    position: absolute;
-                    right: 20px;
-                    section {
-                        float: left;
-                        width: 230px;
-                    }
-                }
-            }
-
-            .button {
-                display: none;
-            }
-        }
-    }
-    @include min-width($medium-width) {
+    @include min-width($tablet-landscape) {
         $check-side-margin: 124px;
         #check {
             padding-left: $check-side-margin;
@@ -409,178 +343,5 @@
                 right: $check-side-margin;
             }
         }
-    }
-    @include min-width($large-width) {
-        --padding-right: 90px;
-        background-image: url(/images/landing-bg-md.jpg);
-        background-color: $bg-color;
-        padding-right: var(--padding-right);
-
-        #menu {
-            margin-right: calc(-1 * var(--padding-right));
-        }
-        footer,
-        main {
-            width: calc(100% + 2 * var(--padding-right));
-        }
-    }
-    // Screen size shrunk. Apply rules for screen size - 90px from now on
-    @include min-width($large-width - 90px) {
-        @include floating-menu();
-        article {
-            header {
-                //padding-top: 256px;
-                padding-bottom: 390px;
-                span {
-                    background-color: transparent;
-                    font-size: 16pt;
-                }
-            }
-            .button {
-                display: none;
-            }
-            .controls {
-                h2 {
-                    margin-bottom: 12px;
-                }
-
-                a {
-                    display: block;
-                    display: inline;
-                    margin-bottom: 18px;
-                    text-transform: uppercase;
-                    font-size: 8pt;
-                    font-size: 11pt;
-                }
-
-            }
-        }
-
-    }
-    @mixin header-resolution($res) {
-        $logo-left-offset: 0.2;
-        $logo-height-ratio: 0.28;
-        $logo-width-ratio: 0.57;
-
-        $check-header-offset-right: 0.2;
-        $check-width: 0.41;
-        $check-padding-left: 65px;
-        $check-padding-right: 65px;
-
-        #logo {
-            margin-left: $res * $logo-left-offset;
-            width: $res * $logo-width-ratio;
-            height: $res * $logo-width-ratio * $logo-height-ratio;
-            margin-bottom: 0;
-        }
-
-        #check-header {
-            right: $res * $check-header-offset-right;
-        }
-        main {
-            article {
-                #check {
-                    $width: $res * $check-width - $check-padding-left - $check-padding-right;
-                    width: $width;
-                    padding-left: $check-padding-left;
-                    padding-right: $check-padding-right;
-                }
-            }
-        }
-    }
-    @mixin check-padding-top($top) {
-        main article #check {
-            padding-top: $top;
-        }
-    }
-
-    @mixin header-height($top, $bottom) {
-        main article header {
-            padding-top: $top;
-            padding-bottom: $bottom
-        }
-    }
-
-    @mixin check-header-right($px) {
-        article #check-header {
-            right: $px;
-        }
-    }
-
-    @include min-width(1000px - 90px) {
-        //background-image: url(/images/landing-bg-1024.jpg);
-        background-image: url(/images/landing-bg-1280.jpg);
-        #logo {
-            background-image: url(/images/logo-1024.png);
-        }
-        @include header-resolution(1024px);
-        @include header-height(194px, 306px);
-        @include check-header-right(173px);
-        @include check-padding-top(351px);
-    }
-
-    @include min-width(1280px - 90px) {
-        background-image: url(/images/landing-bg-1280.jpg);
-        @include header-resolution(1280px);
-        @include header-height(159px, 158px);
-        @include check-padding-top(235px);
-
-        #logo {
-            height: 145px;
-        }
-    }
-    @include min-width(1366px - 90px) {
-        background-image: url(/images/landing-bg-1366.jpg);
-        #logo {
-            background-image: url(/images/logo-1366.png);
-        }
-        @include header-resolution(1366px);
-        @include header-height(160px, 196px);
-        @include check-padding-top(285px);
-        @include check-header-right(260px);
-    }
-    @include min-width(1440px - 45px) {
-        background-image: url(/images/landing-bg-1440.jpg);
-        #logo {
-            background-image: url(/images/logo-1440.png);
-        }
-        @include header-resolution(1440px);
-        @include header-height(173px, 217px);
-        @include check-padding-top(328px);
-    }
-    @include min-width(1600px - 90px) {
-        background-image: url(/images/landing-bg-1600.jpg);
-        #logo {
-            background-image: url(/images/logo-1600.png);
-        }
-        @include header-resolution(1600px);
-        @include header-height(172px, 286px);
-        @include check-header-right(295px);
-        @include check-padding-top(350px);
-        #check {
-            strong {
-                font-size: 16pt;
-            }
-            p {
-                font-size: 11pt;
-            }
-
-        }
-    }
-    @include min-width(1880px - 90px) {
-        background-image: url(/images/landing-bg-1920.jpg);
-        #logo {
-            background-image: url(/images/logo-1920.png);
-        }
-        @include header-resolution(1880px);
-        @include header-height(240px, 369px);
-        @include check-padding-top(549px);
-    }
-    @include min-width(1920px - 90px) {
-        background-image: url(/images/landing-bg-1920.jpg);
-        #logo {
-            background-image: url(/images/logo-1920.png);
-        }
-        @include header-resolution(1920px);
     }
 }

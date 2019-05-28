@@ -8,7 +8,7 @@ h1 {
     text-transform: uppercase;
     font-size: 30pt;
     margin: 50px 75px 45px;
-    @include min-width(600px) {
+    @include min-width($tablet-portrait) {
         margin-left: 15px;
     }
 }
