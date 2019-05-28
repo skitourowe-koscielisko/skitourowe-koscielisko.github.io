@@ -12,7 +12,7 @@
         height: initial;
         .eu-info {
             display: block;
-            margin: 20px -25px 0px;
+            margin: 20px 0px;
         }
         #menu {
             #menu-toggle {
@@ -26,7 +26,6 @@
         }
         .menu-bar {
             background-color: $menu-bg-color-alt;
-            margin: 0 -25px;
             background-clip: content-box;
             h1 {
                 margin-left: 25px;
@@ -378,19 +377,18 @@
             background: transparent url(/images/landing-bg-1440.jpg) no-repeat top left;
         }
         main {
-            background-position-y: -77px;
+            background-position-y: -110px;
         }
+        header .menu-bar,
         .social-media-top,
         main {
             margin-right: 67px;
         }
-        header .menu-bar {
-            margin-right: 42px;
-        }
+
         article {
             header {
-                padding-top: 173px;
-                padding-bottom: 192px;
+                padding-top: 143px;
+                padding-bottom: 189px;
                 h1 {
                     background-image: url(/images/logo-1440.png);
                     width: 820px;
@@ -420,20 +418,18 @@
             background: transparent url(/images/landing-bg-1920.jpg) no-repeat top left;
         }
         main {
-            background-position-y: -77px;
+            background-position-y: -110px;
         }
+        header .menu-bar,
         .social-media-top,
         main {
             margin-right: 90px;
-        }
-        header .menu-bar {
-            margin-right: 65px;
         }
         #check {
             width: 565px;
             top: 520px;
             right: 0;
-            padding: 440px 155px 60px 75px;
+            padding: 500px 155px 60px 75px;
             h3 {
                 right: 390px;
             }
@@ -466,8 +462,8 @@
         }
         article {
             header {
-                padding-top: 285px;
-                padding-bottom: 230px;
+                padding-top: 246px;
+                padding-bottom: 236px;
                 h1 {
                     background-image: url(/images/logo-1920.png);
                     width: 1094px;

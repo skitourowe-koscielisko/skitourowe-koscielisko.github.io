@@ -3,14 +3,16 @@ header {
     $hpadding-sm: 25px;
     $topmargin-sm: 30px;
 
-    background: $menu-bg-color url(/images/menu-bg.png) center 0 no-repeat border-box;
+    background-color: white;
     background-size: 205%;
     background-position-y: bottom;
     height: $height-sm;
-    padding: 0 $hpadding-sm;
+    margin: 0;
+    padding: 0;
 
 
     .menu-bar {
+        background: $menu-bg-color url(/images/menu-bg.png) center 0 no-repeat border-box;
         height: 159px;
     }
 
@@ -19,7 +21,7 @@ header {
         display: inline-block;
         float: left;
         text-indent: -999999px;
-        margin: $topmargin-sm 0 0;
+        margin: $topmargin-sm 0 0 25px;
 
         a {
             height: 74px;
@@ -44,11 +46,10 @@ header {
 
     }
     #menu-toggle {
-        $topmargin-sm: 55px;
         display: block;
         position: relative;
         float: right;
-        margin-top: $topmargin-sm;
+        margin: 55px 25px 0 0;
         z-index: 1;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -169,9 +170,52 @@ header {
     }
 
     @include min-width($laptop) {
+        #menu {
+            z-index: 1;
+        }
         #menu-toggle {
+            position: absolute;
+            right: 0;
+            padding-right: 40px;
+            span,
             input {
                 display: none;
+            }
+            ul {
+                background: none;
+                position: relative;
+                right: 20px;
+                top: 0px;
+                padding-bottom: 110px;
+
+                li {
+                    display: inline-block;
+                    font-size: 14pt;
+                    margin: 10px 20px;
+
+                }
+
+            }
+            a {
+                text-transform: uppercase;
+            }
+
+            a:hover {
+                font-weight: bold;
+                color: $menu-color;
+                text-decoration: underline;
+            }
+        }
+        .menu-bar {
+            height: 110px;
+        }
+        h1 {
+            background: transparent url(/images/logo-header.png) center 0 no-repeat border-box;
+            height: 74px;
+            width: 140px;
+            a {
+                height: 74px;
+                width: 140px;
             }
         }
     }
