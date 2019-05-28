@@ -29,7 +29,7 @@
         }
     }
 
-    @include min-width(437px) {
+    @media (min-width: 437px) {
         font-size: 16pt;
         .bracket {
             font-size: 37pt;

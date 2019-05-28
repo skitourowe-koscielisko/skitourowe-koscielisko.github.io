@@ -39,13 +39,13 @@
                 opacity: 0.7;
             }
 
-            @include min-width($medium-width) {
+            @media (min-width: $medium-width) {
                 width: calc(25% - 6px);
             }
         }
     }
 
-    @include min-width($large-width) {
+    @media (min-width: $large-width) {
         top: 0.25em;
         max-width: 40%;
         &.gallery {

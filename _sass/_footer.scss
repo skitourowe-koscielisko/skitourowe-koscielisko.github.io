@@ -6,7 +6,7 @@ footer {
         margin-bottom: -16px;
         background-color: white;
 
-        @include min-width($medium-width) {
+        @media (min-width: $medium-width) {
             margin-bottom: -45px;
         }
         h2 {
@@ -16,19 +16,19 @@ footer {
             margin: 0;
             padding: 0;
 
-            @include min-width(350px) {
+            @media (min-width: 350px) {
                 font-size: 70px;
             }
 
-            @include min-width(470px) {
+            @media (min-width: 470px) {
                 font-size: 76px;
             }
 
-            @include min-width(565px) {
+            @media (min-width: 565px) {
                 font-size: 100px;
             }
 
-            @include min-width($medium-width) {
+            @media (min-width: $medium-width) {
                 font-size: 106px;
             }
         }
@@ -47,13 +47,13 @@ footer {
                 margin: 0 auto 18px;
                 max-width: 400px;
 
-                @include min-width($medium-width) {
+                @media (min-width: $medium-width) {
                     font-size: 10pt;
                     max-width: 500px;
                 }
             }
 
-            @include min-width(565px) {
+            @media (min-width: 565px) {
                 background-image: url(/images/giewont-md.png);
                 background-position-y: -193px;
                 top: -150px;
@@ -64,14 +64,14 @@ footer {
                 }
             }
 
-            @include min-width($tablet-portrait) {
+            @media (min-width: $tablet-portrait) {
                 padding: 113px 60px;
                 background-image: url("/images/giewont.png");
                 background-size: auto;
                 top: -84px;
             }
 
-            @include min-width($tablet-landscape) {
+            @media (min-width: $tablet-landscape) {
                 background-image: url("/images/giewont.png");
             }
         }
@@ -83,7 +83,7 @@ footer {
         height: 74px;
         margin: 42px auto 70px;
 
-        @include min-width(565px) {
+        @media (min-width: 565px) {
             position: relative;
             top: -205px;
             margin-bottom: -120px;
@@ -120,7 +120,7 @@ footer {
 
             }
 
-            @include min-width($medium-width) {
+            @media (min-width: $medium-width) {
                 width: 497px;
                 margin-left: calc(497px / -2);
                 li {
@@ -128,7 +128,7 @@ footer {
                 }
             }
 
-            @include min-width($large-width) {
+            @media (min-width: $large-width) {
                 width: 617px;
                 margin-left: calc(617px / -2);
                 li {
@@ -144,24 +144,24 @@ footer {
         text-align: center;
         width: calc(100% - 24px);
 
-        @include min-width($medium-width) {
+        @media (min-width: $medium-width) {
             text-align: left;
         }
 
-        @include min-width($large-width) {
+        @media (min-width: $large-width) {
             width: $large-width;
             margin: 24px auto;
         }
 
         h5 {
             margin: 24px auto 24px;
-            @include min-width($medium-width) {
+            @media (min-width: $medium-width) {
                 margin-top: 0;
             }
         }
 
         .main {
-            @include min-width($medium-width) {
+            @media (min-width: $medium-width) {
                 float: left;
                 margin-right: 32px;
             }
@@ -209,7 +209,7 @@ footer {
                     text-transform: none;
                 }
 
-                @include min-width($medium-width) {
+                @media (min-width: $medium-width) {
                     top: calc(9pt + 17px);
                 }
             }

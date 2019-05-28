@@ -17,16 +17,16 @@
                 width: 100%;
                 clear: left;
             }
-            @include min-width(640px) {
+            @media (min-width: 640px) {
                 width: 50%;
             }
-            @include min-width($medium-width) {
+            @media (min-width: $medium-width) {
                 width: 33%;
             }
         }
 
 
-        @include min-width($large-width) {
+        @media (min-width: $large-width) {
         }
     }
 
@@ -35,11 +35,11 @@
         margin: 24px auto;
         background: $bg-color url(/images/layout-trasa/video-bg-sm.png) center 0 no-repeat border-box;
 
-        @include min-width(574px) {
+        @media (min-width: 574px) {
             background-image: url(/images/layout-trasa/video-bg-md.png);
         }
 
-        @include min-width($large-width) {
+        @media (min-width: $large-width) {
             background-image: url(/images/layout-trasa/video-bg-lg.png);
         }
 
@@ -49,15 +49,15 @@
             display: block;
             margin: 0 auto;
 
-            @include min-width(450px) {
+            @media (min-width: 450px) {
                 width: calc(100% - 12px);
             }
 
-            @include min-width($medium-width) {
+            @media (min-width: $medium-width) {
                 width: calc(100% - 68px);
             }
 
-            @include min-width($large-width) {
+            @media (min-width: $large-width) {
                 width: calc(100% - 96px);
             }
         }

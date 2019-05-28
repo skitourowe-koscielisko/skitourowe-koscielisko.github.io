@@ -39,7 +39,7 @@
         width: 20px;
     }
 
-    @include min-width(450px) {
+    @media (min-width: 450px) {
         padding: 32px 0;
         .separator {
             display: inline;
@@ -59,7 +59,7 @@
         }
     }
 
-    @include min-width($tablet-landscape) {
+    @media (min-width: $tablet-landscape) {
         $hpadding: 200px;
         h2 {
             padding-left: $hpadding;
@@ -69,7 +69,7 @@
         }
     }
 
-    @include min-width($laptop) {
+    @media (min-width: $laptop) {
         width: 400px;
         margin-left: auto;
         h2 {

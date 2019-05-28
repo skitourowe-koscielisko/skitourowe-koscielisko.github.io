@@ -184,7 +184,7 @@
                 $horizontal-margin: 65px;
                 $two-column-width: $widget-width * 2 + 2 * $horizontal-margin + 30px;
 
-                @include min-width($two-column-width) {
+                @media (min-width: $two-column-width) {
                     width: $two-column-width;
                     margin: 0 auto;
                     ul {
@@ -201,7 +201,7 @@
                 $three-column-width: $two-column-width + $pogodynka-widget-width +
                                      2 * $mid-widget-padding + $horizontal-margin +
                                      2 * $mid-widget-border-width;
-                @include min-width($three-column-width) {
+                @media (min-width: $three-column-width) {
                     width: $three-column-width;
                     li {
                         &.pogodynka {
@@ -220,7 +220,7 @@
 
         }
     }
-    @include min-width(350px) {
+    @media (min-width: 350px) {
         background-color: $bg-color;
         .menu-bar {
             background: transparent url(/images/landing-bg-sm.png) no-repeat top center;
@@ -254,13 +254,13 @@
             }
         }
     }
-    @include min-width(455px) {
+    @media (min-width: 455px) {
         main {
             background-position-y: -115px;
         }
     }
 
-    @include min-width(500px) {
+    @media (min-width: 500px) {
         article {
             header {
                 padding-top: 163px;
@@ -282,7 +282,7 @@
             }
         }
     }
-    @include min-width(577px) {
+    @media (min-width: 577px) {
         background-position-y: 95px;
         .menu-bar,
         main {
@@ -314,7 +314,7 @@
         }
     }
 
-    @include min-width($tablet-portrait) {
+    @media (min-width: $tablet-portrait) {
         article {
             section.articles {
                 width: 100%;
@@ -333,7 +333,7 @@
         }
     }
 
-    @include min-width($tablet-landscape) {
+    @media (min-width: $tablet-landscape) {
         #check {
             position: absolute;
             width: 313px;
@@ -371,7 +371,7 @@
         }
     }
 
-    @include min-width($laptop) {
+    @media (min-width: $laptop) {
         .menu-bar,
         main {
             background: transparent url(/images/landing-bg-1440.jpg) no-repeat top left;
@@ -412,7 +412,7 @@
         }
     }
 
-    @include min-width($desktop) {
+    @media (min-width: $desktop) {
         .menu-bar,
         main {
             background: transparent url(/images/landing-bg-1920.jpg) no-repeat top left;

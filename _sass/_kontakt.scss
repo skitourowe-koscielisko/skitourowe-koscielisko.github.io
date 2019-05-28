@@ -2,23 +2,23 @@
     background-image: none;
     background-color: $menu-bg-color;
 
-    @include min-width(350px) {
+    @media (min-width: 350px) {
         background-image: url(/images/contact-bg-sm.png);
         background-color: $bg-color;
     }
 
-    @include min-width(530px) {
+    @media (min-width: 530px) {
         background-image: url(/images/contact-bg-md.png);
     }
 
-    @include min-width($medium-width) {
+    @media (min-width: $medium-width) {
         article {
             width: 540px;
             margin: 0 auto;
         }
     }
 
-    @include min-width($large-width) {
+    @media (min-width: $large-width) {
         background-image: url(/images/contact-bg-lg.png);
     }
 
@@ -49,7 +49,7 @@
             clear: right;
         }
 
-        @include min-width(370px) {
+        @media (min-width: 370px) {
             margin-top: 72px;
         }
     }
@@ -99,7 +99,7 @@
         }
     }
 
-    @include min-width($medium-width) {
+    @media (min-width: $medium-width) {
         dl, form {
 
         }

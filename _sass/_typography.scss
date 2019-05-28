@@ -8,7 +8,7 @@ h1 {
     text-transform: uppercase;
     font-size: 30pt;
     margin: 50px 75px 45px;
-    @include min-width($tablet-portrait) {
+    @media (min-width: $tablet-portrait) {
         margin-left: 15px;
     }
 }
@@ -42,7 +42,7 @@ a {
 p {
     font-size: 10pt;
 }
-@include min-width($medium-width) {
+@media (min-width: $medium-width) {
     p {
         font-size: 12pt;
         line-height: 1.5rem;
@@ -65,7 +65,7 @@ p {
     }
 }
 
-@include min-width($large-width) {
+@media (min-width: $large-width) {
     p {
         font-size: 14pt;
         line-height: 1.75rem;

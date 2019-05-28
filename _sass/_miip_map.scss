@@ -10,13 +10,13 @@
         overflow: hidden !important;
     }
 
-    @include min-width($medium-width) {
+    @media (min-width: $medium-width) {
         border: 1px solid #e2e2e2;
     }
 }
 
 .legend {
-    @include min-width($medium-width) {
+    @media (min-width: $medium-width) {
         float: left;
         width: 50%;
     }

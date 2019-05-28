@@ -142,15 +142,15 @@ header {
         }
     }
 
-    @include min-width(470px) {
+    @media (min-width: 470px) {
         background-size: 100%;
     }
-    @include min-width(455px) {
+    @media (min-width: 455px) {
         .menu-bar {
             height: 115px;
         }
     }
-    @include min-width($tablet-landscape) {
+    @media (min-width: $tablet-landscape) {
         height: 165px;
         h1 {
             background-image: url(/images/logo-header-800.png);
@@ -169,7 +169,7 @@ header {
         }
     }
 
-    @include min-width($laptop) {
+    @media (min-width: $laptop) {
         #menu {
             z-index: 1;
         }

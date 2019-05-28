@@ -68,7 +68,7 @@ section.articles {
             filter: brightness(105%);
         }
     }
-    @include min-width($tablet-portrait) {
+    @media (min-width: $tablet-portrait) {
         --tilt: 15px;
         width: calc(100% - 2 * var(--tilt));
         margin: 0 15px;
@@ -131,22 +131,22 @@ article {
                 margin-bottom: 14px;
             }
 
-            @include min-width($medium-width) {
+            @media (min-width: $medium-width) {
                 width: calc(50% - 24px);
             }
 
-            @include min-width($large-width) {
+            @media (min-width: $large-width) {
                 width: calc(33% - 48px);
                 margin: 0 24px 18px;
             }
         }
 
-        @include min-width($medium-width) {
+        @media (min-width: $medium-width) {
             padding: 24px 12px;
             margin: 0 -14px;
         }
 
-        @include min-width($large-width) {
+        @media (min-width: $large-width) {
             margin: 18px 0 18px 0;
             padding: 46px 0px 46px 0px;
         }

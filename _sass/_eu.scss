@@ -16,7 +16,7 @@
         padding: 24px 43px;
         margin-bottom: 0px;
     }
-    @include min-width(640px) {
+    @media (min-width: 640px) {
         .eu-logos {
             img {
                 height: 40px
