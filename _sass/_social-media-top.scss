@@ -6,9 +6,6 @@
     padding: 16px 0;
     margin: 0 -25px;
 
-    @include min-width(450px) {
-        padding: 32px 0;
-    }
 
     h2,
     ul,
@@ -21,17 +18,6 @@
 
     .separator {
         display: none;
-        @include min-width(450px) {
-            display: inline;
-            width: 100%;
-            height: 2px;
-            background-color: $fg-color;
-            z-index: 0;
-            position: absolute;
-            top: 43px;
-            left: 0;
-            right: 0;
-        }
     }
 
     h2 {
@@ -40,10 +26,6 @@
         font-size: 10pt;
         padding: 0 12px 0 25px;
         position: relative;
-        @include min-width(450px) {
-            font-size: 12pt;
-            padding: 0 40px 0 25px;
-        }
     }
 
     ul {
@@ -56,5 +38,35 @@
     }
     .icon {
         width: 20px;
+    }
+
+    @include min-width(450px) {
+        padding: 32px 0;
+        .separator {
+            display: inline;
+            width: 100%;
+            height: 2px;
+            background-color: $fg-color;
+            z-index: 0;
+            position: absolute;
+            top: 43px;
+            left: 0;
+            right: 0;
+
+        }
+        h2 {
+            font-size: 12pt;
+            padding: 0 40px 0 25px;
+        }
+    }
+
+    @include min-width($tablet-landscape) {
+        $hpadding: 200px;
+        h2 {
+            padding-left: $hpadding;
+        }
+        ul {
+            padding-right: $hpadding;
+        }
     }
 }
