@@ -444,6 +444,26 @@
                 font-size: 13pt;
             }
         }
+        #check-header {
+            top: -80px;
+            display: block;
+            width: 152px;
+            height: 152px;
+            font-weight: bold;
+            font-size: 14pt;
+            &:after {
+                font-size: 25pt;
+                position: relative;
+                bottom: 104px;
+                left: 173px;
+            }
+            a:visited,
+            a {
+                display: block;
+                position: relative;
+                padding: 50px 12px;
+            }
+        }
         article {
             header {
                 padding-top: 285px;
