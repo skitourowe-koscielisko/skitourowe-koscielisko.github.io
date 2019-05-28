@@ -69,4 +69,23 @@
             padding-right: $hpadding;
         }
     }
+
+    @include min-width($laptop) {
+        width: 400px;
+        margin-left: auto;
+        h2 {
+            padding-left: 0;
+            text-align: right;
+            position: relative;
+            right: 0px;
+        }
+        ul {
+            padding-right: 0;
+        }
+        .separator {
+            width: 80px;
+            right: 160px;
+            left: initial;
+        }
+    }
 }

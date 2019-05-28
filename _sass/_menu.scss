@@ -68,9 +68,6 @@ header {
             z-index: 2;
             -webkit-touch-callout: none;
 
-            @include min-width($large-width) {
-                display: none;
-            }
         }
 
         span {
@@ -167,6 +164,14 @@ header {
             margin: 25px 25px;
             ul {
                 margin-top: 153px;
+            }
+        }
+    }
+
+    @include min-width($laptop) {
+        #menu-toggle {
+            input {
+                display: none;
             }
         }
     }
