@@ -25,7 +25,7 @@
             }
         }
         .menu-bar {
-            background: transparent url(/images/landing-bg-sm.png) no-repeat top center;
+            background-color: $menu-bg-color-alt;
             margin: 0 -25px;
             background-clip: content-box;
             h1 {
@@ -133,6 +133,7 @@
                 background: #f5f5f5 url("/images/gory.png") no-repeat top center;
                 section {
                     display: none;
+                    float: left;
                     &:nth-child(1),
                     &:nth-child(2) {
                         display: block;
@@ -222,6 +223,9 @@
     }
     @include min-width(350px) {
         background-color: $bg-color;
+        .menu-bar {
+            background: transparent url(/images/landing-bg-sm.png) no-repeat top center;
+        }
         #check-header {
             display: block;
         }
@@ -280,19 +284,25 @@
         }
     }
     @include min-width(577px) {
-        background-image: url(/images/landing-bg-800.png);
         background-position-y: 95px;
+        .menu-bar,
+        main {
+            background: transparent url(/images/landing-bg-800.png) no-repeat top left;
+        }
+        main {
+            background-position-y: -115px;
+        }
         article {
             header {
-                padding-top: 126px;
-                padding-bottom: 30px;
+                padding-top: 89px;
+                padding-bottom: 160px;
             }
         }
         #check-header {
-            top: 522px;
             width: 112px;
             height: 112px;
             font-size: 10pt;
+            top: -57px;
 
             a {
                 padding: 36px 10px;
@@ -304,6 +314,26 @@
             }
         }
     }
+
+    @include min-width(600px) {
+        article {
+            section.articles {
+                width: 100%;
+                margin: 0;
+
+                .controls {
+                    h2 {
+                        margin-left: 15px;
+                        margin-right: 0;
+                    }
+                }
+            }
+            .list {
+                padding: 0 0 0 15px;
+            }
+        }
+    }
+
     @include min-width(788px) {
         article {
             header {
@@ -342,8 +372,6 @@
                 height: 390px;
             }
             section.articles {
-                width: 100%;
-                margin: 0;
                 .controls {
                     display: inline-block;
                     float: left;

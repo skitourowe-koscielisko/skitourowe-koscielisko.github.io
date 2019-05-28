@@ -68,7 +68,7 @@ section.articles {
             filter: brightness(105%);
         }
     }
-    @include min-width(788px) {
+    @include min-width(600px) {
         --tilt: 15px;
         width: calc(100% - 2 * var(--tilt));
         margin: 0 15px;
