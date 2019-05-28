@@ -20,7 +20,7 @@
     shiftParent();
     window.addEventListener('resize', shiftParent);
     function shiftParent() {
-        const minWidth = 1000;
+        const minWidth = 1920;
         var width = paddingRight +
                     window.innerWidth ||
                     document.documentElement.clientWidth ||

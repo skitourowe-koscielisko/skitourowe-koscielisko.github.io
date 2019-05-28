@@ -9,15 +9,9 @@ header {
     height: $height-sm;
     padding: 0 $hpadding-sm;
 
-    @include min-width(470px) {
-        background-size: 100%;
-    }
 
     .menu-bar {
         height: 159px;
-        @include min-width(455px) {
-            height: 115px;
-        }
     }
 
     h1 {
@@ -48,110 +42,133 @@ header {
             }
         }
 
-        #menu-toggle {
-            $topmargin-sm: 55px;
+    }
+    #menu-toggle {
+        $topmargin-sm: 55px;
+        display: block;
+        position: relative;
+        float: right;
+        margin-top: $topmargin-sm;
+        z-index: 1;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+
+
+        input {
+            display: block;
+            width: 40px;
+            height: 32px;
+            position: absolute;
+            top: -7px;
+            left: -5px;
+
+            cursor: pointer;
+            opacity: 0;
+            z-index: 2;
+            -webkit-touch-callout: none;
+
+            @include min-width($large-width) {
+                display: none;
+            }
+        }
+
+        span {
             display: block;
             position: relative;
-            float: right;
-            margin-top: $topmargin-sm;
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            background: $menu-color;
+            border-radius: 3px;
             z-index: 1;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
+            transform-origin: 4px 0px;
+            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                        opacity 0.55s ease;
 
-
-            input {
-                display: block;
-                width: 40px;
-                height: 32px;
-                position: absolute;
-                top: -7px;
-                left: -5px;
-
-                cursor: pointer;
-                opacity: 0;
-                z-index: 2;
-                -webkit-touch-callout: none;
-
-                @include min-width($large-width) {
-                    display: none;
-                }
-            }
-
-            span {
-                display: block;
-                position: relative;
-                width: 33px;
-                height: 4px;
-                margin-bottom: 5px;
-                background: $menu-color;
-                border-radius: 3px;
-                z-index: 1;
-                transform-origin: 4px 0px;
-                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                            opacity 0.55s ease;
-
-                &:first-child {
-                    transform-origin: 0% 0%;
-                }
-                &:nth-last-child(2) {
-                    transform-origin: 0% 100%;
-                }
-            }
-
-            input:checked ~ span {
-                opacity: 1;
-                transform: rotate(45deg) translate(-2px, -1px);
-                background: $menu-color;
-
-                &:nth-last-child(3) {
-                    opacity: 0;
-                    transform: rotate(0deg) scale(0.2, 0.2);
-                }
-
-                &:nth-last-child(2) {
-                    transform: rotate(-45deg) translate(0, -1px);
-                }
-            }
-
-
-            input:checked ~ ul {
-                transform: none;
-                top: 12px;
-            }
-
-            ul {
-                $offset: 199px;
-                position: fixed;
-                top: -$offset;
-                left: 0;
-                right: 0px;
-                width: 100%;
-                height: 100%;
-                //margin-top: $offset;
-                margin: $offset 0 0;
-                padding: 55px 0px;
-
-
-                background: $menu-bg-color-alt;
-                list-style-type: none;
-                -webkit-font-smoothing: antialiased;
+            &:first-child {
                 transform-origin: 0% 0%;
-                transform: translate(0, -100%);
+            }
+            &:nth-last-child(2) {
+                transform-origin: 0% 100%;
+            }
+        }
 
-                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        input:checked ~ span {
+            opacity: 1;
+            transform: rotate(45deg) translate(-2px, -1px);
+            background: $menu-color;
 
-                li {
-                    margin: 10px 12%;
-                    font-size: 22px;
-                }
+            &:nth-last-child(3) {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
+            }
 
+            &:nth-last-child(2) {
+                transform: rotate(-45deg) translate(0, -1px);
+            }
+        }
+
+
+        input:checked ~ ul {
+            transform: none;
+            top: 12px;
+        }
+
+        ul {
+            $offset: 199px;
+            position: fixed;
+            top: -$offset;
+            left: 0;
+            right: 0px;
+            width: 100%;
+            height: 100%;
+            margin: $offset 0 0;
+            padding: 55px 0px;
+
+
+            background: $menu-bg-color-alt;
+            list-style-type: none;
+            -webkit-font-smoothing: antialiased;
+            transform-origin: 0% 0%;
+            transform: translate(0, -100%);
+
+            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+            li {
+                margin: 10px 12%;
+                font-size: 22px;
+            }
+
+        }
+    }
+
+    @include min-width(470px) {
+        background-size: 100%;
+    }
+    @include min-width(455px) {
+        .menu-bar {
+            height: 115px;
+        }
+    }
+    @include min-width($tablet-landscape) {
+        height: 165px;
+        h1 {
+            background-image: url(/images/logo-header-800.png);
+            width: 99px;
+            height: 52px;
+            margin: 17px 20px 4px;
+        }
+        .menu-bar {
+            height: 77px;
+        }
+        #menu-toggle {
+            margin: 25px 25px;
+            ul {
+                margin-top: 153px;
             }
         }
     }
 }
 
-@include min-width($large-width) {
-    @include floating-menu();
-}

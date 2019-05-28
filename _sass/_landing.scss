@@ -335,12 +335,39 @@
     }
 
     @include min-width($tablet-landscape) {
-        $check-side-margin: 124px;
         #check {
-            padding-left: $check-side-margin;
-            padding-right: $check-side-margin;
+            position: absolute;
+            width: 313px;
+            top: 470px;
+            right: 0;
+            padding: 280px 35px 60px;
             h3 {
-                right: $check-side-margin;
+                right: 90px;
+            }
+            strong {
+                font-size: 13pt;
+            }
+            p {
+                font-size: 11pt;
+            }
+        }
+
+        .menu-bar,
+        main {
+            background: transparent url(/images/landing-bg-1280.jpg) no-repeat top left;
+        }
+        main {
+            background-position-y: -77px;
+        }
+        article {
+            header {
+                padding-top: 133px;
+                padding-bottom: 240px;
+                h1 {
+                    background-image: url(/images/logo-800.png);
+                    width: 610px;
+                    height: 151px;
+                }
             }
         }
     }
