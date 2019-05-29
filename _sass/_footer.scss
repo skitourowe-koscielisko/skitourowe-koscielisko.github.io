@@ -29,7 +29,7 @@ footer {
             }
 
             @media (min-width: $medium-width) {
-                font-size: 106px;
+                font-size: 146px;
             }
         }
 
@@ -65,15 +65,22 @@ footer {
             }
 
             @media (min-width: $tablet-portrait) {
-                padding: 113px 60px;
-                background-image: url("/images/giewont.png");
+                padding: 150px 60px;
+                background-image: url("/images/giewont-md.png");
                 background-size: auto;
-                top: -84px;
             }
 
             @media (min-width: $tablet-landscape) {
+                padding: 200px 0px;
                 background-image: url("/images/giewont.png");
+                background-position-y: -250px;
+                top: -226px;
+                margin-bottom: -186px;
+                strong, em {
+                    font-size: 12pt;
+                }
             }
+
         }
     }
 
@@ -87,6 +94,14 @@ footer {
             position: relative;
             top: -205px;
             margin-bottom: -120px;
+        }
+
+        @media (min-width: $tablet-portrait) {
+            top: -185px;
+        }
+
+        @media (min-width: $tablet-landscape) {
+            top: -245px;
         }
     }
 
