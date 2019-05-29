@@ -551,4 +551,16 @@
         }
 
     }
+    @media (min-width: 1800px) {
+        main article section.articles {
+            width: calc(1160px + 426px + 90px);
+            padding-left: calc(100% - 1160px - 426px - 90px + 90px);
+            .controls {
+                width: 426px;
+            }
+            .list {
+                width: 1110px
+            }
+        }
+    }
 }
