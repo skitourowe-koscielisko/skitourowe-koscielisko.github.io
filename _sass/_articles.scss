@@ -29,7 +29,7 @@ section.articles {
 
 
         h4 {
-            font-size: 14pt;
+            font-size: 12pt;
             line-height: initial;
             margin-bottom: -100px;
             a {
@@ -56,6 +56,7 @@ section.articles {
         .arrow-link {
             @include box-tilt();
             text-transform: uppercase;
+            font-size: 8pt;
         }
 
         span {
@@ -97,6 +98,14 @@ section.articles {
             &:nth-child(3n - 2) {
                 margin-left: 0;
             }
+        }
+    }
+    @media (min-width: $laptop) {
+        h4 {
+            font-size: 14pt;
+        }
+        .arrow-link {
+            font-size: 12pt;
         }
     }
 }

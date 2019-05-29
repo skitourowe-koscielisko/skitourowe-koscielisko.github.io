@@ -274,7 +274,7 @@
             section.articles {
                 .controls {
                     h2 {
-                        font-size: 29pt;
+                        font-size: 28pt;
                         padding: 0;
                         margin: 75px -65px 40px 65px;
                     }
@@ -320,11 +320,8 @@
                 width: 100%;
                 margin: 0;
 
-                .controls {
-                    h2 {
-                        margin-left: 15px;
-                        margin-right: 0;
-                    }
+                .button {
+                    display: none;
                 }
             }
             .list {
@@ -333,7 +330,7 @@
         }
     }
 
-    @media (min-width: $tablet-landscape) {
+    @media (min-width: 800px) {
         #check {
             position: absolute;
             width: 313px;
@@ -368,6 +365,53 @@
                     height: 151px;
                 }
             }
+            section.articles {
+                width: calc(532px + 230px + 35px);
+                padding-left: calc(100% - 532px - 230px - 35px);
+                margin: 0 auto;
+
+                .controls {
+                    width: 232px;
+                    margin-right: 30px;
+                    .arrow-link,
+                    h2 {
+                        margin: 0 0 40px 0;
+                    }
+                    .arrow-link {
+                        font-size: 12pt;
+                        display: inline;
+                    }
+                }
+                .controls,
+                .list {
+                    margin-top: 75px;
+                }
+                .list {
+                    width: 530px;
+                    padding: 0;
+                    section {
+                        width: calc(50% - 30px);
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1152px) {
+        article {
+            section.articles {
+                width: calc(795px + 230px + 35px);
+                padding-left: calc(100% - 795px - 230px - 35px);
+                .list {
+                    width: 795px;
+                    section:nth-child(3) {
+                        display: block;
+                    }
+                    section {
+                        width: calc(33% - 30px);
+                    }
+                }
+            }
         }
     }
 
@@ -386,6 +430,7 @@
         }
 
         article {
+            width: 100%;
             header {
                 padding-top: 143px;
                 padding-bottom: 189px;
@@ -397,7 +442,11 @@
             }
         }
         main article section.articles {
-            width: calc(100% + 67px);
+            width: calc(900px + 232px + 30px);
+            padding-left: calc(100% - 900px - 232px - 30px + 67px);
+            .list {
+                width: 900px
+            }
         }
         main article section.weather {
             position: relative;
@@ -416,6 +465,7 @@
         .menu-bar,
         main {
             background: transparent url(/images/landing-bg-1920.jpg) no-repeat top left;
+            display: block;
         }
         main {
             background-position-y: -110px;
@@ -424,6 +474,9 @@
         .social-media-top,
         main {
             margin-right: 90px;
+        }
+        main {
+            width: calc(100% - 90px);
         }
         #check {
             width: 565px;
@@ -472,7 +525,26 @@
             }
         }
         main article section.articles {
-            width: calc(100% + 90px);
+
+            width: calc(1110px + 262px + 30px);
+            padding-left: calc(100% - 1110px - 262px - 30px + 90px);
+            margin: 0;
+            .controls {
+                width: 262px;
+                margin-right: 30px;
+                .arrow-link,
+                h2 {
+                    margin: 0 0 40px 0;
+                    font-size: 32pt;
+                }
+                .arrow-link {
+                    font-size: 12pt;
+                    display: inline;
+                }
+            }
+            .list {
+                width: 1110px
+            }
         }
         main article section.weather {
             left: 90px;
