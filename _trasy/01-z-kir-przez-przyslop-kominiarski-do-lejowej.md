@@ -23,10 +23,6 @@ autor: mateusz
 ---
 Łatwe podejście, łatwy zjazd w sam raz dla początkujących na krótki spacer skiturowy. Przy stabilnych śniegach brak zagrożenia lawinowego. Z pewnością jest to propozycja dla osób, które cenią sobie brak turystów na szlakach, a nie spektakularne zjazdy.
 
-<!--
-    Ten kod HTML wyświetli się w 3 kolumnach na desktopie.
-    Zamień tekst, jeśli potrzeba, lub usuń całość
--->
 <div class="info">
 
 <p>
@@ -41,8 +37,6 @@ autor: mateusz
 </p>
 </div>
 
-<!-- Oznaczenie końca zajawki artykułu. Dalej wskoczą szczegóły trasy, wideo, itp.
--->
 <!-- excerpt -->
 
 <!-- Po sekcji wideo dalszy opis trasy -->

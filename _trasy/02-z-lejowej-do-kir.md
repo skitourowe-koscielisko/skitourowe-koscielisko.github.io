@@ -39,6 +39,8 @@ Bardzo łatwe podejście oraz trudny, mało komfortowy zjazd. Propozycja dla do�
 </p>
 </div>
 
+<!-- excerpt -->
+
 ### Początek trasy.
 
 Polecam zostawić auto na pierwszym parkingu za wlotem do doliny Kościeliskiej (jadąc od strony Zakopanego). Po pierwsze jest tańszy, po drugie ruszymy na fokach spod samego auta. Idziemy w stronę Doliny Lejowej, za domami. Przejście jest tuż przy płocie Ośrodka Szkoleniowego Marymont, a następnie pensjonatu Szarotka. To nie jest oficjalny szlak, natomiast znajduje się poza terem TPN’u stąd sugeruje wybranie takiego rozwiązania – znacznie przyjemniejszego niż spacer ulicą. Poruszamy się równolegle do drogi. Po 600 metrach dotrzemy do siatek zabezpieczających wyciąg narciarski „Polana Biały Potok”. Wyciąg obchodzimy od dołu – nie wkraczamy na trasę narciarską! Jesteśmy na drodze pod reglami (szlak zielony), który zaprowadzi nas do wlotu Doliny Lejowej. Po 700 metrach docieramy do wlotu Doliny Lejowej i skał o nazwie Między Ściany.
