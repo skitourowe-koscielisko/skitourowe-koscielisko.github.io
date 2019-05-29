@@ -26,7 +26,7 @@ for img in $@
 do
     IMGNAME=$(basename $img)
     THUMBNAME=${IMGNAME}.thumb.jpg
-    cp $img $GALDIR
+    convert $img -resize 900 +repage ${GALDIR}/${IMGNAME}
     convert $img -thumbnail ${THUMBNAIL_SIZE}^ -background white -gravity center -extent $THUMBNAIL_SIZE $GALDIR/$THUMBNAME
     printf '  <a href="/%s" title=""><img src="/%s" alt="" /></a>\n' "${GALDIR}/${IMGNAME}" "${GALDIR}/${THUMBNAME}"
 done

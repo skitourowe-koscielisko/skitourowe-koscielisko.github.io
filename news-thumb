@@ -15,17 +15,21 @@ then
 fi
 
 IMG_BASENAME=$(basename $IMG_PATH | sed 's/\..*$/.png/')
+IMG_DEST="images/news/$IMG_BASENAME"
 THUMB_PATH="images/thumbs/$IMG_BASENAME"
 
-if [ ! -d assets/thumbs ]
+if [ ! -d images/thumbs ]
 then
-    mkdir -p assets/thumbs
+    mkdir -p images/thumbs
 fi
 
 # Convert with padding
 #convert $IMG_PATH -thumbnail '600x352>' -background white -gravity center -extent 600x352 $THUMB_PATH
+convert $IMG_PATH -resize 900 +repage $IMG_DEST && \
+    echo image: "/$IMG_DEST"
 
 # Convert and crop
 convert $IMG_PATH -thumbnail '600x352^' -background white -gravity center -extent 600x352 $THUMB_PATH && \
-    echo thumbnail: $THUMB_PATH
+    echo thumbnail: "/$THUMB_PATH"
+
 
