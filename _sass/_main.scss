@@ -18,6 +18,16 @@ main {
     @media (min-width: $tablet-landscape) {
         margin: 0 15px;
     }
+    @media (min-width: $laptop) {
+        > article {
+            margin: 0 auto;
+            width: 1152px;
+        }
+        > h1 {
+            width: 1152px;
+            margin: 65px auto 32px;
+        }
+    }
 }
 
 
