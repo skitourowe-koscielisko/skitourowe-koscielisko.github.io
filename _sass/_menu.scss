@@ -219,5 +219,10 @@ header {
             }
         }
     }
+    @media (min-width: $desktop) {
+        .menu-bar {
+            background-size: 100%;
+        }
+    }
 }
 

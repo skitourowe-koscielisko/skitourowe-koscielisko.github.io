@@ -90,6 +90,15 @@ section.articles {
             }
         }
     }
+    @media (min-width: $tablet-landscape) {
+        section {
+            width: calc(33% - 2* var(--tilt));
+            margin-left: calc(2 * var(--tilt));
+            &:nth-child(3n - 2) {
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 /* Rules for single article */
