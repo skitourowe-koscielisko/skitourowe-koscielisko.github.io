@@ -5,6 +5,10 @@
     @media (min-width: 350px) {
         background-image: url(/images/contact-bg-sm.png);
         background-color: $bg-color;
+        .menu-bar {
+            background-image: none;
+            background-color: transparent;
+        }
     }
 
     @media (min-width: 530px) {
