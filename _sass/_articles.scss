@@ -101,11 +101,13 @@ section.articles {
         }
     }
     @media (min-width: $laptop) {
-        h4 {
-            font-size: 14pt;
-        }
-        .arrow-link {
-            font-size: 12pt;
+        section {
+            h4 {
+                font-size: 14pt;
+            }
+            .arrow-link {
+                font-size: 12pt;
+            }
         }
     }
 }
