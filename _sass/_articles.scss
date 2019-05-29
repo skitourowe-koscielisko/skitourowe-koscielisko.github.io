@@ -71,7 +71,7 @@ section.articles {
     @media (min-width: $tablet-portrait) {
         --tilt: 15px;
         width: calc(100% - 2 * var(--tilt));
-        margin: 0 15px;
+        margin: 0;
         section {
             width: calc(50% - 2* var(--tilt));
             &:nth-child(2n) {

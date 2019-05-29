@@ -170,6 +170,7 @@ header {
     }
 
     @media (min-width: $laptop) {
+        height: 198px;
         #menu {
             z-index: 1;
         }
@@ -226,3 +227,14 @@ header {
     }
 }
 
+.news {
+    header {
+        .menu-bar {
+            background: $menu-bg-color url(/images/menu-bg-news.png) center 0 no-repeat border-box;
+            background-size: 205%;
+            @media (min-width: 407px) {
+                background-size: 100%;
+            }
+        }
+    }
+}
