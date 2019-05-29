@@ -116,6 +116,12 @@ section.articles {
 article {
     p:first-child {
         font-size: 13pt;
+        @media (min-width: $tablet-landscape) {
+            font-size: 15pt;
+        }
+        @media (min-width: $laptop) {
+            font-size: 17pt;
+        }
     }
 
     .highlight {
@@ -151,13 +157,21 @@ article {
                 margin-bottom: 14px;
             }
 
-            @media (min-width: $medium-width) {
+            @media (min-width: $tablet-landscape) {
                 width: calc(50% - 24px);
+                font-size: 10pt;
+                .title {
+                    font-size: 14pt;
+                }
             }
 
-            @media (min-width: $large-width) {
+            @media (min-width: 1024px) {
+                font-size: 11pt;
                 width: calc(33% - 48px);
                 margin: 0 24px 18px;
+                .title {
+                    font-size: 16pt;
+                }
             }
         }
 

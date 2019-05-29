@@ -39,12 +39,14 @@ a {
     }
 }
 
-p {
+article {
     font-size: 10pt;
 }
 @media (min-width: $medium-width) {
-    p {
+    article {
         font-size: 12pt;
+    }
+    p {
         line-height: 1.5rem;
     }
 

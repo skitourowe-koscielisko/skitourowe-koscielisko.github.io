@@ -1,4 +1,10 @@
-.track {
+.tracks {
+    main {
+        margin-top: 20px;
+        @media (min-width: $tablet-landscape) {
+            margin-top: 40px;
+        }
+    }
     section:not(.heading) > h2 {
             text-align: center;
             font-weight: bold;
