@@ -20,7 +20,7 @@ do
     identify $img > /dev/null || exit 1
 done
 
-echo '<span class="image gallery">'
+echo '<span class="image modal gallery">'
 
 for img in $@
 do
