@@ -7,7 +7,7 @@ splitboard: nie
 podejscie: 2
 zjazd: 1
 zima: tak
-wysokosc: 1345 m
+wysokosc: 1125 m
 przewyzszenie: 220 m
 nachylenie: 25-30 stopni
 dlugosc_trasy: 8 km
