@@ -1,8 +1,8 @@
 ---
 title: Z Lejowej przez Przysłop Kominiarski do Kir
 description: Łatwe podejście, łatwy zjazd w sam raz dla początkujących na krótki spacer skiturowy. Przy stabilnych śniegach brak zagrożenia lawinowego. Z pewnością jest to propozycja dla osób, które cenią sobie brak turystów na szlakach, a nie spektakularne zjazdy.
-thumbnail: /images/thumbs/z-lejowej-przez-przyslop-kominiarski-do-kir.jpg
-image: /images/trasy/z-lejowej-przez-przyslop-kominarski-do-kir.jpg
+thumbnail: /images/thumbs/19.png
+image: /images/galleries/przyslop1/19.jpg
 splitboard: nie
 podejscie: 1
 zjazd: 1
