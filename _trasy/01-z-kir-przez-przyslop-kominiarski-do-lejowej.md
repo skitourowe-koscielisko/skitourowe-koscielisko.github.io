@@ -18,7 +18,7 @@ czas_zjazdu: 1,5 h
 najlepsze_warunki: styczeń, luty, marzec
 zagrozenia: wystające kamienie i korzenie, możliwe oblodzenie zwłaszcza na wąskim podejściu na Przysłop.
 mapa: https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d18197.32631078663!2d19.838678677404506!3d49.26706692708182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e2!4m5!1s0x471592d040abec65%3A0xb323ce2bc797fa1!2sDolina+Ko%C5%9Bcieliska+-+Wej%C5%9Bcie%2C+Dolina+Ko%C5%9Bcieliska%2C+Ko%C5%9Bcielisko!3m2!1d49.2734141!2d19.868870299999998!4m5!1s0x471592e5be8ed9ff%3A0xdc0b45fd4a74cc1f!2zS29taW5pYXJza2kgUHJ6eXPFgm9wLCBOxJlkenkgS3ViacWEY2EsIEtvxZtjaWVsaXNrbw!3m2!1d49.2570239!2d19.8562291!4m5!1s0x47159328cd53eb49%3A0xa624b8d2ec90cc81!2sDolina+Lejowa%2C+Szlak+pieszy+%C5%BC%C3%B3%C5%82ty%2C+Zakopane!3m2!1d49.2775308!2d19.8498169!4m5!1s0x471592d040abec65%3A0xb323ce2bc797fa1!2sDolina+Ko%C5%9Bcieliska+-+Wej%C5%9Bcie%2C+Dolina+Ko%C5%9Bcieliska%2C+Ko%C5%9Bcielisko!3m2!1d49.2734141!2d19.868870299999998!5e1!3m2!1sen!2spl!4v1558717867264!5m2!1sen!2spl
-youtube_id: wst_hCVOll0
+youtube_id: UtCCq6ZG5Oo
 autor: mateusz
 ---
 Łatwe podejście, łatwy zjazd w sam raz dla początkujących na krótki spacer skiturowy. Przy stabilnych śniegach brak zagrożenia lawinowego. Z pewnością jest to propozycja dla osób, które cenią sobie brak turystów na szlakach, a nie spektakularne zjazdy.
