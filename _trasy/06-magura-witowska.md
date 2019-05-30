@@ -23,7 +23,7 @@ czas_podejscia: 2 - 2,5 h
 
 czas_zjazdu: 0,5 - 1 h
 najlepsze_warunki: styczeń, luty
-zagrozenia: Możliwe oblodzenie lub wystające kamienie na szlaku na Przełęcz Iwaniacką. Podejście na Ornak, dalej Siwy Zwornik i Błyszcz może być wystawione na podmuchy wiatru, może być oblodzone, ryzyko zejścia lawiny, m.in. żleby Baniste i Piszczałki. Trawers wąskim szlakiem na grani. Zjazd do D. Starorobociańskiej zagrożony zejściem lawiny, idziemy tylko przy stabilnym śniegu.
+zagrozenia: Brak zagrożenia lawinowego, trasa dobra na niestabilne warunki śniegowe, kiedy odradzane są wyjścia w wyższe partie gór. Przy dużych opadach szlak może być nie przetarty, w tygodniu można napotkać zwózkę drewna.
 mapa: https://www.google.com/maps/d/embed?mid=12my7PJYSWYkZ431dpHyqkz_1I_ViJIQn
 youtube_id: 7jyjWE2Inb8
 
