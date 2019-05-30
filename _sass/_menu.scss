@@ -115,7 +115,7 @@ header {
         }
 
         ul {
-            $offset: 191px;
+            $offset: 177px;
             position: fixed;
             top: -$offset;
             left: 0;
@@ -164,13 +164,13 @@ header {
         #menu-toggle {
             margin: 25px 25px;
             ul {
-                margin-top: 153px;
+                margin-top: 139px;
             }
         }
     }
 
     @media (min-width: $laptop) {
-        height: 198px;
+        height: 185px;
         #menu {
             z-index: 1;
         }
@@ -188,10 +188,11 @@ header {
                 right: 20px;
                 top: 0px;
                 padding-bottom: 110px;
+                margin-top: 150px;
 
                 li {
                     display: inline-block;
-                    font-size: 14pt;
+                    font-size: 12pt;
                     margin: 10px 20px;
 
                 }
