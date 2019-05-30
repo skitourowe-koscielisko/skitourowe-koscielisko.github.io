@@ -29,35 +29,28 @@ youtube_id: AJQmOp3j8fw
 autor: wojtek
 ---
 
+Wiosenna ski-turowa wyprawa na Starorobociański Wierch (2176 m) - najwyższy szczyt w Polskich Tatrach Zachodnich, to długa, całodniowa narciarska przygoda. Niespecjalnie trudna (skala trudności zjazdu -2), ale bardzo estetyczna. Wyprawie towarzyszą przepyszne widoki,  z rozległą panoramą ze szczytu i tym, co lubimy najbardziej: bardzo długim zjazdem. Wymaga stabilnej pogody i dobrych warunków śnieżnych.
 
- Wiosenna ski-turowa wyprawa na Starorobociański Wierch (2176 m) - najwyższy szczyt w Polskich Tatrach Zachodnich, to długa, całodniowa narciarska przygoda. Niespecjalnie trudna (skala trudności zjazdu -2), ale bardzo estetyczna. Wyprawie towarzyszą przepyszne widoki,  z rozległą panoramą ze szczytu i tym, co lubimy najbardziej: bardzo długim zjazdem. Wymaga stabilnej pogody i dobrych warunków śnieżnych.
-<!--
-    Ten kod HTML wyświetli się w 3 kolumnach na desktopie.
-    Zamień tekst, jeśli potrzeba, lub usuń całość
--->
 <div class="info">
-
 <p>
-    <span class="title">Dla kogo?</span>Adresujemy ją do osób o średnim lub zaawansowanym stażu „turowym”, zwłaszcza ważna będzie umiejętność właściwej oceny warunków lawiniastych danego dnia i wybór właściwej trasy zjazdu. Ważne też jest dobre przygotowanie kondycyjne, gdyż jest to bardzo długa tura. Można ją oczywiście skrócić, rozpoczynając wyprawę np. ze schroniska na Polanie Chochołowskiej. </p>
-
- <p>
-    <span class="title">Sprzęt</span>Lawinowe ABC: sonda, łopatka i detektor – wychodzimy powyżej górnej granicy lasu w teren zagrożony lawinami.
-Kask – w czasie zjazdu może się przydać nawet najlepszym narciarzom. Na podejście w razie kiepskich warunków śniegowych warto wyposażyć się w harszle</p>
-
- <p>
-    <span class="title">Dojazd</span>Transport publiczny: w sezonie z Zakopanego kursują busy do Doliny Chochołowskiej, mają nawet rozkład jazdy, ale uwaga, jeśli akurat nie ma turystów, to mimo rozkładów jazdy nie będzie też busów, wtedy można korzystać z busów jadących w stronę Chochołowa, ale wysiadamy przy głównej drodze i do naszej wycieczki dokładamy kilometr podejścia.
-Samochód: u wylotu doliny znajdują się liczne parkingi – najlepiej dotrzeć do tego, przed którym widać już szlaban i wejście na szlak. Parking znajduje się po lewej stronie drogi i kosztuje 10 zł za dzień.</p>
+    <span class="title">Dla kogo?</span>
+    Adresujemy ją do osób o średnim lub zaawansowanym stażu „turowym”, zwłaszcza ważna będzie umiejętność właściwej oceny warunków lawiniastych danego dnia i wybór właściwej trasy zjazdu. Ważne też jest dobre przygotowanie kondycyjne, gdyż jest to bardzo długa tura. Można ją oczywiście skrócić, rozpoczynając wyprawę np. ze schroniska na Polanie Chochołowskiej.
+</p>
+<p>
+    <span class="title">Sprzęt</span>
+    Lawinowe ABC: sonda, łopatka i detektor – wychodzimy powyżej górnej granicy lasu w teren zagrożony lawinami.
+Kask – w czasie zjazdu może się przydać nawet najlepszym narciarzom. Na podejście w razie kiepskich warunków śniegowych warto wyposażyć się w harszle
+</p>
+<p>
+    <span class="title">Dojazd</span>
+    Transport publiczny: w sezonie z Zakopanego kursują busy do Doliny Chochołowskiej, mają nawet rozkład jazdy, ale uwaga, jeśli akurat nie ma turystów, to mimo rozkładów jazdy nie będzie też busów, wtedy można korzystać z busów jadących w stronę Chochołowa, ale wysiadamy przy głównej drodze i do naszej wycieczki dokładamy kilometr podejścia.
+Samochód: u wylotu doliny znajdują się liczne parkingi – najlepiej dotrzeć do tego, przed którym widać już szlaban i wejście na szlak. Parking znajduje się po lewej stronie drogi i kosztuje 10 zł za dzień.
+</p>
 </div>
 
-<!--
--->
 <!-- excerpt -->
 
-<!--  -->
-
-
 ### Opis trasy.
-
 
 Chciałbym Czytelnikom zaproponować zjazd ze Starorobociańskiego zboczem północno – zachodnim na Starorobociańską Przełęcz. Dalsza trasa wycieczki prowadzi krótkim podejściem na Kończysty Wierch (2002 m.n.p.m). Stamtąd dość stromym zboczem zjazd do Doliny Jarząbczej i dalej aż do wylotu Doliny Chochołowskiej. Podczas trwania wycieczki zdobywamy dwa szczyty powyżej 2000 m.n.p.m: Starorobociański i Kończysty. Zaczynamy w Dolinie Chochołowskiej (parking na Siwej Polanie), a dalej już można przeważnie iść na nartach (mowa o marcu). Podejście prowadzi najpierw na Polanę Huciska, potem do leśniczówki (dawne schronisko Blaszyńskich), a następnie skręcamy w Doliną Starorobociańską (za czarnymi znakami) i idziemy na Siwą Przełęcz. Ważna uwaga: w razie zagrożenia lawinowego, wszystkie żleby przecinające szlak w Dolinie Starorobociańskiej są bardzo lawiniaste. Także żleb prowadzący na Siwą Przełęcz słynie z dużych lawin. Dlatego też trasa, o której piszemy, jest możliwa do przejścia dopiero po wiosennych, pewnych śniegach i przy niskim stopniu zagrożenia lawinowego, jeżeli warunki są niekorzystne lub wręcz niebezpieczne, stanowczo jej nie polecamy, a nawet odradzamy.
 Dalej posuwamy się z Siwej Przełęczy granią na Szczyt Starorobociańskiego. Przy dobrych, wiosennych śniegach, można iść na sam szczyt na fokach, przy twardym śniegu zalecamy założyć na tym odcinku raki. Czasami w razie oblodzenia warto też mieć czekan. Po ok. godzinnym podejściu z Siwej Przełęczy osiągamy szczyt. Podejście stokiem wschodnim jest dość trudne, wymaga dobrego śniegu. Raz na moich oczach dokonał go Adam Matuszny, jeden z najlepszych polskich ski-alpinistów w latach 90-tych. Po godzinnym prawie podejściu z Siwej Przełęczy staję na szczycie Starorobociańskiego.
