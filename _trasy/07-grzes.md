@@ -70,7 +70,23 @@ Powyżej podejścia w płaskim już miejscu odgałęzia się szlak na Trzydniowi
 Za schroniskiem, czyli po jego południowo-zachodniej stronie zaczyna się oznaczona pomarańczową tabliczką nartostrada. Trasa ta gubi się jednak; do niedawna była drogą prowadzącą przez las, obecnie las umarł i został wycięty, kierujemy się więc otwartym zboczem z odchyłem w prawo na grzbiecik, gdzie ciągle jeszcze stoją drzewa, tam trafiamy na ślad nartostrady, która poprowadzi nas w stronę żółtego szlaku na Grzesia. W przypadku trudności ze znalezieniem nartostrady (może być zasypana bez żadnych śladów) proponuję od początku iść szlakiem. Zaczyna się przed schroniskiem i jest dobrze oznakowany. Niezależnie od tego, czy poruszamy się nartostradą, czy szlakiem w końcu wychodzimy na grzbiet o nazwie Suchy Upłaz. Z Suchego Upłazu na wierzchołek Grzesia pozostaje 25 min. grzbiet jest szeroki i niezbyt stromy. Często lepsze do podchodzenia warunki panują po jego prawej stronie.
 Grześ 1653 m n.p.m. jest położony na granicy polsko-słowackiej. Ongiś był miejscem, gdzie Polacy przekazywali Słowakom zakazaną w Czechosłowacji literaturę religijną oraz dewocjonalia. Dziś na pamiątkę tamtych niebezpiecznych wypraw na wierzchołku stoi krzyż. Co roku są też organizowane spotkania Polaków ze Słowakami.
 
+
 <span class="image modal gallery">
+  <a href="/images/galleries/grzes2/1.jpg" title=""><img src="/images/galleries/grzes2/1.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/2.jpg" title=""><img src="/images/galleries/grzes2/2.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/3.jpg" title=""><img src="/images/galleries/grzes2/3.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/4.jpg" title=""><img src="/images/galleries/grzes2/4.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/5.jpg" title=""><img src="/images/galleries/grzes2/5.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/6.jpg" title=""><img src="/images/galleries/grzes2/6.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/7.jpg" title=""><img src="/images/galleries/grzes2/7.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/8.jpg" title=""><img src="/images/galleries/grzes2/8.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/9.jpg" title=""><img src="/images/galleries/grzes2/9.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/10.jpg" title=""><img src="/images/galleries/grzes2/10.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/11.jpg" title=""><img src="/images/galleries/grzes2/11.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/12.jpg" title=""><img src="/images/galleries/grzes2/12.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/15.jpg" title=""><img src="/images/galleries/grzes2/15.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/16.jpg" title=""><img src="/images/galleries/grzes2/16.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes2/17.jpg" title=""><img src="/images/galleries/grzes2/17.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/grzes2/16.jpg" title=""><img src="/images/galleries/grzes2/16.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/grzes2/18.jpg" title=""><img src="/images/galleries/grzes2/18.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/grzes2/19.jpg" title=""><img src="/images/galleries/grzes2/19.jpg.thumb.jpg" alt="" /></a>
@@ -99,7 +115,16 @@ Grześ 1653 m n.p.m. jest położony na granicy polsko-słowackiej. Ongiś był 
 ### Zjazd z Grzesia.
 Najpierw łatwy i niezbyt stromy Suchym Upłazem aż do szerokiej płaskiej przełączki w tym grzbiecie. Z przełączki robi się trudniej, najlepiej zjechać na wprost (kierunek wschodni) między drzewami i dalej najpierw gęstym potem rzadszym lasem, aż do szlaku. Tu trzeba się rozejrzeć – jeśli dobrze trafiliśmy to poniżej nas znajduje się skałka. Ta skałka wyznacza kierunek naszego dalszego zjazdu. Musimy pozostawić ją po naszej prawej stronie, kierujemy się więc na lewo od niej do żlebu o nazwie Dolinka. I tu czeka nas najstromszy odcinek zjazdu. Kierując się prosto w dół docieramy do starej nartostrady w miejscu, gdzie jest ona widoczna – wygląda jak leśna droga prowadząca niemal po poziomicy w prawo. Tą droga jedziemy do wspomnianego w opisie podejścia grzbietu z lasem. Grzbietem zjeżdżamy w dół, aż na otwartą przestrzeń, skąd już widać schronisko.
 
+
 <span class="image modal gallery">
+  <a href="/images/galleries/grzes3/13.jpg" title=""><img src="/images/galleries/grzes3/13.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes3/14.jpg" title=""><img src="/images/galleries/grzes3/14.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes3/18.jpg" title=""><img src="/images/galleries/grzes3/18.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes3/19.jpg" title=""><img src="/images/galleries/grzes3/19.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes3/20.jpg" title=""><img src="/images/galleries/grzes3/20.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes3/21.jpg" title=""><img src="/images/galleries/grzes3/21.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes3/22.jpg" title=""><img src="/images/galleries/grzes3/22.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/grzes3/23.jpg" title=""><img src="/images/galleries/grzes3/23.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/grzes3/38.jpg" title=""><img src="/images/galleries/grzes3/38.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/grzes3/52.jpg" title=""><img src="/images/galleries/grzes3/52.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/grzes3/53.jpg" title=""><img src="/images/galleries/grzes3/53.jpg.thumb.jpg" alt="" /></a>
