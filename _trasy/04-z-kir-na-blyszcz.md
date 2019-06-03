@@ -25,8 +25,7 @@ czas_zjazdu: 2,5 - 3 h
 najlepsze_warunki: marzec, kwiecień
 zagrozenia: Możliwe oblodzenie lub wystające kamienie na szlaku na Przełęcz Iwaniacką. Podejście na Ornak, dalej Siwy Zwornik i Błyszcz może być wystawione na podmuchy wiatru, może być oblodzone, ryzyko zejścia lawiny, m.in. żleby Baniste i Piszczałki. Trawers wąskim szlakiem na grani. Zjazd do D. Starorobociańskiej zagrożony zejściem lawiny, idziemy tylko przy stabilnym śniegu.
 mapa: https://www.google.com/maps/embed?pb=!1m60!1m8!1m3!1d83368.32958077194!2d19.7719912!3d49.2335539!3m2!1i1024!2i768!4f13.1!4m49!3e2!4m5!1s0x471592d040abec65%3A0xb323ce2bc797fa1!2sDolina+Ko%C5%9Bcieliska+-+Wej%C5%9Bcie%2C+Dolina+Ko%C5%9Bcieliska%2C+34-500+Ko%C5%9Bcielisko!3m2!1d49.2734141!2d19.868870299999998!4m5!1s0x4715926903a89a4f%3A0x3c36dd5f018d8d5c!2sSchronisko+PTTK+na+Hali+Ornak%2C+Dolina+Ko%C5%9Bcieliska%2C+Zakopane!3m2!1d49.229124299999995!2d19.8587001!4m5!1s0x4715924ee21ada11%3A0xd2f503f89e8745cf!2zSXdhbmlhY2thIFByemXFgsSZY3o!3m2!1d49.232223999999995!2d19.836373299999998!4m5!1s0x4715923a4110125b%3A0x65aceadd2a5c7cc2!2sOrnak%2C+Ko%C5%9Bcielisko!3m2!1d49.219074199999994!2d19.833069899999998!4m5!1s0x471591f6516bb131%3A0xc07d42b4f1ec7be6!2zQsWCeXN6Y3o!3m2!1d49.1935119!2d19.841566099999998!4m5!1s0x4715922932bb6881%3A0xa2cdcf7c909757c0!2sDolina+Starorobocia%C5%84ska%2C+Ko%C5%9Bcielisko!3m2!1d49.220795599999995!2d19.8172021!4m5!1s0x4715924ee21ada11%3A0xd2f503f89e8745cf!2zSXdhbmlhY2thIFByemXFgsSZY3o!3m2!1d49.232223999999995!2d19.836373299999998!4m5!1s0x471592d040abec65%3A0xb323ce2bc797fa1!2sDolina+Ko%C5%9Bcieliska+-+Wej%C5%9Bcie%2C+Dolina+Ko%C5%9Bcieliska%2C+Ko%C5%9Bcielisko!3m2!1d49.2734141!2d19.868870299999998!5e0!3m2!1sen!2spl!4v1559163792030!5m2!1sen!2spl
-youtube_id: wst_hCVOll0
-
+youtube_id: yfqJoyS2knU
 autor: wojtek
 ---
 
