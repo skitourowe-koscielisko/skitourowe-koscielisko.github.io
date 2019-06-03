@@ -48,9 +48,14 @@
             }
         }
         dd {
-            font-size: 13pt;
+            font-size: 11pt;
             display: block;
             clear: right;
+            margin-left: 62px;
+            @media (min-width: $medium-width) {
+                font-size: 13pt;
+                margin-left: 72px;
+            }
         }
 
         @media (min-width: 370px) {
