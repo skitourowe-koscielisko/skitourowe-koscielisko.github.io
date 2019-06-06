@@ -1,6 +1,16 @@
 body.news,
 body.tracks {
-    background-color: $bg-dim-color;
+    background-color: $bg-color;
+    background-image: url(/images/logo-bg.png);
+    background-size: 100%;
+    background-repeat-y: no-repeat;
+    background-position-y: 211px;
+    @media (min-width: $tablet-landscape) {
+        background-position-y: 153px;
+    }
+    @media (min-width: $laptop) {
+        background-position-y: 177px;
+    }
     .tour-summary {
         display: flex;
         -moz-flex-wrap: wrap;
