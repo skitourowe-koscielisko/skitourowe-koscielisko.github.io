@@ -388,6 +388,7 @@
                     .arrow-link {
                         font-size: 12pt;
                         display: inline;
+                        text-transform: uppercase;
                     }
                 }
                 .controls,
@@ -565,14 +566,20 @@
 
     }
     @media (min-width: 1800px) {
+        article header h1 {
+            margin-right: 290px;
+        }
         main article section.articles {
-            width: calc(1160px + 426px + 90px);
-            padding-left: calc(100% - 1160px - 426px - 90px + 90px);
+            width: calc(1240px + 426px + 30px);
+            padding-left: calc(100% - 1240px - 426px + 90px - 30px);
             .controls {
                 width: 426px;
+                h2 {
+                    font-size: 60px;
+                }
             }
             .list {
-                width: 1110px
+                width: 1240px
             }
         }
     }
