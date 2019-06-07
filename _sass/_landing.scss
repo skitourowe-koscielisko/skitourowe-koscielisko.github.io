@@ -416,6 +416,10 @@
             section.articles {
                 width: calc(795px + 230px + 35px);
                 padding-left: calc(100% - 795px - 230px - 35px);
+                .controls,
+                .list {
+                    margin-top: 160px;
+                }
                 .list {
                     width: 795px;
                     section:nth-child(3) {
