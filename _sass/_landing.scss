@@ -129,8 +129,11 @@
 
         section {
             &.articles {
-                background: #f5f5f5 url("/images/gory.png") no-repeat top center;
+                background: #f5f5f5 no-repeat top center;
                 background-position-y: -64px;
+                &.tracks {
+                    background-image: url("/images/gory.png");
+                }
                 section {
                     display: none;
                     float: left;
@@ -196,8 +199,8 @@
                     }
                 }
                 // Three widgets in row
-                $pogodynka-widget-width: 208px;
-                $mid-widget-padding: 56px;
+                $pogodynka-widget-width: 300px;
+                $mid-widget-padding: 6px;
                 $mid-widget-border-width: 2px;
                 $three-column-width: $two-column-width + $pogodynka-widget-width +
                                      2 * $mid-widget-padding + $horizontal-margin +
@@ -399,6 +402,11 @@
     }
 
     @media (min-width: 1152px) {
+        header {
+            .menu-bar {
+                background-color: $bg-color;
+            }
+        }
         article {
             section.articles {
                 width: calc(795px + 230px + 35px);
