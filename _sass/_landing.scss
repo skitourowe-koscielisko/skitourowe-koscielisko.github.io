@@ -129,10 +129,14 @@
 
         section {
             &.articles {
-                background: #f5f5f5 no-repeat top center;
-                background-position-y: -64px;
+                background-color: $bg-color;
                 &.tracks {
-                    background-image: url("/images/gory.png");
+                    background: #f5f5f5 url("/images/gory.png") no-repeat top center;
+                    background-position-y: -64px;
+                }
+                &.news {
+                    background: $bg-color url("/images/koscielisko-bg.png") no-repeat top center;
+                    background-size: 100%;
                 }
                 section {
                     display: none;
