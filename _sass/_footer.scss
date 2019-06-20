@@ -159,10 +159,6 @@ footer {
         text-align: center;
         width: calc(100% - 24px);
 
-        @media (min-width: $medium-width) {
-            text-align: left;
-        }
-
         @media (min-width: $large-width) {
             width: $large-width;
             margin: 24px auto;
@@ -176,8 +172,10 @@ footer {
         }
 
         .main {
+            img {
+                height: 55px;
+            }
             @media (min-width: $medium-width) {
-                float: left;
                 margin-right: 32px;
             }
         }
