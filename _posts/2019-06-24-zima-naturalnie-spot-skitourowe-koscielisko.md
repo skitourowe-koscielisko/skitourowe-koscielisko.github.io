@@ -21,5 +21,4 @@ Ze względu na bliskość Tatrzańskiego Parku Narodowego stanowi doskonałą ba
   <a href="/images/galleries/sk_news_1/3.jpg" title=""><img src="/images/galleries/sk_news_1/4.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/sk_news_1/5.jpg" title=""><img src="/images/galleries/sk_news_1/6.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/sk_news_1/7.jpg" title=""><img src="/images/galleries/sk_news_1/8.jpg.thumb.jpg" alt="" /></a>
-  <a href="/images/galleries/sk_news_1/9.jpg" title="">
-</span>
+  <a href="/images/galleries/sk_news_1/9.jpg" title=""></span>
