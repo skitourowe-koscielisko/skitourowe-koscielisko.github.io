@@ -18,9 +18,9 @@ Ze względu na bliskość Tatrzańskiego Parku Narodowego stanowi doskonałą ba
 
 <span class="image modal gallery">
   <a href="/images/galleries/sk_news_1/1.jpg" title=""><img src="/images/galleries/sk_news_1/1.jpg.thumb.jpg" alt="" /></a>
-  <a href="/images/galleries/zawody-basi-german/race6.jpg" title=""><img src="/images/galleries/zawody-basi-german/race6.jpg.thumb.jpg" alt="" /></a>
-  <a href="/images/galleries/zawody-basi-german/race7.jpg" title=""><img src="/images/galleries/zawody-basi-german/race7.jpg.thumb.jpg" alt="" /></a>
-  <a href="/images/galleries/zawody-basi-german/race8.jpg" title=""><img src="/images/galleries/zawody-basi-german/race8.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/sk_news_1/2.jpg" title=""><img src="/images/galleries/sk_news_1/2.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleriessk_news_1/3.jpg" title=""><img src="/images/galleries/sk_news_1/3.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/sk_news_1/4.jpg" title=""><img src="/images/galleries/sk_news_1/4.jpg.thumb.jpg" alt="" /></a>
 </span>
 
 <span class="image modal gallery">
