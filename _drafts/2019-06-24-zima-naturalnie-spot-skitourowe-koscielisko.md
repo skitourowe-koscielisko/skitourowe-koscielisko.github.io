@@ -1,8 +1,8 @@
 ---
-  title: Zima Naturalnie! Spot Skitourowe Kościelisko.
-  description: Spot Skitourowe Kościelisko Zima Naturalnie.
-  thumbnail: images/galleries/sk_news_1/9.jpg
-  ---
+title: Zima Naturalnie! Spot Skitourowe Kościelisko.
+description: Spot Skitourowe Kościelisko Zima Naturalnie.
+thumbnail: images/galleries/sk_news_1/9.jpg
+---
   <span class="image left">
     <img alt="Plakat z zawodów im. Basi German" src="images/galleries/sk_news_1/9.jpg" title="Kościelisko - zimowa aktywność na świeżym powietrzu">
   </span>
