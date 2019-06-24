@@ -17,13 +17,9 @@ Ze względu na bliskość Tatrzańskiego Parku Narodowego stanowi doskonałą ba
 ### Okolice Kościeliska zimą.
   
 <span class="image_modal_gallery">
-<a href="/images/galleries/sk_news_1/1.jpg" title="">
-<img src="/images/galleries/sk_news_1/5.jpg.jpg.thumb.jpg" alt="" /></a>
-<a href="/images/galleries/sk_news_1/2.jpg" title="">
-<img src="/images/galleries/sk_news_1/6.jpg" alt="" /></a>
-<a href="/images/galleries/sk_news_1/3.jpg" title="">
-<img src="/images/galleries/sk_news_1/7.jpg" alt="" /></a>
-<a href="/images/galleries/sk_news_1/4.jpg" title="">
-<img src="/images/galleries/sk_news_1/8.jpg" alt="" /></a>
-<img src="/images/galleries/sk_news_1/9.jpg" alt="" />
+<img src="/images/galleries/sk_news_1/1.jpg" alt="" /><img src="/images/galleries/sk_news_1/5.jpg" alt="" /></a>
+<img src="/images/galleries/sk_news_1/2.jpg" alt="" /></a><img src="/images/galleries/sk_news_1/6.jpg" alt="" /></a>
+<img src="/images/galleries/sk_news_1/3.jpg" alt="" /></a><img src="/images/galleries/sk_news_1/7.jpg" alt="" /></a>
+<img src="/images/galleries/sk_news_1/4.jpg" alt="" /></a><img src="/images/galleries/sk_news_1/8.jpg" alt="" /></a>
+<img src="/images/galleries/sk_news_1/9.jpg" alt="" /></a>
 </span>
