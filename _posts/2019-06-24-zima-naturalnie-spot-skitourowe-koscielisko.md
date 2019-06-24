@@ -17,7 +17,7 @@ Ze względu na bliskość Tatrzańskiego Parku Narodowego stanowi doskonałą ba
 ### Okolice Kościeliska zimą.
 
 <span class="image modal gallery">
-  <a href="/images/galleries/zawody-basi-german/race5.jpg" title=""><img src="/images/galleries/zawody-basi-german/race5.jpg.thumb.jpg" alt="" /></a>
+  <a href="/images/galleries/sk_news_1/1.jpg" title=""><img src="/images/galleries/sk_news_1/1.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/zawody-basi-german/race6.jpg" title=""><img src="/images/galleries/zawody-basi-german/race6.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/zawody-basi-german/race7.jpg" title=""><img src="/images/galleries/zawody-basi-german/race7.jpg.thumb.jpg" alt="" /></a>
   <a href="/images/galleries/zawody-basi-german/race8.jpg" title=""><img src="/images/galleries/zawody-basi-german/race8.jpg.thumb.jpg" alt="" /></a>
