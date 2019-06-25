@@ -40,7 +40,9 @@ bodyclass: tracks
   </section>
   <section class="video">
     <h2>Video przewodnik</h2>
-    <iframe src="https://youtube.com/embed/{{ page.youtube_id }}" frameborder="0" allowfullscreen></iframe>
+    <div class="container">
+      <iframe src="https://youtube.com/embed/{{ page.youtube_id }}" frameborder="0" allowfullscreen></iframe>
+    </div>
   </section>
 
   <section class="description">
@@ -49,15 +51,3 @@ bodyclass: tracks
 </article>
 
 <script type="text/javascript" src="/assets/js/modal.js"></script>
-<script type="text/javascript">
-  function onWindowResize() {
-    var iframe = document.querySelector('.video iframe');
-    var height;
-    if (iframe) {
-      height = parseInt(iframe.clientWidth / 1.78);
-      iframe.setAttribute('style', `height: ${height}px`);
-    }
-  }
-  onWindowResize();
-  window.onresize = onWindowResize;
-</script>

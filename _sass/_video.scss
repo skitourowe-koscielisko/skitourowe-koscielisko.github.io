@@ -1,0 +1,27 @@
+.video {
+    padding: 32px 0 48px;
+    margin: 24px auto;
+
+    .container {
+        position: relative;
+        padding-bottom: 56.25%;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 0px none;
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+
+        }
+        @media (min-width: $laptop) {
+            padding-bottom: 500px;
+        }
+        @media (min-width: $desktop) {
+            padding-bottom: 600px;
+        }
+    }
+}
+
