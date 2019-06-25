@@ -131,8 +131,8 @@
             &.articles {
                 background-color: $bg-color;
                 &.tracks {
-                    background: #f5f5f5 url("/images/gory.png") no-repeat top center;
-                    background-position-y: -64px;
+                    background: $bg-color url("/images/gory.png") no-repeat top center;
+                    background-position-y: -133px;
                 }
                 &.news {
                     background: $bg-color url("/images/koscielisko-bg.png") no-repeat top center;
@@ -156,17 +156,18 @@
                 background-color: $bg-color;
                 $widget-width: 268px;
                 $one-column-width: $widget-width;
-                margin-left: auto;
-                margin-right: auto;
-                width: $one-column-width;
-                padding: 42px 0;
+                //padding: 42px 0;
                 h3 {
                     color: $menu-bg-color;
+                    padding-top: 42px;
                     margin-bottom: 20px;
                 }
                 ul {
                     margin: 0;
                     list-style: none;
+                    width: $one-column-width;
+                    margin-left: auto;
+                    margin-right: auto;
                     li {
                         margin: 0 auto 32px;
                     }
@@ -193,9 +194,10 @@
                 $two-column-width: $widget-width * 2 + 2 * $horizontal-margin + 30px;
 
                 @media (min-width: $two-column-width) {
-                    width: $two-column-width;
-                    margin: 0 auto;
+                    h3,
                     ul {
+                        width: $two-column-width;
+                        margin: 0 auto;
                         li {
                             float: left;
                             margin: 0 $horizontal-margin 12px 0;
@@ -210,7 +212,10 @@
                                      2 * $mid-widget-padding + $horizontal-margin +
                                      2 * $mid-widget-border-width;
                 @media (min-width: $three-column-width) {
-                    width: $three-column-width;
+                    h3,
+                    ul {
+                        width: $three-column-width;
+                    }
                     li {
                         &.pogodynka {
                             width: $pogodynka-widget-width;
@@ -338,6 +343,16 @@
         }
     }
 
+    @media (min-width: $tablet-landscape) {
+        article {
+            section.weather {
+                background: $bg-color url("/images/gory.png") no-repeat top center;
+                background-position-y: -510px;
+                padding-bottom: 400px;
+            }
+        }
+    }
+
     @media (min-width: 800px) {
         #check {
             position: absolute;
@@ -430,6 +445,9 @@
                     }
                 }
             }
+            section.weather {
+                background-position-y: -593px;
+            }
         }
     }
 
@@ -459,6 +477,7 @@
                 }
             }
         }
+        main article section.weather,
         main article section.articles {
             width: calc(900px + 232px + 30px);
             padding-left: calc(100% - 900px - 232px - 30px + 67px);
@@ -467,8 +486,8 @@
             }
         }
         main article section.weather {
-            position: relative;
-            left: 67px;
+            background-position-y: -627px;
+            //left: 67px;
         }
         #check {
             width: 400px;
@@ -542,10 +561,13 @@
                 }
             }
         }
+        main article section.weather,
         main article section.articles {
 
             width: calc(1110px + 262px + 30px);
             padding-left: calc(100% - 1110px - 262px - 30px + 90px);
+        }
+        main article section.articles {
             margin: 0;
             .controls {
                 width: 262px;
@@ -565,7 +587,7 @@
             }
         }
         main article section.weather {
-            left: 90px;
+            background-position-y: -643px;
         }
 
     }
@@ -585,6 +607,10 @@
             .list {
                 width: 1240px
             }
+        }
+        main article section.weather {
+            background-position-y: -668px;
+            padding-bottom: 600px;
         }
     }
     @media (min-width: 1900px) {
