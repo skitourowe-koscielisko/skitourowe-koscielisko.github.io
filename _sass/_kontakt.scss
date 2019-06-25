@@ -105,6 +105,10 @@
             float: left;
             border: 0;
             width: calc(100% - 48px);
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
     }
 
