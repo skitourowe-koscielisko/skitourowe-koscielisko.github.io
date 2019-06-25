@@ -173,10 +173,13 @@ footer {
 
         .main {
             img {
-                height: 55px;
+                height: 65px;
             }
             @media (min-width: $medium-width) {
                 margin-right: 32px;
+                img {
+                    height: 90px;
+                }
             }
         }
 
