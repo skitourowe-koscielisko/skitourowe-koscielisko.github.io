@@ -17,7 +17,7 @@
         #menu {
             #menu-toggle {
                 input:checked ~ ul {
-                    top: -199px;
+                    top: -140px;
                 }
                 input:checked ~ span {
                     display: none;
@@ -243,7 +243,7 @@
         }
         main {
             background: transparent url(/images/landing-bg-sm.png) no-repeat top center;
-            background-position-y: -159px;
+            background-position-y: -115px;
         }
         article {
             header {
@@ -265,11 +265,6 @@
                     margin: 60px 0 24px 10px;
                 }
             }
-        }
-    }
-    @media (min-width: 455px) {
-        main {
-            background-position-y: -115px;
         }
     }
 

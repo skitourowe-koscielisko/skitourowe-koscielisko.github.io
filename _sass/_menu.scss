@@ -13,7 +13,7 @@ header {
 
     .menu-bar {
         background: $menu-bg-color url(/images/menu-bg.png) center 0 no-repeat border-box;
-        height: 159px;
+        height: 115px;
     }
 
     h1 {
@@ -111,7 +111,7 @@ header {
 
         input:checked ~ ul {
             transform: none;
-            top: 12px;
+            top: -10px;
         }
 
         ul {
@@ -145,11 +145,7 @@ header {
     @media (min-width: 470px) {
         background-size: 100%;
     }
-    @media (min-width: 455px) {
-        .menu-bar {
-            height: 115px;
-        }
-    }
+
     @media (min-width: $tablet-landscape) {
         height: 153px;
         h1 {
