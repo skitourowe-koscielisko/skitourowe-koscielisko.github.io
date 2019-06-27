@@ -116,23 +116,29 @@ footer {
         margin: 0 0 50px;
 
         ul {
-            position: absolute;
             clear: left;
             float: left;
-            margin: 0;
             padding: 0;
+            margin: 0 auto;
             text-align: center;
             list-style-type: none;
-            left: 50%;
-            width: 353px;
-            margin-left: calc(353px / -2);
 
             li {
                 display: block;
                 float: left;
-                padding: 24px 34px 12px;
+                padding: 24px 12px 12px;
                 background-color: $bg-color;
 
+            }
+            @media (min-width: 353px) {
+                position: absolute;
+                width: 353px;
+                margin: 0;
+                margin-left: calc(353px / -2);
+                left: 50%;
+                li {
+                    padding: 24px 34px 12px;
+                }
             }
 
             @media (min-width: $medium-width) {
