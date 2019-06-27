@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    margin: 0;
+    margin: 0 8px;
     @media (min-width: $tablet-landscape) {
         margin: 0 15px;
     }
