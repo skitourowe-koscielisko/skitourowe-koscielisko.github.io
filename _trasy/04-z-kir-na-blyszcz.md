@@ -30,11 +30,8 @@ autor: wojtek
 ---
 
 
- Klasyk tatrzański. Bardzo długa wyrypa narciarska, ze stromymi podejściami i zjazdami. Błyszcz (2159 m) to trudny cel długiej wyprawy w starym stylu wycieczek na fokach z czasów Józefa Oppenheima, Mariusza Zaruskiego, Stanisława Zdyba i dawnych narciarzy. Nagrodą za długie pojęcie jest wspaniała panorama i królewski zjazd stokami o nastromieniu do 40 stopni. Tylko na wiosnę, konieczny jest długi dzień i przy stabilnych śniegach. Przy firnach wycieczka na miarę Alp czy innych wielkich gór. Nie wierzycie? Spróbujcie:).
-<!--
-    Ten kod HTML wyświetli się w 3 kolumnach na desktopie.
-    Zamień tekst, jeśli potrzeba, lub usuń całość
--->
+Klasyk tatrzański. Bardzo długa wyrypa narciarska, ze stromymi podejściami i zjazdami. Błyszcz (2159 m) to trudny cel długiej wyprawy w starym stylu wycieczek na fokach z czasów Józefa Oppenheima, Mariusza Zaruskiego, Stanisława Zdyba i dawnych narciarzy. Nagrodą za długie pojęcie jest wspaniała panorama i królewski zjazd stokami o nastromieniu do 40 stopni. Tylko na wiosnę, konieczny jest długi dzień i przy stabilnych śniegach. Przy firnach wycieczka na miarę Alp czy innych wielkich gór. Nie wierzycie? Spróbujcie!
+
 <div class="info">
 
 <p>
@@ -50,11 +47,7 @@ Do Kir, czyli do wylotu Doliny Kościeliskiej, możemy dotrzeć własnym samocho
 </p>
 </div>
 
-<!--
--->
 <!-- excerpt -->
-
-<!--  -->
 
 
 ### Opis trasy.
