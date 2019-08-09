@@ -24,7 +24,8 @@ czas_podejscia: 2 - 2,5 h
 czas_zjazdu: 0,5 - 1 h
 najlepsze_warunki: styczeń, luty
 zagrozenia: Brak zagrożenia lawinowego, trasa dobra na niestabilne warunki śniegowe, kiedy odradzane są wyjścia w wyższe partie gór. Przy dużych opadach szlak może być nie przetarty, w tygodniu można napotkać zwózkę drewna.
-mapa: https://www.google.com/maps/d/embed?mid=12my7PJYSWYkZ431dpHyqkz_1I_ViJIQn
+#mapa: https://www.google.com/maps/d/embed?mid=12my7PJYSWYkZ431dpHyqkz_1I_ViJIQn
+mapa: http://miip.geomalopolska.pl/iMapLite/app/skitour_koscielisko/miip_skitour_koscielisko_6.html
 youtube_id: 7jyjWE2Inb8
 
 autor: wojtek
