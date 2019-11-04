@@ -10,30 +10,6 @@
         background-color: transparent;
         background-image: none;
         height: initial;
-        .eu-info {
-            display: block;
-            margin: 20px 0px;
-        }
-        #menu {
-            #menu-toggle {
-                input:checked ~ ul {
-                    top: -178px;
-                }
-                input:checked ~ span {
-                    display: none;
-                }
-            }
-        }
-        .menu-bar {
-            background-color: $menu-bg-color-alt;
-            background-clip: content-box;
-            h1 {
-                margin-left: 25px;
-            }
-            #menu-toggle {
-                margin-right: 25px;
-            }
-        }
     }
 
     #check-header {
@@ -355,7 +331,7 @@
         #check {
             position: absolute;
             width: 313px;
-            top: 470px;
+            top: 200px;
             right: 0;
             padding: 280px 35px 60px;
             h3 {
