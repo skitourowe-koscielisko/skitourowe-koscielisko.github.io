@@ -20,7 +20,16 @@
       {% include social-media-top.html %}
       <section class="menu-bar">
         <h1 id="nav-logo"><a href="/">{{ site.title }}</a></h1>
-        {% include menu.html %}
+        <nav id="menu" role="navigation">
+          <div id="menu-toggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+            {% include menu.html %}
+          </div>
+        </nav>
       </section>
     </header>
     <main>

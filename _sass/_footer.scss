@@ -160,6 +160,30 @@ footer {
         }
     }
 
+    .menu {
+        display: none;
+
+        @media (min-width: $tablet-landscape) {
+            display: initial;
+        }
+        ul {
+            margin: 28px 0 36px;
+        }
+        li {
+            list-style-type: none;
+            display: inline;
+            padding: 0 10px;
+
+            a,
+            a:visited {
+                font-size: 11pt;
+                font-weight: initial !important;
+                color: $menu-bg-color-alt;
+                text-transform: lowercase;
+            }
+        }
+    }
+
     .partners {
         margin: 24px 12px;
         text-align: center;
