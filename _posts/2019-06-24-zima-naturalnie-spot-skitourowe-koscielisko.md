@@ -1,7 +1,8 @@
 ---
 title: Zima Naturalnie! Spot Skitourowe Kościelisko.
 description: Spot Skitourowe Kościelisko Zima Naturalnie.
-thumbnail: /images/galleries/sk_news_1/9.jpg
+image: /images/news/9.png
+thumbnail: /images/thumbs/9.png
 ---
 
 ### Powodów, dla których warto odwiedzić Kościelisko zimą jest wiele.
