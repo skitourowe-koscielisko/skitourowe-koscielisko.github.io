@@ -31,9 +31,18 @@ layout: landing
       </a>
     </div>
     <div class="list">
-      {% for post in site.trasy %}
+      {% for post in site.trasy limit:2 %}
         {%include item-post.html %}
       {% endfor %}
+      <section class="see-all">
+	<h4>
+	  <a href="/trasy/" title="Zobacz wszystkie newsy">
+	    <img src="/images/see-more.png">
+	    <span>Więcej tras</span>
+	    <span class="arrow">&gt;</span>
+	  </a>
+	</h4>
+      </section>
     </div>
     <div class="clear"></div>
     <a class="button arrow-link" href="/trasy/" title="Trasy skitourowe w rejonie Kościeliska">
@@ -76,9 +85,18 @@ layout: landing
       </a>
     </div>
     <div class="list">
-      {% for post in site.posts limit:8 %}
+      {% for post in site.posts limit:2 %}
         {%include item-post.html %}
       {% endfor %}
+      <section class="see-all">
+	<h4>
+	  <a href="/news/" title="Zobacz wszystkie newsy">
+	    <img src="/images/see-more.png">
+	    <span>Więcej newsów</span>
+	    <span class="arrow">&gt;</span>
+	  </a>
+	</h4>
+      </section>
     </div>
     <br class="clear">
     <a class="button arrow-link" href="/news/" title="Newsy">Zobacz wszystkie newsy<i></i></a>

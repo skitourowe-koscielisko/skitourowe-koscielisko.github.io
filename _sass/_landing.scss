@@ -435,12 +435,51 @@
                 }
                 .list {
                     width: 795px;
-                    section:nth-child(3) {
-                        display: block;
-                    }
                     section {
                         width: calc(33% - 30px);
+                        position: relative;
+                        left: 41px;
+                        &.see-all {
+                            &:hover {
+                                .arrow {
+                                    transition: all 0.4s;
+                                    transform: translate(80%, 0);
+                                }
+                            }
+                            display: block;
+                            img {
+                                background-color: white;
+                                filter: grayscale(100%) opacity(50%);
+                            }
+                            h4 {
+                                a {
+                                    span {
+                                        color: #8d8d8d;
+                                        margin: 0 0 0 16px;
+                                        &:hover {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+                            .arrow {
+                                position: absolute;
+                                font-size: 40pt;
+                                font-weight: bold;
+                                top: 45%;
+                                right: 23px;
+                                z-index: 1000;
+                                margin: 0;
+                                padding: 0;
+                                background: transparent;
+                                color: $menu-bg-color;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
                     }
+
                 }
             }
             section.weather {
